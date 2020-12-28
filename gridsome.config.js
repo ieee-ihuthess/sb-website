@@ -6,6 +6,7 @@
 
 module.exports = {
   siteName: 'IEEE Student Branch - IHU Thessaloniki',
+  siteUrl: "https://relaxed-raman-07896d.netlify.app",
   titleTemplate: "%s",
   plugins: []
 }
