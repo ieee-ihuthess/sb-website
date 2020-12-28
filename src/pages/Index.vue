@@ -24,9 +24,13 @@ import Contact from "@/components/Contact.vue";
 export default {
   metaInfo: {
     titleTemplate: "IEEE Student Branch - IHU Thessaloniki",
-    meta: [{ name: "description", content: `
-      The IEEE Student Branch of International Hellenic University - Thessaloniki campus is a student tech
-      community.` }],
+    meta: [
+      {
+        name: "description",
+        content:
+          " The IEEE Student Branch of International Hellenic University - Thessaloniki campus is a student tech community.",
+      },
+    ],
   },
   components: {
     Hero,
