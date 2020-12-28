@@ -1,0 +1,29 @@
+{
+  "name": "sb-website",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@fortawesome/free-regular-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "bootstrap": "^4.5.3",
+    "bootstrap-vue": "^2.19.0",
+    "gridsome": "^0.7.0",
+    "particles.vue": "^2.1.11",
+    "vue": "^2.6.12",
+    "vue-carousel": "^0.18.0",
+    "vue-scrollactive": "^0.9.3",
+    "vue-scrollto": "^2.20.0",
+    "vue-typed-js": "^0.1.2"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/vue-fontawesome": "^2.0.2",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0"
+  }
+}
