@@ -47,14 +47,10 @@ library.add(
 );
 
 export default function(Vue, { router, head, isClient }) {
-  if (isClient) {
-    const VueCarousel = require('vue-carousel').default;
-    Vue.use(VueCarousel);
-  }
   head.link.push({
     rel: "stylesheet",
     href:
-      "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Roboto:wght@300&display=swap",
+    "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Roboto:wght@300&display=swap",
   });
   // Set default layout as a global component
   Vue.component("font-awesome", FontAwesomeIcon);
@@ -64,4 +60,8 @@ export default function(Vue, { router, head, isClient }) {
   Vue.use(VueScrollTo);
   Vue.use(VueTypedJs);
   Vue.use(Particles);
+  if (isClient) {
+    const VueCarousel = require('vue-carousel').default;
+    Vue.use(VueCarousel);
+  }
 }

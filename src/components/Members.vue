@@ -1,6 +1,7 @@
 <template>
   <section id="members" class="section">
     <h2>Members</h2>
+    <ClientOnly>
     <carousel
       paginationColor="#b3b3b3"
       paginationActiveColor="#176796"
@@ -11,6 +12,7 @@
         <member-card />
       </slide>
     </carousel>
+    </ClientOnly>
   </section>
 </template>
 

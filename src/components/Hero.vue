@@ -1,6 +1,8 @@
 <template>
   <section class="hero text-center" id="home">
+    <ClientOnly>
     <Particles id="vue-particles" :options="options" />
+    </ClientOnly>
     <div class="hero__overlay">
       <div class="hero__content">
         <vue-typed-js
