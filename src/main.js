@@ -11,7 +11,6 @@ import VueScrollactive from "vue-scrollactive";
 import VueScrollTo from "vue-scrollto";
 import Particles from "particles.vue";
 import VueTypedJs from "vue-typed-js";
-import VueCarousel from "vue-carousel";
 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { config, library } from "@fortawesome/fontawesome-svg-core";
@@ -48,6 +47,10 @@ library.add(
 );
 
 export default function(Vue, { router, head, isClient }) {
+  if (isClient) {
+    const VueCarousel = require('vue-carousel').default;
+    Vue.use(VueCarousel);
+  }
   head.link.push({
     rel: "stylesheet",
     href:
@@ -60,6 +63,5 @@ export default function(Vue, { router, head, isClient }) {
   Vue.use(VueScrollactive);
   Vue.use(VueScrollTo);
   Vue.use(VueTypedJs);
-  Vue.use(VueCarousel);
   Vue.use(Particles);
 }

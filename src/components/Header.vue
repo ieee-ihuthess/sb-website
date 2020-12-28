@@ -89,32 +89,38 @@ export default {
     };
   },
   mounted() {
-    if (screen.width < 990) this.$data.transparentNav = false;
-    else this.$data.transparentNav = true;
-    window.addEventListener("scroll", this.onScroll);
+    if (process.isClient) {
+      if (screen.width < 990) this.$data.transparentNav = false;
+      else this.$data.transparentNav = true;
+      window.addEventListener("scroll", this.onScroll);
+    }
   },
   beforeDestroy() {
     window.removeEventListener("scroll", this.onScroll);
   },
   computed: {
     scrollOffset() {
-      return screen.width < 768 ? -450 : -100;
+      if (process.isClient) {
+        return screen.width < 768 ? -450 : -100;
+      }
     },
   },
   methods: {
     onScroll() {
-      if (screen.width < 990) this.$data.transparentNav = false;
-      const currentScrollPosition =
-        window.pageYOffset || document.documentElement.scrollTop;
+      if (process.isClient) {
+        if (screen.width < 990) this.$data.transparentNav = false;
+        const currentScrollPosition =
+          window.pageYOffset || document.documentElement.scrollTop;
 
-      if (currentScrollPosition < 0) {
-        return;
-      }
+        if (currentScrollPosition < 0) {
+          return;
+        }
 
-      if (currentScrollPosition < 5) {
-        this.$data.transparentNav = true;
-      } else {
-        this.$data.transparentNav = false;
+        if (currentScrollPosition < 5) {
+          this.$data.transparentNav = true;
+        } else {
+          this.$data.transparentNav = false;
+        }
       }
     },
     scrollIntoView(evt) {
