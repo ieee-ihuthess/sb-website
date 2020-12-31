@@ -9,7 +9,7 @@ public_folder: "/uploads"
 collections:
   - name: "members"
     label: "Member"
-    folder: "members"
+    folder: "content/members"
     create: true
     slug: "{{slug}}"
     fields:
@@ -19,7 +19,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "faq"
     label: "Faq"
-    folder: "faq"
+    folder: "content/faq"
     create: true
     slug: "{{slug}}"
     fields:
