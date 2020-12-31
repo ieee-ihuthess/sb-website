@@ -13,14 +13,14 @@ module.exports = {
       use: "@gridsome/source-filesystem",
       options: {
         typeName: "Member",
-        path: "data/members/*.md",
+        path: "./content/members/**/*.md",
       },
     },
     {
       use: "@gridsome/source-filesystem",
       options: {
         typeName: "Faq",
-        path: "data/faq/*.md",
+        path: "./content/faq/**/*.md",
       },
     },
     {
