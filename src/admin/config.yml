@@ -1,0 +1,26 @@
+backend:
+  name: github
+  repo: joj0s/sb-website
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "members"
+    label: "Member"
+    folder: "members"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Designation", name: "desgination", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "date"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "faq"
+    label: "Faq"
+    folder: "faq"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Question", name: "question", widget: "string"}
+      - {label: "Answer", name: "answer", widget: "markdown"}

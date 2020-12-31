@@ -9,9 +9,13 @@
   "dependencies": {
     "@fortawesome/free-regular-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.4",
     "bootstrap": "^4.5.3",
     "bootstrap-vue": "^2.19.0",
     "gridsome": "^0.7.0",
+    "gridsome-plugin-netlify-cms": "^1.0.9",
+    "netlify-cms": "^2.10.78",
     "particles.vue": "^2.1.11",
     "vue": "^2.6.12",
     "vue-carousel": "^0.18.0",
