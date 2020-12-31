@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: joj0s/sb-website
+  branch: main
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
