@@ -3,9 +3,10 @@
     <h2>Contact us</h2>
     <div class="col-md-12 col-md-offset-2">
       <form
-        onsubmit="sendMail(this);"
-        method="POST"
-        id="contact-form"
+        @submit.prevent="handleSubmit"
+        name="contact"
+        method="post"
+        data-netlify="true"
       >
         <div class="row">
           <div class="col-md-6 field">
@@ -16,6 +17,7 @@
               class="form-control"
               name="name"
               placeholder="Name*"
+              v-model="form.name"
               required
             />
           </div>
@@ -27,6 +29,7 @@
               type="email"
               name="Email"
               placeholder="Email*"
+              v-model="form.email"
               required
             />
           </div>
@@ -38,23 +41,73 @@
               class="form-control"
               name="Message"
               placeholder="Message*"
+              v-model="form.message"
               required
             ></textarea>
           </div>
           <div class="col-md-12 text-center">
+            <b-alert variant="success" v-if="submitSuccessful">Your message was submitted. Thank you!</b-alert>
+            <b-alert variant="danger" v-if="submitFailed">Something went wrong. {{errorMessage}}</b-alert>
             <b-button class="submit" type="submit">Submit Message</b-button>
           </div>
-          <p id="msgs"></p>
         </div>
       </form>
     </div>
   </section>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      form: {
+        name: "",
+        email: "",
+        message: "",
+      },
+      submitFailed: false,
+      submitSuccessful: true,
+      errorMessage: '' 
+    };
+  },
+  methods: {
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join("&");
+    },
+    handleSubmit() {
+      fetch("/", {
+        method: "post",
+        headers: {
+          "Content-Type": "application/x-www-urlencoded",
+        },
+        body: this.encode({
+          "form-name": "contact",
+          ...this.form,
+        }),
+      })
+        .then(() => {
+          this.$data.submitSuccessful = true;
+          this.$data.submitFailed = false;
+          this.$data.errorMessage = "";
+          })
+        .catch((e) => {
+          this.$data.submitSuccessful = false;
+          this.$data.submitFailed = true;
+          this.$data.errorMessage = e;
+        });
+    },
+  },
+};
+</script>
+
 <style lang="scss">
 @import "~/assets/scss/variables";
 
-textarea{
+textarea {
   resize: none;
 }
 
