@@ -3,11 +3,16 @@
     <h2>Contact us</h2>
     <div class="col-md-12 col-md-offset-2">
       <form
-        @submit.prevent="handleSubmit"
         name="contact"
         method="post"
+        v-on:submit.prevent="handleSubmit"
         data-netlify="true"
+        data-netlify-honeypot="bot-field"
       >
+        <input type="hidden" name="form-name" value="contact" />
+        <p hidden>
+          <label> Don’t fill this out: <input name="bot-field" /> </label>
+        </p>
         <div class="row">
           <div class="col-md-6 field">
             <span class="field__title">Name</span>
@@ -27,7 +32,7 @@
               id="email"
               class="form-control"
               type="email"
-              name="Email"
+              name="email"
               placeholder="Email*"
               v-model="form.email"
               required
@@ -39,15 +44,19 @@
               id="message"
               rows="5"
               class="form-control"
-              name="Message"
+              name="message"
               placeholder="Message*"
               v-model="form.message"
               required
             ></textarea>
           </div>
           <div class="col-md-12 text-center">
-            <b-alert variant="success" v-if="submitSuccessful">Your message was submitted. Thank you!</b-alert>
-            <b-alert variant="danger" v-if="submitFailed">Something went wrong. {{errorMessage}}</b-alert>
+            <b-alert variant="success" v-if="submitSuccessful"
+              >Your message was submitted. Thank you!</b-alert
+            >
+            <b-alert variant="danger" v-if="submitFailed"
+              >Something went wrong. {{ errorMessage }}</b-alert
+            >
             <b-button class="submit" type="submit">Submit Message</b-button>
           </div>
         </div>
@@ -67,34 +76,34 @@ export default {
       },
       submitFailed: false,
       submitSuccessful: true,
-      errorMessage: '' 
+      errorMessage: "",
     };
   },
   methods: {
     encode(data) {
       return Object.keys(data)
         .map(
-          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+          (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
         )
         .join("&");
     },
-    handleSubmit() {
+    handleSubmit(e) {
       fetch("/", {
-        method: "post",
-        headers: {
-          "Content-Type": "application/x-www-urlencoded",
-        },
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: this.encode({
-          "form-name": "contact",
-          ...this.form,
+          "form-name": e.target.getAttribute("name"),
+          ...this.formData,
         }),
       })
         .then(() => {
+          console.log('suc')
           this.$data.submitSuccessful = true;
           this.$data.submitFailed = false;
           this.$data.errorMessage = "";
-          })
+        })
         .catch((e) => {
+          console.log(e);
           this.$data.submitSuccessful = false;
           this.$data.submitFailed = true;
           this.$data.errorMessage = e;
