@@ -11,7 +11,7 @@
       >
         <input type="hidden" name="form-name" value="contact" />
         <p hidden>
-          <label> Don’t fill this out: <input name="bot-field" /> </label>
+          <label> Don’t fill this out: <input name="botfield" /> </label>
         </p>
         <div class="row">
           <div class="col-md-6 field">
@@ -51,7 +51,7 @@
             ></textarea>
           </div>
           <div class="col-md-12 text-center">
-            <b-alert variant="success" v-if="submitSuccessful"
+            <b-alert variant="success" v-model="submitSuccessful"
               >Your message was submitted. Thank you!</b-alert
             >
             <b-alert variant="danger" v-if="submitFailed"
@@ -70,12 +70,13 @@ export default {
   data() {
     return {
       form: {
+        botfield: "",
         name: "",
         email: "",
         message: "",
       },
       submitFailed: false,
-      submitSuccessful: true,
+      submitSuccessful: false,
       errorMessage: "",
     };
   },
