@@ -7,11 +7,10 @@
         method="post"
         v-on:submit.prevent="handleSubmit"
         data-netlify="true"
-        data-netlify-honeypot="bot-field"
       >
         <input type="hidden" name="form-name" value="contact" />
         <p hidden>
-          <label> Don’t fill this out: <input name="botfield" /> </label>
+          <label> Don’t fill this out: <input name="bot-field" /> </label>
         </p>
         <div class="row">
           <div class="col-md-6 field">
@@ -69,12 +68,7 @@
 export default {
   data() {
     return {
-      form: {
-        botfield: "",
-        name: "",
-        email: "",
-        message: "",
-      },
+      form: {},
       submitFailed: false,
       submitSuccessful: false,
       errorMessage: "",
