@@ -82,10 +82,8 @@ export default {
   methods: {
     encode(data) {
       return Object.keys(data)
-        .map(
-          (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-        )
-        .join("&");
+      .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+      .join('&')
     },
     handleSubmit(e) {
       fetch("/", {
@@ -93,17 +91,15 @@ export default {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: this.encode({
           "form-name": e.target.getAttribute("name"),
-          ...this.formData,
+          ...this.form,
         }),
       })
         .then(() => {
-          console.log('suc')
           this.$data.submitSuccessful = true;
           this.$data.submitFailed = false;
           this.$data.errorMessage = "";
         })
         .catch((e) => {
-          console.log(e);
           this.$data.submitSuccessful = false;
           this.$data.submitFailed = true;
           this.$data.errorMessage = e;
