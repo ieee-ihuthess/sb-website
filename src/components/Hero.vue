@@ -1,7 +1,7 @@
 <template>
   <section class="hero text-center" id="home">
     <ClientOnly>
-    <Particles id="vue-particles" :options="options" />
+      <Particles id="vue-particles" :options="options" />
     </ClientOnly>
     <div class="hero__overlay">
       <div class="hero__content">
@@ -14,12 +14,23 @@
           :strings="['coding.', 'helping.', 'technology.']"
         >
           <h1 class="hero__heading__text">
-            A community all about <span class="typing hero__heading__subtext"></span>
+            A community all about
+            <span class="typing hero__heading__subtext"></span>
           </h1>
         </vue-typed-js>
         <div class="buttons">
-          <a v-scroll-to="'#faq'" href="#faq" class="hero__btn1">LEARN ABOUT US</a>
-          <a v-scroll-to="'#contact'" href="#contact" class="hero__btn2">GET IN TOUCH</a>
+          <a
+            v-scroll-to="{ el: '#faq', offset: scrollOffset }"
+            href="#faq"
+            class="hero__btn1"
+            >LEARN ABOUT US</a
+          >
+          <a
+            v-scroll-to="{ el: '#contact', offset: scrollOffset }"
+            href="#contact"
+            class="hero__btn2"
+            >GET IN TOUCH</a
+          >
         </div>
       </div>
     </div>
@@ -92,6 +103,13 @@ export default {
         detectRetina: true,
       },
     };
+  },
+  computed: {
+    scrollOffset() {
+      if (process.isClient) {
+        return screen.width < 768 ? -450 : -100;
+      }
+    },
   },
 };
 </script>

@@ -93,11 +93,13 @@ export default {
           this.$data.submitSuccessful = true;
           this.$data.submitFailed = false;
           this.$data.errorMessage = "";
+          console.log(this.$data.form)
         })
         .catch((e) => {
           this.$data.submitSuccessful = false;
           this.$data.submitFailed = true;
           this.$data.errorMessage = e;
+          console.log(this.$data.form)
         });
     },
   },
