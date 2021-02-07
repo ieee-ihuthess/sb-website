@@ -19,7 +19,6 @@
   </section>
 </template>
 
-
 <style lang="scss" scoped>
 @import "~/assets/scss/variables";
 
@@ -59,6 +58,22 @@
       background-size: cover;
       border-radius: 150px;
     }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-lg-min) {
+      right: 5px;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.7) 6.72%,
+          rgba(255, 255, 255, 0) 50%
+        ),
+        url("../assets/img/wie-sm.jpeg");
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      background-size: cover;
+      border-radius: 0 !important;
+    }
   }
 }
 
@@ -66,15 +81,22 @@
   padding: 50px 0;
   max-width: 60%;
 
-  @media (max-width: $screen-md-min) {
+  @media (max-width: $screen-sm-min) {
     margin-top: 20px;
     font-size: 10px !important;
     max-width: 55%;
     padding: 0;
   }
 
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    margin-top: 55px;
+    font-size: 10px !important;
+    max-width: 55%;
+    padding: 0;
+  }
+
   &__content {
-    @media (max-width: $screen-md-min) {
+    @media (max-width: $screen-sm-min) {
       margin-top: 15px;
       font-size: 2em !important;
     }
@@ -83,8 +105,12 @@
   &__author {
     margin-top: -20px;
 
-    @media (max-width: $screen-md-min) {
+    @media (max-width: $screen-sm-min) {
       font-size: 1.4rem;
+      margin-top: 30px;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
       margin-top: 30px;
     }
   }
@@ -95,10 +121,18 @@
   margin-top: 80px;
   font-size: 20px;
 
-  @media (max-width: $screen-md-min) {
+  @media (max-width: $screen-sm-min) {
     margin-top: 20px;
     max-width: 100%;
-    font-size: 16px;
+    font-size: 18px;
+    padding: 0 6px;
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    margin-top: 55px;
+    max-width: 100%;
+    font-size: 20px;
+    padding: 0 8px;
   }
 }
 
@@ -110,9 +144,13 @@
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    overflow-x: hidden;
+    overflow: hidden;
     height: 250px;
-    padding-left: 20px;
+    padding-left: 20px !important;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      padding-left: 40px !important;
+    }
   }
 }
 </style>
