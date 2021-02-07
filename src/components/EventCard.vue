@@ -108,7 +108,7 @@ export default {
       color: $blue;
     }
   }
-clip text
+
   &__title {
     margin-top: 10px;
     margin-bottom: 10px;
