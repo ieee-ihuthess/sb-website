@@ -21,6 +21,7 @@ import {
   faYoutube,
   faLeanpub,
   faGithub,
+  faGitlab
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faFileCode,
@@ -37,6 +38,7 @@ library.add(
   faInstagram,
   faLinkedinIn,
   faGithub,
+  faGitlab,
   faYoutube,
   faLeanpub,
   faFileCode,

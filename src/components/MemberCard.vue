@@ -1,34 +1,20 @@
 <template>
   <div class="member">
-    <g-image src="https://placeimg.com/250/250/any?1" />
+    <g-image :src="member.image" />
     <div class="member__info">
-      <h4 class="member__name">Samsouri Nasia</h4>
-      <h4 class="member__designation">Chair</h4>
+      <h4 class="member__name">{{ member.name }}</h4>
+      <h4 class="member__designation">{{ member.designation }}</h4>
     </div>
     <ul class="member__social-list">
-      <li class="member__social-link">
-        <a href="#">
+      <li
+        class="member__social-link"
+        v-for="(link, service) in member.socialLinks"
+        :key="link"
+      >
+        <a :href="link">
           <font-awesome
             class="member__social-icon"
-            :icon="['fab', 'github']"
-            size="lg"
-          />
-        </a>
-      </li>
-      <li class="member__social-link">
-        <a href="#">
-          <font-awesome
-            class="member__social-icon"
-            :icon="['fab', 'instagram']"
-            size="lg"
-          />
-        </a>
-      </li>
-      <li class="member__social-link">
-        <a href="#">
-          <font-awesome
-            class="member__social-icon"
-            :icon="['fab', 'facebook']"
+            :icon="['fab', service]"
             size="lg"
           />
         </a>
@@ -36,6 +22,31 @@
     </ul>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    member: {
+      type: Object,
+      required: true,
+      validator: (member) => {
+        return (
+          !!member.name &&
+          typeof member.name == "string" &&
+          !!member.designation &&
+          typeof member.designation == "string" &&
+          !!member.image &&
+          typeof member.image == "string" &&
+          !!member.date &&
+          member.date instanceof Date &&
+          !!member.socialLinks &&
+          typeof member.socialLinks == "object"
+        );
+      },
+    },
+  },
+};
+</script>
 
 <style lang="scss">
 @import "~/assets/scss/variables";
