@@ -9,7 +9,7 @@
       <li
         class="member__social-link"
         v-for="(link, service) in member.socialLinks"
-        :key="link"
+        :key="service"
       >
         <a :href="link">
           <font-awesome
@@ -37,8 +37,6 @@ export default {
           typeof member.designation == "string" &&
           !!member.image &&
           typeof member.image == "string" &&
-          !!member.date &&
-          member.date instanceof Date &&
           !!member.socialLinks &&
           typeof member.socialLinks == "object"
         );
