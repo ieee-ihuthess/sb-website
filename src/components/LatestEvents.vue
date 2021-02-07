@@ -71,5 +71,6 @@ export default {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   grid-gap: 20px;
+  justify-items: center;
 }
 </style>
