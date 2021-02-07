@@ -3,25 +3,29 @@
     <div class="event__top_wrapper">
       <g-image
         class="event__image"
-        src="https://picsum.photos/320/180/"
-        alt=""
+        :src="event.image"
+        :alt="event.title + ' cover image'"
       />
       <div class="event__date">
-        <span>09</span>
+        <span>{{ event.date.getDay() }}</span>
         <br />
-        <span>Sep</span>
+        <span>{{
+          event.date
+            .toLocaleString("default", { month: "long" })
+            .substring(0, 3)
+        }}</span>
       </div>
     </div>
     <div>
       <div class="event__links">
-        <a class="event__link" href="#">
+        <a class="event__link" :href="event.fbLink">
           <font-awesome
             class="event__icon"
             :icon="['fab', 'facebook']"
             size="lg"
           />
         </a>
-        <a class="event__link" href="#">
+        <a v-if="event.ytLink" class="event__link" :href="event.ytLink">
           <font-awesome
             class="event__icon"
             :icon="['fab', 'youtube']"
@@ -29,22 +33,37 @@
           />
         </a>
       </div>
-      <h4 class="event__title">Winter School on Internet of Things</h4>
-      <p>
-        The Research Laboratory of Computer Systems, Security and Networks
-        (SYAD) of Alexandreio TEI of Thessaloniki and the IEEE Student Branch at
-        Alexander TEI of Thessaloniki co-organize the Winter School entitled
-        "Internet of Things: Security, Communication & Application Challenges"
-        on Friday 15 and Saturday 16 December (10: 00-18: 00) at ATEITH
-        (Filippos Hall, main corridor)...
-      </p>
+      <h4 class="event__title">{{ event.title }}</h4>
+      <p>{{ event.description }}</p>
       <br />
-      <b-button class="event__show-button"
-        >Show more...</b-button
-      >
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    event: {
+      type: Object,
+      required: true,
+      validator: (event) => {
+        return (
+          !!event.title &&
+          typeof event.title == "string" &&
+          !!event.description && event.description.length <= 400 &&
+          typeof event.description == "string" &&
+          !!event.image &&
+          typeof event.image == "string" &&
+          !!event.date &&
+          event.date instanceof Date &&
+          !!event.fbLink &&
+          typeof event.fbLink == "string"
+        );
+      },
+    },
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 @import "~/assets/scss/variables";
@@ -89,7 +108,7 @@
       color: $blue;
     }
   }
-
+clip text
   &__title {
     margin-top: 10px;
     margin-bottom: 10px;
