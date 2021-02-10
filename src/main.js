@@ -13,7 +13,7 @@ import { config, library } from "@fortawesome/fontawesome-svg-core";
 import {
   faFacebook,
   faInstagram,
-  faLinkedinIn,
+  faLinkedin,
   faYoutube,
   faLeanpub,
   faGithub,
@@ -33,7 +33,7 @@ config.autoAddCss = false;
 library.add(
   faFacebook,
   faInstagram,
-  faLinkedinIn,
+  faLinkedin,
   faGithub,
   faGitlab,
   faYoutube,

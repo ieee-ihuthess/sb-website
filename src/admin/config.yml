@@ -40,7 +40,7 @@ collections:
           - {label: "GitLab link", name: "gitlab", widget: "string", required: false}
           - {label: "Facebook link", name: "facebook", widget: "string", required: false}
           - {label: "Instagram link", name: "instagram", widget: "string", required: false}
-          - {label: "LinkedIn link", name: "linkedIn", widget: "string", required: false}
+          - {label: "LinkedIn link", name: "linkedin", widget: "string", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
   - name: "events"
     label: "Event"
