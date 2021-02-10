@@ -12,16 +12,14 @@
           header-tag="header"
           class="question__top-wrapper"
           role="tab"
+          @click="toggleClicked(index)"
+          :ref="'toggle' + index"
+          v-b-toggle="'accordion' + index"
         >
           <h4 class="question__heading" :ref="'heading' + index">
             {{ question.heading }}
           </h4>
-          <a
-            :ref="'toggle' + index"
-            @click="toggleClicked(index)"
-            class="question__toggle"
-            v-b-toggle="'accordion' + index"
-          >
+          <a class="question__toggle">
             <font-awesome
               :ref="'icon' + index"
               class="question__icon"
@@ -132,6 +130,7 @@ export default {
   margin-bottom: 30px;
 
   &__top-wrapper {
+    cursor: pointer;
     background: none;
     border: none !important;
     display: flex;
@@ -143,7 +142,7 @@ export default {
   &__heading {
     padding-right: 10px;
   }
-  
+
   &__heading.not-collapsed {
     color: $light-blue !important;
   }
