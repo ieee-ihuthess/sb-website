@@ -23,12 +23,11 @@
 
 <script>
 import MemberCard from "@/components/MemberCard.vue";
-import carousel from "vue-owl-carousel";
+// import carousel from "vue-owl-carousel";
 
 export default {
   components: {
     MemberCard,
-    carousel,
   },
   data() {
     return {
@@ -94,6 +93,10 @@ export default {
       ],
     };
   },
+  // mounted() {
+  //   carousel = require('vue-owl-carousel')
+  //   carouse.$mount
+  // }
 };
 </script>
 

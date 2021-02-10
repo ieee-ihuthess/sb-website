@@ -58,4 +58,9 @@ export default function(Vue, { router, head, isClient }) {
   Vue.use(VueScrollTo);
   Vue.use(VueTypedJs);
   Vue.use(Particles);
+  if (process.isClient) {
+    const Carousel = require("vue-owl-carousel");
+    Vue.component("carousel", Carousel)
+  }
+
 }
