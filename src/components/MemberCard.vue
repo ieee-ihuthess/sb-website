@@ -1,6 +1,6 @@
 <template>
   <div class="member">
-    <g-image :src="member.image" />
+    <g-image :src="member.image" width="250"/>
     <div class="member__info">
       <h4 class="member__name">{{ member.name }}</h4>
       <h4 class="member__designation">{{ member.designation }}</h4>
@@ -50,8 +50,9 @@ export default {
 @import "~/assets/scss/variables";
 
 .member {
-  margin: 0 15px;
+  margin: 0 auto;
   text-align: center;
+  max-width: 250px;
 
   &__info {
     text-align: center;
@@ -59,7 +60,7 @@ export default {
   }
 
   &__name {
-    font-size: 19px;
+    font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: 1px;
     padding-top: 2px;
