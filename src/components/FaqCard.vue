@@ -11,7 +11,7 @@
         v-b-toggle="'accordion' + index"
       >
         <h4 class="question__heading" :ref="'heading' + index">
-          {{ question.heading }}
+          {{ question.question }}
         </h4>
         <a class="question__toggle">
           <font-awesome
@@ -28,7 +28,7 @@
             >I start opened because <code>visible</code> is
             <code>true</code></b-card-text
           >
-          <b-card-text>{{ question.text }}</b-card-text>
+          <b-card-text>{{ question.answer }}</b-card-text>
         </b-card-body>
       </b-collapse>
     </b-card>
@@ -43,10 +43,10 @@ export default {
       required: true,
       validator: (question) => {
         return (
-          !!question.heading &&
-          typeof question.heading == "string" &&
-          !!question.text &&
-          typeof question.text == "string"
+          !!question.question &&
+          typeof question.question == "string" &&
+          !!question.answer &&
+          typeof question.answer == "string"
         );
       },
     },

@@ -3,8 +3,11 @@ backend:
   repo: joj0s/sb-website
   branch: main
 
-media_folder: "static/uploads"
-public_folder: "/uploads"
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dyeki9pps
+    api_key: 455689789792114
 
 collections:
   - name: "members"
@@ -13,11 +16,23 @@ collections:
     create: true
     slug: "{{name}}"
     fields:
-      - {label: "Name", name: "name", widget: "string"}
-      - {label: "Designation", name: "desgination", widget: "string"}
-      - {label: "Image", name: "image", widget: "image", media_folder: "/uploads/members"}
+      - label: "Name"
+        name: "name"
+        widget: "string"
+      - label: "Designation"
+        name: "designation"
+        widget: "string"
+      - label: "Image"
+        name: "image"
+        widget: "image"
+        config:
+          default_transformations:
+            - fetch_format: auto
+              width: 250
+              quality: auto
+              crop: fill
       - label: "Social Links"
-        name: "social_links"
+        name: "socialLinks"
         widget: "object"
         collapsed: true
         fields: 
@@ -25,7 +40,8 @@ collections:
           - {label: "GitLab link", name: "gitlab", widget: "string", required: false}
           - {label: "Facebook link", name: "facebook", widget: "string", required: false}
           - {label: "Instagram link", name: "instagram", widget: "string", required: false}
-      - {label: "Publish Date", name: "date", widget: "date"}
+          - {label: "LinkedIn link", name: "linkedIn", widget: "string", required: false}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
   - name: "events"
     label: "Event"
     folder: "content/events"
@@ -35,9 +51,9 @@ collections:
       - {label: "Event Title", name: "title", widget: "string"}
       - {label: "Event Description", name: "description", widget: "text"}
       - {label: "Event Image", name: "image", widget: "image", media_folder: "/uploads/events"}
-      - {label: "Event Date", name: "date", widget: "date"}
-      - {label: "Facebook link", name: "facebook_link", widget: "string"}
-      - {label: "Youtube link", name: "youtube_link", widget: "string", required: false}
+      - {label: "Event Date", name: "date", widget: "datetime"}
+      - {label: "Facebook link", name: "fbLink", widget: "string"}
+      - {label: "Youtube link", name: "ytLink", widget: "string", required: false}
   - name: "faq"
     label: "Faq"
     folder: "content/faq"

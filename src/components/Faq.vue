@@ -4,7 +4,7 @@
     <div class="faq" role="tablist">
       <faq-card
         v-for="(question, index) in questions"
-        :key="question.heading"
+        :key="question.question"
         :question="question"
         :index="index"
       ></faq-card>
@@ -21,8 +21,8 @@ export default {
     return {
       questions: [
         {
-          heading: "What is IEEE?",
-          text: `
+          question: "What is IEEE?",
+          answer: `
           Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
           richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
           brunch. Food toggleruck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
@@ -34,8 +34,8 @@ export default {
         `,
         },
         {
-          heading: "Why should I join the IEEE Student Branch?",
-          text: `
+          question: "Why should I join the IEEE Student Branch?",
+          answer: `
           Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
           richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
           brunch. Food toggleruck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
@@ -47,8 +47,8 @@ export default {
         `,
         },
         {
-          heading: "How can I join the IEEE Student Branch?",
-          text: `
+          question: "How can I join the IEEE Student Branch?",
+          answer: `
           Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
           richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
           brunch. Food toggleruck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
@@ -60,8 +60,8 @@ export default {
         `,
         },
         {
-          heading: "What activities does the IEEE Student Branch organize?",
-          text: `
+          question: "What activities does the IEEE Student Branch organize?",
+          answer: `
           Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
           richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
           brunch. Food toggleruck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
