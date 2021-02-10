@@ -1,13 +1,23 @@
 <template>
   <section id="members" class="section">
     <h2>Members</h2>
-    <carousel :nav="false" :dots="true" :responsive="{ 0:{items:1, center:true}, 600:{items:2}, 1000:{items:4}}">
-      <member-card
-        v-for="member in members"
-        :key="member.name"
-        :member="member"
-      />
-    </carousel>
+    <ClientOnly>
+      <carousel
+        :nav="false"
+        :dots="true"
+        :responsive="{
+          0: { items: 1, center: true },
+          600: { items: 2 },
+          1000: { items: 4 },
+        }"
+      >
+        <member-card
+          v-for="member in members"
+          :key="member.name"
+          :member="member"
+        />
+      </carousel>
+    </ClientOnly>
   </section>
 </template>
 
