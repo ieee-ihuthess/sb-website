@@ -17,6 +17,8 @@
     "gridsome-plugin-netlify-cms": "^1.0.9",
     "netlify-cms": "^2.10.78",
     "particles.vue": "^2.1.11",
+    "typeface-manrope": "^1.0.0",
+    "typeface-roboto": "^1.1.13",
     "vue": "^2.6.12",
     "vue-owl-carousel": "^2.0.3",
     "vue-scrollactive": "^0.9.3",

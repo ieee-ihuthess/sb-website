@@ -45,12 +45,11 @@ library.add(
   faUserFriends
 );
 
+// Use local typefaces
+require('typeface-roboto')
+require('typeface-manrope')
+
 export default function(Vue, { router, head, isClient }) {
-  head.link.push({
-    rel: "stylesheet",
-    href:
-      "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Roboto:wght@300&display=swap",
-  });
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
   Vue.component("font-awesome", FontAwesomeIcon);
