@@ -28,6 +28,7 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
           <b-nav-item
+            @click.prevent="scrollDone(item.target)"
             class="navbar__link"
             v-scroll-to="{ el: item.target, offset: scrollOffset }"
             v-for="item in menuItems"
@@ -127,21 +128,20 @@ export default {
         this.$refs.content.scrollTop = el.offsetTop;
       }
     },
+    scrollDone(target) {
+      console.log("hi");
+      history.pushState(
+        {},
+        null,
+        this.$route.path + target
+      );
+    },
   },
 };
 </script>
 
 <style lang="scss">
 @import "~/assets/scss/variables";
-
-.active {
-  color: white !important;
-  border-bottom: 1px solid $light-blue;
-
-  @media (max-width: $screen-md-min) {
-    border-bottom: none;
-  }
-}
 
 .navbar {
   background: $dark-blue;
@@ -180,6 +180,15 @@ export default {
     margin-left: 10px;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.7s;
+
+    .active {
+      color: white !important;
+      border-bottom: 1px solid $light-blue;
+
+      @media (max-width: $screen-md-min) {
+        border-bottom: none;
+      }
+    }
 
     &:hover {
       border-bottom: 1px solid $light-blue;
