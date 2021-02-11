@@ -45,12 +45,25 @@ library.add(
   faUserFriends
 );
 
-// Use local typefaces
-require('typeface-roboto')
-require('typeface-manrope')
-
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
+  head.link.push({
+    rel: "preconnect",
+    href: "https://fonts.gstatic.com",
+  }); 
+  head.link.push({
+    rel: "preload",
+    as: "style",
+    href:
+      "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Roboto:wght@300&display=swap",
+  });
+  head.link.push({
+    rel: "stylesheet",
+    href:
+      "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Roboto:wght@300&display=swap",
+    media: "print",
+    onload: "this.media='all'"
+    });
   Vue.component("Layout", DefaultLayout);
   Vue.component("font-awesome", FontAwesomeIcon);
   Vue.use(BootstrapVue);
@@ -60,7 +73,6 @@ export default function(Vue, { router, head, isClient }) {
   Vue.use(Particles);
   if (process.isClient) {
     const Carousel = require("vue-owl-carousel");
-    Vue.component("carousel", Carousel)
+    Vue.component("carousel", Carousel);
   }
-
 }

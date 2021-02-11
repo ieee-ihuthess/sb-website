@@ -49,7 +49,7 @@ export default {
 @import "~/assets/scss/variables";
 
 * {
-  font-family: "Manrope";
+  font-family: "Manrope",sans-serif;
 }
 
 h1 {
@@ -58,7 +58,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Roboto";
+  font-family: "Roboto",sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   margin-bottom: 80px;
