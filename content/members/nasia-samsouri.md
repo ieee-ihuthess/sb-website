@@ -6,5 +6,7 @@ socialLinks:
   facebook: https://www.facebook.com/ach.glykoooo
   instagram: https://www.instagram.com/nasia.sam/
   github: https://github.com/nasia-sam
+  gitlab: "#"
+  linkedin: "#"
 date: 2021-02-11T12:42:16.930Z
 ---
