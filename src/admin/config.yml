@@ -22,6 +22,7 @@ collections:
       - label: "Designation"
         name: "designation"
         widget: "string"
+        default: "Member"
       - label: "Image"
         name: "image"
         widget: "image"
@@ -36,24 +37,47 @@ collections:
         widget: "object"
         collapsed: true
         fields: 
-          - {label: "GitHub link", name: "github", widget: "string", required: false}
-          - {label: "GitLab link", name: "gitlab", widget: "string", required: false}
-          - {label: "Facebook link", name: "facebook", widget: "string", required: false}
-          - {label: "Instagram link", name: "instagram", widget: "string", required: false}
-          - {label: "LinkedIn link", name: "linkedin", widget: "string", required: false}
+          - {label: "GitHub link", name: "github", widget: "string", required: false, default: "#"}
+          - {label: "GitLab link", name: "gitlab", widget: "string", required: false, default: "#"}
+          - {label: "Facebook link", name: "facebook", widget: "string", required: false, default: "#"}
+          - {label: "Instagram link", name: "instagram", widget: "string", required: false, default: "#"}
+          - {label: "LinkedIn link", name: "linkedin", widget: "string", required: false, default: "#"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
   - name: "events"
     label: "Event"
     folder: "content/events"
     create: true
-    slug: "{{question}}"
+    slug: "{{title}}-{{date}}"
     fields:
-      - {label: "Event Title", name: "title", widget: "string"}
-      - {label: "Event Description", name: "description", widget: "text"}
-      - {label: "Event Image", name: "image", widget: "image", media_folder: "/uploads/events"}
-      - {label: "Event Date", name: "date", widget: "datetime"}
-      - {label: "Facebook link", name: "fbLink", widget: "string"}
-      - {label: "Youtube link", name: "ytLink", widget: "string", required: false}
+      - label: "Event Title"
+        name: "title"
+        widget: "string"
+      - label: "Event Description"
+        name: "description"
+        widget: "text"
+      - label: "Event Image"
+        name: "image"
+        widget: "image"
+        config:
+          default_transformations:
+            - fetch_format: auto
+              width: 320
+              height: 180
+              quality: auto
+              crop: fill
+      - label: "Event Date"
+        name: "date"
+        widget: "datetime"
+      - label: "Facebook link"
+        name: "fbLink"
+        widget: "string"
+        required: false
+        default: "#"
+      - label: "Youtube link"
+        name: "ytLink"
+        widget: "string"
+        required: false
+        default: "#"
   - name: "faq"
     label: "Faq"
     folder: "content/faq"
