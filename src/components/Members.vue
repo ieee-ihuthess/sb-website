@@ -12,91 +12,44 @@
         }"
       >
         <member-card
-          v-for="member in members"
-          :key="member.name"
-          :member="member"
+          v-for="member in $static.members.edges"
+          :key="member.node.id"
+          :member="member.node"
         />
       </carousel>
     </ClientOnly>
   </section>
 </template>
 
+<static-query>
+query {
+  members: allMember {
+    edges {
+      node {
+        id,
+        name,
+        designation,
+        image,
+        socialLinks {
+          github,
+          gitlab,
+          facebook,
+          linkedin,
+          instagram
+        }
+      }
+    }
+  }
+}
+</static-query>
+
 <script>
 import MemberCard from "@/components/MemberCard.vue";
-// import carousel from "vue-owl-carousel";
 
 export default {
   components: {
     MemberCard,
   },
-  data() {
-    return {
-      members: [
-        {
-          name: "Nasia Samsouri",
-          designation: "Chair",
-          image: "https://placeimg.com/250/250/any?1",
-          socialLinks: {
-            github: "#",
-            facebook: "#",
-          },
-        },
-        {
-          name: "Giorgos Apostolopoulos",
-          designation: "Vice Chair",
-          image: "https://placeimg.com/250/250/any?2",
-          socialLinks: {
-            github: "#",
-            gitlab: "#",
-            facebook: "#",
-          },
-        },
-        {
-          name: "Anastasia Mousa",
-          designation: "Secretary",
-          image: "https://placeimg.com/250/250/any?3",
-          socialLinks: {
-            github: "#",
-            gitlab: "#",
-            facebook: "#",
-            instagram: "#",
-          },
-        },
-        {
-          name: "Grigoris Giapantzis",
-          designation: "Treasurer",
-          image: "https://placeimg.com/250/250/any?5",
-          socialLinks: {
-            github: "#",
-            gitlab: "#",
-          },
-        },
-        {
-          name: "Nasia Samsouri 1",
-          designation: "Chair",
-          image: "https://placeimg.com/250/250/any?1",
-          socialLinks: {
-            github: "#",
-            facebook: "#",
-          },
-        },
-        {
-          name: "Giorgos Apostolopoulos 1",
-          designation: "Vice Chair",
-          image: "https://placeimg.com/250/250/any?2",
-          socialLinks: {
-            github: "#",
-            gitlab: "#",
-            facebook: "#",
-          },
-        },
-      ],
-    };
-  },
-  // mounted() {
-  //   carousel = require('vue-owl-carousel')
-  //   carouse.$mount
-  // }
 };
 </script>
 

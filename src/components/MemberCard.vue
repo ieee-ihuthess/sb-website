@@ -1,24 +1,22 @@
 <template>
   <div class="member">
-    <g-image :src="member.image" width="250"/>
+    <g-image :src="member.image" width="250" />
     <div class="member__info">
       <h4 class="member__name">{{ member.name }}</h4>
       <h4 class="member__designation">{{ member.designation }}</h4>
     </div>
     <ul class="member__social-list">
-      <li
-        class="member__social-link"
-        v-for="(link, service) in member.socialLinks"
-        :key="service"
-      >
-        <a :href="link">
-          <font-awesome
-            class="member__social-icon"
-            :icon="['fab', service]"
-            size="lg"
-          />
-        </a>
-      </li>
+      <div v-for="(link, service) in member.socialLinks" :key="service">
+        <li class="member__social-link" v-if="link !== '#'">
+          <a :href="link">
+            <font-awesome
+              class="member__social-icon"
+              :icon="['fab', service]"
+              size="lg"
+            />
+          </a>
+        </li>
+      </div>
     </ul>
   </div>
 </template>
@@ -78,11 +76,12 @@ export default {
 
   &__social-list {
     padding-left: 0;
+    display: flex;
+    justify-content: center;
   }
 
   &__social-link {
     list-style: none;
-    display: inline-block;
     width: 32px;
     height: 32px;
     margin-right: 6px;
