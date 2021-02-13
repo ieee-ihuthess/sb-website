@@ -27,6 +27,7 @@ import {
   faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import Cloudinary from "cloudinary-vue";
 
 config.autoAddCss = false;
 
@@ -46,7 +47,7 @@ library.add(
 );
 
 export default function(Vue, { router, head, isClient }) {
-  // Set default layout as a global component
+  // Preload requests to Google Fonts API
   head.link.push({
     rel: "preconnect",
     href: "https://fonts.gstatic.com",
@@ -64,8 +65,24 @@ export default function(Vue, { router, head, isClient }) {
     media: "print",
     onload: "this.media='all'"
     });
+
   Vue.component("Layout", DefaultLayout);
   Vue.component("font-awesome", FontAwesomeIcon);
+
+  // A global mixin to extract Cloudinary public ids from image paths
+  Vue.mixin({
+    methods: {
+      getImageCloudinaryId(imagePath) {
+        return imagePath
+          .split("/")
+          .slice(7)
+          .join("/");
+      }
+    }
+  })
+  Vue.use(Cloudinary, {
+    configuration: { cloudName: "dyeki9pps" }
+  });
   Vue.use(BootstrapVue);
   Vue.use(VueScrollactive);
   Vue.use(VueScrollTo);
