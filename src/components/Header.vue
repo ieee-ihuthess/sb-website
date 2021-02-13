@@ -81,7 +81,7 @@ export default {
           target: "#contact",
         },
       ],
-      logosrc: require("@/assets/img/sb-logo.png"),
+      logosrc: require("@/assets/img/sb-logo-min.png"),
       transparentNav: true,
     };
   },

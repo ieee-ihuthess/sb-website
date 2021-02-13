@@ -3,78 +3,33 @@
     <h2>Frequent Questions</h2>
     <div class="faq" role="tablist">
       <faq-card
-        v-for="(question, index) in questions"
-        :key="question.question"
-        :question="question"
+        v-for="(question, index) in $static.faq.edges"
+        :key="question.node.question"
+        :question="question.node"
         :index="index"
       ></faq-card>
     </div>
   </section>
 </template>
 
+<static-query>
+query {
+  faq: allFaq {
+    edges {
+      node {
+        id,
+        question,
+        answer
+      }
+    }
+  }
+}
+</static-query>
+
 <script>
-import FaqCard from "@/components/FaqCard.vue"
+import FaqCard from "@/components/FaqCard.vue";
 
 export default {
   components: { FaqCard },
-  data() {
-    return {
-      questions: [
-        {
-          question: "What is IEEE?",
-          answer: `
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-          richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-          brunch. Food toggleruck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-          tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-          assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
-          wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-          vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-          synth nesciunt you probably haven't heard of them accusamus labore VHS.
-        `,
-        },
-        {
-          question: "Why should I join the IEEE Student Branch?",
-          answer: `
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-          richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-          brunch. Food toggleruck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-          tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-          assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
-          wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-          vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-          synth nesciunt you probably haven't heard of them accusamus labore VHS.
-        `,
-        },
-        {
-          question: "How can I join the IEEE Student Branch?",
-          answer: `
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-          richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-          brunch. Food toggleruck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-          tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-          assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
-          wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-          vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-          synth nesciunt you probably haven't heard of them accusamus labore VHS.
-        `,
-        },
-        {
-          question: "What activities does the IEEE Student Branch organize?",
-          answer: `
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-          richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-          brunch. Food toggleruck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-          tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-          assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
-          wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-          vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-          synth nesciunt you probably haven't heard of them accusamus labore VHS.
-        `,
-        },
-      ],
-    };
-  },
-
 };
 </script>
