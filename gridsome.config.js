@@ -19,8 +19,22 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
+        typeName: "Event",
+        path: "./content/events/**/*.md",
+      },
+    },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
         typeName: "Faq",
         path: "./content/faq/**/*.md",
+      },
+    },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        typeName: "GalleryImage",
+        path: "./content/gallery/**/*.md",
       },
     },
     {

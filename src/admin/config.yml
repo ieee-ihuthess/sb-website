@@ -47,7 +47,7 @@ collections:
     label: "Event"
     folder: "content/events"
     create: true
-    slug: "{{title}}-{{date}}"
+    slug: "{{title}}"
     fields:
       - label: "Event Title"
         name: "title"
@@ -86,3 +86,22 @@ collections:
     fields:
       - {label: "Question", name: "question", widget: "string"}
       - {label: "Answer", name: "answer", widget: "text"}
+  - name: "galleryImage"
+    label: "Gallery Image"
+    folder: "content/gallery"
+    create: true
+    slug: "{{caption}}-{{id}}"
+    fields:
+      - label: "Image"
+        name: "image"
+        widget: "image"
+        config:
+          default_transformations:
+            - fetch_format: auto
+              width: 1024
+              height: 680
+              quality: auto
+              crop: fill
+      - label: "Caption"
+        name: "caption"
+        widget: "string"
