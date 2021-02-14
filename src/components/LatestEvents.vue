@@ -14,7 +14,7 @@
 
 <static-query>
 query {
-  events: allEvent {
+  events: allEvent(sortBy: "date", order: DESC, limit: 3) {
     edges {
       node {
         id,
