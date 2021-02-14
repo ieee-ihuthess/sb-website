@@ -85,7 +85,8 @@ collections:
     slug: "{{question}}"
     fields:
       - {label: "Question", name: "question", widget: "string"}
-      - {label: "Answer", name: "answer", widget: "text"}
+      - {label: "Question Order", name: "order", value_type: "int"}
+      - {label: "Answer", name: "body", widget: "markdown"}
   - name: "galleryImage"
     label: "Gallery Image"
     folder: "content/gallery"

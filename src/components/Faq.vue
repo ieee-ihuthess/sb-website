@@ -14,12 +14,13 @@
 
 <static-query>
 query {
-  faq: allFaq {
+  faq: allFaq(sortBy: "order", order: ASC) {
     edges {
       node {
         id,
         question,
-        answer
+        content,
+        order
       }
     }
   }

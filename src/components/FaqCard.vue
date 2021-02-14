@@ -24,11 +24,7 @@
       </b-card-header>
       <b-collapse :id="'accordion' + index" role="tabpanel">
         <b-card-body>
-          <b-card-text
-            >I start opened because <code>visible</code> is
-            <code>true</code></b-card-text
-          >
-          <b-card-text>{{ question.answer }}</b-card-text>
+          <b-card-text v-html="question.content"></b-card-text>
         </b-card-body>
       </b-collapse>
     </b-card>
@@ -45,8 +41,7 @@ export default {
         return (
           !!question.question &&
           typeof question.question == "string" &&
-          !!question.answer &&
-          typeof question.answer == "string"
+          !!question.content
         );
       },
     },
