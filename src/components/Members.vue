@@ -23,13 +23,14 @@
 
 <static-query>
 query {
-  members: allMember {
+  members: allMember(sortBy: "date", order: ASC) {
     edges {
       node {
         id,
         name,
         designation,
         image,
+        date
         socialLinks {
           github,
           gitlab,
