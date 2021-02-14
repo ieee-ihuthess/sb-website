@@ -28,7 +28,8 @@ export default {
       {
         name: "description",
         content:
-          " The IEEE Student Branch of International Hellenic University - Thessaloniki campus is a student tech community.",
+          "The IEEE Student Branch of International Hellenic University - Thessaloniki campus in Sindos is a "+
+          "technological community of IEEE Student members who organize events, lectures and projects."
       },
     ],
   },
