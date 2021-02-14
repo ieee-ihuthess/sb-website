@@ -21,12 +21,14 @@
         <div class="buttons">
           <a
             v-scroll-to="{ el: '#faq', offset: scrollOffset }"
+            @click.prevent="scrollDone('#faq')"
             href="#faq"
             class="hero__btn1"
             >LEARN ABOUT US</a
           >
           <a
             v-scroll-to="{ el: '#contact', offset: scrollOffset }"
+            @click.prevent="scrollDone('#contact')"
             href="#contact"
             class="hero__btn2"
             >GET IN TOUCH</a
@@ -109,6 +111,11 @@ export default {
       if (process.isClient) {
         return screen.width < 768 ? -450 : -100;
       }
+    },
+  },
+  methods: {
+    scrollDone(target) {
+      history.pushState({}, null, this.$route.path + target);
     },
   },
 };

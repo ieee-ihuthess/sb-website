@@ -129,12 +129,7 @@ export default {
       }
     },
     scrollDone(target) {
-      console.log("hi");
-      history.pushState(
-        {},
-        null,
-        this.$route.path + target
-      );
+      history.pushState({}, null, this.$route.path + target);
     },
   },
 };
