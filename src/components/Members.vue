@@ -4,11 +4,10 @@
     <ClientOnly>
       <carousel
         :nav="false"
-        :dots="true"
         :responsive="{
-          0: { items: 1, center: true },
-          600: { items: 2 },
-          1000: { items: 4 },
+          0: { items: 1, center: true, dots: false },
+          600: { items: 2, dots: true },
+          1000: { items: 4, dots: true },
         }"
       >
         <member-card
