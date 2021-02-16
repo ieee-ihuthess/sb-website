@@ -65,7 +65,7 @@ export default {
           !!event.title &&
           typeof event.title == "string" &&
           !!event.description &&
-          event.description.length <= 400 &&
+          event.description.length <= 450 &&
           typeof event.description == "string" &&
           !!event.image &&
           typeof event.image == "string" &&
