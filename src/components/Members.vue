@@ -4,10 +4,11 @@
     <ClientOnly>
       <carousel
         :nav="false"
+        :navText="['prev', 'next']"
         :responsive="{
-          0: { items: 1, center: true, dots: false },
-          600: { items: 2, dots: true },
-          1000: { items: 4, dots: true },
+          0: { items: 1, center: true, dots: false, nav: true },
+          600: { items: 2, dots: true, nav: false },
+          1000: { items: 4, dots: true, nav: false },
         }"
       >
         <member-card
@@ -66,5 +67,9 @@ export default {
   span {
     background: $light-blue !important;
   }
+}
+
+.owl-prev, .owl-next {
+  background: $blue !important;  
 }
 </style>
