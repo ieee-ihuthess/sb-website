@@ -3,6 +3,7 @@
     <div class="event__top_wrapper">
       <cld-image
         :publicId="getImageCloudinaryId(event.image)"
+        secure="true"
         height="180"
         width="320"
         loading="lazy"
@@ -23,6 +24,7 @@
         <a
           v-if="event.fbLink !== '#'"
           class="event__link"
+          rel="noopener"
           :href="event.fbLink"
           :aria-label="event.title + ' Facebook link'"
         >

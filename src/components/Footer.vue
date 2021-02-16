@@ -3,6 +3,7 @@
     <div class="social-links">
       <a
         v-for="link in socialLinks"
+        rel="noopener"
         :key="link.to"
         :href="link.to"
         target="_blank"

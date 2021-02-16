@@ -13,6 +13,7 @@
       >
         <a
           :href="link"
+          rel="noopener"
           target="_blank"
           :aria-label="member.name + '\'s ' + service"
         >

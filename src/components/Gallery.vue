@@ -21,7 +21,9 @@
             <cld-image
               :alt="image.node.image + 'photo'"
               class="d-block img-fluid w-100"
+              secure="true"
               :publicId="getImageCloudinaryId(image.node.image)"
+              :ads="getImageCloudinaryId(image.node.image)"
             >
               <cld-transformation
                 width="1024"
