@@ -36,13 +36,43 @@ collections:
         name: "socialLinks"
         widget: "object"
         collapsed: true
-        fields: 
-          - {label: "GitHub link", name: "github", widget: "string", required: false, default: "#"}
-          - {label: "GitLab link", name: "gitlab", widget: "string", required: false, default: "#"}
-          - {label: "Facebook link", name: "facebook", widget: "string", required: false, default: "#"}
-          - {label: "Instagram link", name: "instagram", widget: "string", required: false, default: "#"}
-          - {label: "LinkedIn link", name: "linkedin", widget: "string", required: false, default: "#"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+        fields:
+          - {
+              label: "GitHub link",
+              name: "github",
+              widget: "string",
+              required: false,
+              default: "#",
+            }
+          - {
+              label: "GitLab link",
+              name: "gitlab",
+              widget: "string",
+              required: false,
+              default: "#",
+            }
+          - {
+              label: "Facebook link",
+              name: "facebook",
+              widget: "string",
+              required: false,
+              default: "#",
+            }
+          - {
+              label: "Instagram link",
+              name: "instagram",
+              widget: "string",
+              required: false,
+              default: "#",
+            }
+          - {
+              label: "LinkedIn link",
+              name: "linkedin",
+              widget: "string",
+              required: false,
+              default: "#",
+            }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
   - name: "events"
     label: "Event"
     folder: "content/events"
@@ -54,6 +84,7 @@ collections:
         widget: "string"
       - label: "Event Description"
         name: "description"
+        pattern: ['.{,450}', "Maximum length is 450 characters."]
         widget: "text"
       - label: "Event Image"
         name: "image"
@@ -73,20 +104,27 @@ collections:
         widget: "string"
         required: false
         default: "#"
+        hint: "If you want no link to appear, insert '#' as the value."
       - label: "Youtube link"
         name: "ytLink"
         widget: "string"
         required: false
         default: "#"
+        hint: "If you want no link to appear, insert '#' as the value."
   - name: "faq"
     label: "Faq"
     folder: "content/faq"
     create: true
     slug: "{{question}}"
     fields:
-      - {label: "Question", name: "question", widget: "string"}
-      - {label: "Question Order", name: "order", value_type: "int"}
-      - {label: "Answer", name: "body", widget: "markdown"}
+      - { label: "Question", name: "question", widget: "string" }
+      - {
+          label: "Question Order",
+          name: "order",
+          value_type: "int",
+          hint: "Order in which you want the question to appear in FAQ section",
+        }
+      - { label: "Answer", name: "body", widget: "markdown" }
   - name: "galleryImage"
     label: "Gallery Image"
     folder: "content/gallery"
@@ -100,7 +138,7 @@ collections:
           default_transformations:
             - fetch_format: auto
               width: 1024
-              height: 680
+              height: 480
               quality: auto
               crop: fill
       - label: "Caption"
