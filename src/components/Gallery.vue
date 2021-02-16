@@ -8,8 +8,6 @@
         style="text-shadow: 0px 0px 2px #000"
         fade
         indicators
-        img-width="1024"
-        img-height="480"
         :controls="true"
       >
         <b-carousel-slide
@@ -26,9 +24,8 @@
               :ads="getImageCloudinaryId(image.node.image)"
             >
               <cld-transformation
-                width="1024"
-                height="480"
-                crop="fill"
+                quality="auto"
+                fetchFormat="auto"
               /> </cld-image></template
         ></b-carousel-slide>
       </b-carousel>

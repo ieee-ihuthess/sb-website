@@ -6,8 +6,8 @@ backend:
 media_library:
   name: cloudinary
   config:
-    cloud_name: dyeki9pps
-    api_key: 455689789792114
+    cloud_name: dk5dlrnv1
+    api_key: 453579541597887
 
 collections:
   - name: "members"

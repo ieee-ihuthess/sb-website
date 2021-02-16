@@ -6,7 +6,7 @@ socialLinks:
   facebook: https://www.facebook.com/greg.giapa
   github: https://github.com/Giapa
   gitlab: "#"
-  instagram: https://www.instagram.com/test
-  linkedin: "3"
-date: 2021-02-11T10:50:21.342Z
+  instagram: "#"
+  linkedin: linkedin.com/in/gregory-giapantzis-bb750018a/
+date: 2021-02-11T10:43:19.930Z
 ---

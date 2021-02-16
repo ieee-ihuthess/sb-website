@@ -91,7 +91,7 @@ export default function(Vue, { router, head, isClient }) {
     },
   });
   Vue.use(Cloudinary, {
-    configuration: { cloudName: "dyeki9pps" },
+    configuration: { cloudName: "dk5dlrnv1" },
   });
   Vue.use(
     VBScrollspyPlugin,
