@@ -1,5 +1,5 @@
 ---
-name: Anastiasia Mousa
+name: Anastasia Mousa
 designation: Secretary
 image: https://res.cloudinary.com/dk5dlrnv1/image/upload/v1613476312/members/mousa_ltoclw_idu7uc.jpg
 socialLinks:
