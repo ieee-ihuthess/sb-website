@@ -1,12 +1,22 @@
 import DefaultLayout from "~/layouts/Default.vue";
 
-import BootstrapVue from "bootstrap-vue";
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-vue/dist/bootstrap-vue.css";
 import VueScrollactive from "vue-scrollactive";
 import VueScrollTo from "vue-scrollto";
 import Particles from "particles.vue";
 import VueTypedJs from "vue-typed-js";
+
+import {
+  VBScrollspyPlugin,
+  NavPlugin,
+  AlertPlugin,
+  CardPlugin,
+  LayoutPlugin,
+  ButtonPlugin,
+  CarouselPlugin,
+  NavbarPlugin,
+} from "bootstrap-vue";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-vue/dist/bootstrap-vue.css";
 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { config, library } from "@fortawesome/fontawesome-svg-core";
@@ -51,7 +61,7 @@ export default function(Vue, { router, head, isClient }) {
   head.link.push({
     rel: "preconnect",
     href: "https://fonts.gstatic.com",
-  }); 
+  });
   head.link.push({
     rel: "preload",
     as: "style",
@@ -63,8 +73,8 @@ export default function(Vue, { router, head, isClient }) {
     href:
       "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Roboto:wght@300&display=swap",
     media: "print",
-    onload: "this.media='all'"
-    });
+    onload: "this.media='all'",
+  });
 
   Vue.component("Layout", DefaultLayout);
   Vue.component("font-awesome", FontAwesomeIcon);
@@ -77,16 +87,35 @@ export default function(Vue, { router, head, isClient }) {
           .split("/")
           .slice(7)
           .join("/");
-      }
-    }
-  })
-  Vue.use(Cloudinary, {
-    configuration: { cloudName: "dyeki9pps" }
+      },
+    },
   });
-  Vue.use(BootstrapVue);
+  Vue.use(Cloudinary, {
+    configuration: { cloudName: "dyeki9pps" },
+  });
+  Vue.use(
+    VBScrollspyPlugin,
+    NavPlugin,
+    AlertPlugin,
+    CardPlugin,
+    LayoutPlugin,
+    ButtonPlugin,
+    CarouselPlugin
+  );
+  Vue.use(VBScrollspyPlugin);
+  Vue.use(NavPlugin);
+  Vue.use(AlertPlugin);
+  Vue.use(CardPlugin);
+  Vue.use(LayoutPlugin);
+  Vue.use(CarouselPlugin);
+  Vue.use(ButtonPlugin);
+  Vue.use(NavbarPlugin)
+
   Vue.use(VueScrollactive);
   Vue.use(VueScrollTo);
   Vue.use(VueTypedJs);
+  
+
   Vue.use(Particles);
   if (process.isClient) {
     const Carousel = require("vue-owl-carousel");
