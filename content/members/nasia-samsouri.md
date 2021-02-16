@@ -1,7 +1,7 @@
 ---
 name: Nasia Samsouri
 designation: Chair
-image: https://res.cloudinary.com/dyeki9pps/image/upload/v1613047411/members/nasia_qmygqu.jp2
+image: https://res.cloudinary.com/dyeki9pps/image/upload/v1613047411/members/nasia_qmygqu.jpg
 socialLinks:
   facebook: https://www.facebook.com/ach.glykoooo
   instagram: https://www.instagram.com/nasia.sam/

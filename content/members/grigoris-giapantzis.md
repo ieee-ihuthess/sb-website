@@ -1,7 +1,7 @@
 ---
 name: Grigoris Giapantzis
 designation: Treasurer
-image: https://res.cloudinary.com/dyeki9pps/image/upload/v1613040714/members/giapantzis.jp2
+image: https://res.cloudinary.com/dyeki9pps/image/upload/v1613040714/members/giapantzis.jpg
 socialLinks:
   facebook: https://www.facebook.com/greg.giapa
   github: https://github.com/Giapa
