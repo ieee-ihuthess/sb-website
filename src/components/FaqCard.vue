@@ -13,14 +13,14 @@
         <h4 class="question__heading" :ref="'heading' + index">
           {{ question.question }}
         </h4>
-        <a class="question__toggle">
+        <i class="question__toggle">
           <font-awesome
             :ref="'icon' + index"
             class="question__icon"
             icon="chevron-down"
             size="lg"
           />
-        </a>
+        </i>
       </b-card-header>
       <b-collapse :id="'accordion' + index" role="tabpanel">
         <b-card-body>

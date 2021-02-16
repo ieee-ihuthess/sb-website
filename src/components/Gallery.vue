@@ -19,6 +19,7 @@
         >
           <template #img>
             <cld-image
+              :alt="image.node.image + 'photo'"
               class="d-block img-fluid w-100"
               :publicId="getImageCloudinaryId(image.node.image)"
             >

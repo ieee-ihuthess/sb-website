@@ -14,7 +14,7 @@
         </p>
         <div class="row">
           <div class="col-md-6 field">
-            <span class="field__title">Name</span>
+            <label for="name" class="field__title">Name</label>
             <input
               id="name"
               type="text"
@@ -26,7 +26,7 @@
             />
           </div>
           <div class="col-md-6 field">
-            <span class="field__title">Email</span>
+            <label for="email" class="field__title">Email</label>
             <input
               id="email"
               class="form-control"
@@ -38,7 +38,7 @@
             />
           </div>
           <div class="col-md-12 field">
-            <span class="field__title">Message</span>
+            <label for="message" class="field__title">Message</label>
             <textarea
               id="message"
               rows="5"

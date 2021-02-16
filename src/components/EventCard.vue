@@ -20,14 +20,24 @@
     </div>
     <div>
       <div class="event__links">
-        <a v-if="event.fbLink !== '#'" class="event__link" :href="event.fbLink">
+        <a
+          v-if="event.fbLink !== '#'"
+          class="event__link"
+          :href="event.fbLink"
+          :aria-label="event.title + ' Facebook link'"
+        >
           <font-awesome
             class="event__icon"
             :icon="['fab', 'facebook']"
             size="lg"
           />
         </a>
-        <a v-if="event.ytLink !== '#'" class="event__link" :href="event.ytLink">
+        <a
+          v-if="event.ytLink !== '#'"
+          class="event__link"
+          :href="event.ytLink"
+          :aria-label="event.title + ' YouTube link'"
+        >
           <font-awesome
             class="event__icon"
             :icon="['fab', 'youtube']"

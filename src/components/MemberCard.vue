@@ -1,22 +1,28 @@
 <template>
   <div class="member">
-    <g-image :src="member.image" width="250" />
+    <g-image :src="member.image" :alt="member.name" width="250" />
     <div class="member__info">
       <h4 class="member__name">{{ member.name }}</h4>
       <h4 class="member__designation">{{ member.designation }}</h4>
     </div>
     <ul class="member__social-list">
-      <div v-for="(link, service) in member.socialLinks" :key="service">
-        <li class="member__social-link" v-if="link !== '#'">
-          <a :href="link">
-            <font-awesome
-              class="member__social-icon"
-              :icon="['fab', service]"
-              size="lg"
-            />
-          </a>
-        </li>
-      </div>
+      <li
+        v-for="(link, service) in validLinks"
+        :key="service"
+        class="member__social-link"
+      >
+        <a
+          :href="link"
+          target="_blank"
+          :aria-label="member.name + '\'s ' + service"
+        >
+          <font-awesome
+            class="member__social-icon"
+            :icon="['fab', service]"
+            size="lg"
+          />
+        </a>
+      </li>
     </ul>
   </div>
 </template>
@@ -39,6 +45,18 @@ export default {
           typeof member.socialLinks == "object"
         );
       },
+    },
+  },
+  computed: {
+    validLinks() {
+      let validLinksObject = {}
+      for (const [service, linkValue] of Object.entries(
+        this.$props.member.socialLinks
+      )) {
+        if (linkValue !== '#')
+          validLinksObject[service] = linkValue; 
+      }
+      return validLinksObject;
     },
   },
 };
