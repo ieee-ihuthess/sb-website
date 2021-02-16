@@ -9,12 +9,11 @@
   >
     <b-container class="navbar__container">
       <b-navbar-brand class="navbar__brand" href="#">
-        <img
+        <g-image
           :src="logosrc"
-          fit="contain"
           width="50"
           height="50"
-          class="d-inline-block align-top mr-3"
+          class="navbar__image d-inline-block align-top mr-3"
           alt="Student Branch Logo"
         />
         <span class="navbar__brand__title" style="font-size: 15px;">
@@ -159,6 +158,11 @@ export default {
 
   &__container {
     max-width: 1440px !important;
+  }
+
+  &__image {
+    height: 50px !important;
+    width: 50px !important;
   }
 
   &__brand {
