@@ -1,14 +1,9 @@
-# Default starter for Gridsome
+## <img src="https://ieee-ihu-thess.netlify.app/assets/img/sb-logo-min.dcb64279.png" width="30"/> IEEE Student Branch - IHU Thessaloniki Website
 
-This is the project you get when you run `gridsome create new-project`.
+Our new, [JAMstack](https://jamstack.org/) powered website using the Vue based [Gridsome](https://gridsome.org/) static site generator.
+### Development environment instructions
 
-### 1. Install Gridsome CLI tool if you don't have
-
-`npm install --global @gridsome/cli`
-
-### 2. Create a Gridsome project
-
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+1. `npm install --global @gridsome/cli` to install Gridsome CLI.
+2. Clone the project.
+3. `npm install` inside the project directory to install dependencies.
+4. `gridsome develop` to spin up a local dev environment.
