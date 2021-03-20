@@ -2,9 +2,9 @@
   <section
     class="section"
     id="whoweare"
-    style="margin-top: 450px; width: 100%"
+    style="margin-top: 450px; width: 100%;"
   >
-    <h2>Who we are</h2>
+    <!-- <h2>Who we are</h2> -->
     <div class="tiles">
       <div class="tile" v-for="tile in gridTiles" :key="tile.title">
         <font-awesome class="tile__icon" :icon="tile.icon" size="3x" />
@@ -21,22 +21,22 @@ export default {
     return {
       gridTiles: [
         {
-          title: "Development",
+          title: "Τεχνολογία",
           icon: "file-code",
           text:
-            "Our team is comprised of developers and engineers of all skill levels and we take on various project with the aim of improvement",
+            "Η ομάδα μας αποτελείται από προγραμματιστές και μηχανικούς όλων των επιπέδων δεξιοτήτων και σκοπός μας είναι η συνεχής ανάπτυξή τους.",
         },
         {
-          title: "Learning",
+          title: "Μάθηση",
           icon: "graduation-cap",
           text:
-            "We organize a large number of informative tech talks each year and we offer a hub of discussion and growth",
+            "Οργανώνουμε μεγάλο αριθμό ενημερωτικών τεχνολογικών ομιλιών κάθε χρόνο και προσφέρουμε έναν κόμβο συζήτησης και βελτίωσης.",
         },
         {
-          title: "Volunteering",
+          title: "Εθελοντισμός",
           icon: "user-friends",
           text:
-            "Apart from our technological interests, we aim to give back to our community through volunteering events",
+            "Εκτός των τεχνολογικών μας ενδιαφερόντων, στοχεύουμε να προσφέρουμε στην κοινότητά μας μέσω εθελοντικών events.",
         },
       ],
     };

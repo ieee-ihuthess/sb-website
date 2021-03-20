@@ -1,6 +1,6 @@
 <template>
   <section id="members" class="section">
-    <h2>Members</h2>
+    <h2>ΜΕΛΗ</h2>
     <ClientOnly>
       <carousel
         :nav="false"

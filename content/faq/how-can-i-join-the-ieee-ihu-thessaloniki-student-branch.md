@@ -1,7 +1,9 @@
 ---
-question: How can I join the IEEE IHU Thessaloniki Student Branch?
+question: Πώς μπορώ να γίνω μέλος του IEEE IHU Thessaloniki Student Branch;
 order: 3
 ---
-The only requirement for joining the IEEE IHU Thessaloniki Student Branch is to be a student of in IHU Thessaloniki, and to be a IEEE Student member. Being a IEEE Student member requires a small fee of about 23€ per year paid directly to the IEEE organization. This membership comes with a large number of benefits, such as monthly tech magazines, a free '@ieee.org' email alias, access to papers, competitions, scholarships and more.
+Οι μοναδικές προϋποθέσεις για να γίνει κανείς μέλος του φοιτητικού μας παραρτήματος είναι να είναι φοιτητής/ρια στο ΔΙΠΑΕ Σίνδου και να είναι μέλος του IEEE.
 
-If you want to join or have any questions about the process, feel free to contact us. **Students of all skill levels are welcome!**
+Το κόστος μέλους του IEEE είναι 23€ τον χρόνο. Τα χρήματα πηγαίνουν εξ'ολοκλήρου στον παγκόσμιο οργανισμό του IEEE, και το membership προσφέρει πολλά οφέλη, όπως μηνιαία τεχνολογικά περιοδικά, μία διεύθυνση email '@ieee.org', πρόσβαση σε δημοσιεύσεις, διαγωνισμούς, υποτροφίες και άλλα.
+
+Αν ενδιαφέρεσαι να γίνεις μέλος, [επικοινώνησε μαζί μας](#contact) μέσω της φόρμας στην σελίδα ή μέσω των social μας, και θα σε κατευθύνουμε. **Φοιτητές και φοιτήτριες όλων των επιπέδων είναι ευπρόσδεκτοι! Η μόνη αναγκαία συνθήκη είναι η αγάπη για την ενασχόληση με το αντικείμενο σου!**

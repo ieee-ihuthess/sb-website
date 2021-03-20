@@ -1,7 +1,7 @@
 ---
-question: What is IEEE?
+question: Τι είναι το IEEE;
 order: 0
 ---
-The [IEEE (Institute of Electrical and Electronic Engineers)](https://www.ieee.org) is a global technological, professional, non-political organization with the goal of promoting the theory and applications of the science of Electrical and Computer Engineering for the development of the profession based on social contribution.
+Το [IEEE (Institute of Electrical and Electronic Engineers)](https://www.ieee.org) είναι ένας παγκόσμιος, τεχνολογικός και μη πολιτικός οργανισμός με στόχο την προώθηση της θεωριάς και των εφαρμογών της επιστήμης της Μηχανικής Πληροφορικής και Ηλεκτρονικών Συστημάτων για την ανάπτυξη του επαγγέλματος βασισμένο στην προσφορά στην κοινωνία.
 
-IEEE currently has more than 400,000 members, of which more than 90,000 are students in more than 160 countries, making it the largest technology professional community in the world.
+Το IEEE αριθμεί αυτή τη στιγμή πάνω από 400.000 μέλη, από τα οποία τα 90.000 είναι φοιτητές και φοιτήτριες σε πάνω από 160 χώρες, κάνοντας το τη μεγαλύτερη επαγγελματική τεχνολογική κοινότητα του κόσμου.

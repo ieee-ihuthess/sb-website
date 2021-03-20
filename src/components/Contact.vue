@@ -1,6 +1,6 @@
 <template>
   <section class="section" id="contact">
-    <h2>Contact us</h2>
+    <h2>ΕΠΙΚΟΙΝΩΝΙΑ</h2>
     <div class="col-md-12 col-md-offset-2">
       <form
         name="contact"
@@ -14,7 +14,7 @@
         </p>
         <div class="row">
           <div class="col-md-6 field">
-            <label for="name" class="field__title">Name</label>
+            <label for="name" class="field__title">Όνομα</label>
             <input
               id="name"
               type="text"
@@ -38,7 +38,7 @@
             />
           </div>
           <div class="col-md-12 field">
-            <label for="message" class="field__title">Message</label>
+            <label for="message" class="field__title">Μήνυμα</label>
             <textarea
               id="message"
               rows="5"

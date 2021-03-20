@@ -48,12 +48,8 @@ export default {
     return {
       menuItems: [
         {
-          name: "Home",
+          name: "ΑΡΧΙΚΗ",
           target: "#home",
-        },
-        {
-          name: "Who We Are",
-          target: "#whoweare",
         },
         {
           name: "Gallery",
@@ -68,15 +64,15 @@ export default {
           target: "#faq",
         },
         {
-          name: "Latest Events",
+          name: "ΝΕΑ & EVENTS",
           target: "#latest",
         },
         {
-          name: "Members",
+          name: "ΜΕΛΗ",
           target: "#members",
         },
         {
-          name: "Contact Us",
+          name: "ΕΠΙΚΟΙΝΩΝΙΑ",
           target: "#contact",
         },
       ],

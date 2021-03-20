@@ -1,6 +1,6 @@
 <template>
   <section class="section" id="latest">
-    <h2>Latest Events</h2>
+    <h2>ΝΕΑ & EVENTS</h2>
     <div class="events">
       <event-card
         v-for="event in $static.events.edges"

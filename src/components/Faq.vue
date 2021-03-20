@@ -1,6 +1,6 @@
 <template>
   <section class="section" id="faq">
-    <h2>Frequent Questions</h2>
+    <h2>ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ - FAQ</h2>
     <div class="faq" role="tablist">
       <faq-card
         v-for="(question, index) in $static.faq.edges"
