@@ -20,7 +20,7 @@
               type="text"
               class="form-control"
               name="name"
-              placeholder="Name*"
+              placeholder="Όνομα"
               v-model="form.name"
               required
             />
@@ -32,7 +32,7 @@
               class="form-control"
               type="email"
               name="email"
-              placeholder="Email*"
+              placeholder="Email"
               v-model="form.email"
               required
             />
@@ -44,7 +44,7 @@
               rows="5"
               class="form-control"
               name="message"
-              placeholder="Message*"
+              placeholder="Μήνυμα"
               v-model="form.message"
               required
             ></textarea>
@@ -56,7 +56,7 @@
             <b-alert variant="danger" v-if="submitFailed"
               >Something went wrong. {{ errorMessage }}</b-alert
             >
-            <b-button class="submit" type="submit">Submit Message</b-button>
+            <b-button class="submit" type="submit">Υποβολή</b-button>
           </div>
         </div>
       </form>
