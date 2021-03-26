@@ -4,12 +4,11 @@
     id="whoweare"
     style="margin-top: 450px; width: 100%;"
   >
-    <!-- <h2>Who we are</h2> -->
     <div class="tiles">
       <div class="tile" v-for="tile in gridTiles" :key="tile.title">
         <font-awesome class="tile__icon" :icon="tile.icon" size="3x" />
-        <span class="tile__title">{{ tile.title }}</span>
-        <span class="tile__text">{{ tile.text }}</span>
+        <span class="tile__title">{{ $t(tile.title) }}</span>
+        <span class="tile__text">{{ $t(tile.text) }}</span>
       </div>
     </div>
   </section>
@@ -21,22 +20,19 @@ export default {
     return {
       gridTiles: [
         {
-          title: "Τεχνολογία",
+          title: "technology",
           icon: "file-code",
-          text:
-            "Η ομάδα μας αποτελείται από προγραμματιστές και μηχανικούς όλων των επιπέδων δεξιοτήτων και σκοπός μας είναι η συνεχής ανάπτυξή τους.",
+          text: "technologyText",
         },
         {
-          title: "Μάθηση",
+          title: "learning",
           icon: "graduation-cap",
-          text:
-            "Οργανώνουμε μεγάλο αριθμό ενημερωτικών τεχνολογικών ομιλιών κάθε χρόνο και προσφέρουμε έναν κόμβο συζήτησης και βελτίωσης.",
+          text: "learningText",
         },
         {
-          title: "Εθελοντισμός",
+          title: "volunteering",
           icon: "user-friends",
-          text:
-            "Εκτός των τεχνολογικών μας ενδιαφερόντων, στοχεύουμε να προσφέρουμε στην κοινότητά μας μέσω εθελοντικών events.",
+          text: "volunteeringText",
         },
       ],
     };
@@ -64,6 +60,7 @@ export default {
   width: 350px;
 
   &__title {
+    text-transform: capitalize;
     font-weight: 600;
     font-size: 25px;
     margin-bottom: 15px;

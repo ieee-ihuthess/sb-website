@@ -1,14 +1,11 @@
-// This is where project configuration and plugin options are located.
-// Learn more: https://gridsome.org/docs/config
-
-// Changes here require a server restart.
-// To restart press CTRL + C in terminal and run `gridsome develop`
+const i18n = require('./src/plugins/i18n')
 
 module.exports = {
   siteName: "IEEE Student Branch - IHU Thessaloniki",
   siteUrl: "https://relaxed-raman-07896d.netlify.app",
   titleTemplate: "%s",
   plugins: [
+    i18n,
     {
       use: "@gridsome/source-filesystem",
       options: {

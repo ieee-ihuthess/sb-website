@@ -33,8 +33,20 @@
             v-for="item in menuItems"
             :key="item.name"
             :href="item.target"
-            >{{ item.name }}</b-nav-item
+            >{{ $t(item.name) }}</b-nav-item
           >
+          <b-nav-item-dropdown
+            :text="$i18n.locale.substring(0, 2).toUpperCase()"
+            right
+          >
+            <b-dropdown-item
+              @click.prevent="localeChanged(locale)"
+              v-for="locale in availableLocales"
+              :key="locale"
+            >
+              {{ locale }}
+            </b-dropdown-item>
+          </b-nav-item-dropdown>
         </b-navbar-nav>
       </b-collapse>
     </b-container>
@@ -46,13 +58,16 @@ export default {
   name: "TheHeader",
   data() {
     return {
+      currentLocale: this.$i18n.locale.toString(),
+      availableLocales: this.$i18n.availableLocales,
+      currentScrolledSection: "",
       menuItems: [
         {
-          name: "ΑΡΧΙΚΗ",
+          name: "home",
           target: "#home",
         },
         {
-          name: "Gallery",
+          name: "gallery",
           target: "#gallery",
         },
         {
@@ -64,21 +79,24 @@ export default {
           target: "#faq",
         },
         {
-          name: "ΝΕΑ & EVENTS",
+          name: "newsAndEvents",
           target: "#latest",
         },
         {
-          name: "ΜΕΛΗ",
+          name: "members",
           target: "#members",
         },
         {
-          name: "ΕΠΙΚΟΙΝΩΝΙΑ",
+          name: "contact",
           target: "#contact",
         },
       ],
       logosrc: require("@/assets/img/sb-logo-min.png"),
       transparentNav: true,
     };
+  },
+  created() {
+    this.$root.$on("bv::scrollspy::activate", this.onScrollToSection);
   },
   mounted() {
     if (process.isClient) {
@@ -98,12 +116,14 @@ export default {
     },
   },
   methods: {
+    onScrollToSection(target) {
+      this.$data.currentScrolledSection = target;
+    },
     onScroll() {
       if (process.isClient) {
         if (screen.width < 990) this.$data.transparentNav = false;
         const currentScrollPosition =
           window.pageYOffset || document.documentElement.scrollTop;
-
         if (currentScrollPosition < 0) {
           return;
         }
@@ -125,6 +145,15 @@ export default {
     },
     scrollDone(target) {
       history.pushState({}, null, this.$route.path + target);
+    },
+    localeChanged(locale) {
+      this.$router.push({
+        path: this.$tp(
+          this.$route.path + this.currentScrolledSection,
+          locale,
+          true
+        ),
+      });
     },
   },
 };

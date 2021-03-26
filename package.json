@@ -15,6 +15,7 @@
     "bootstrap-vue": "^2.19.0",
     "cloudinary-vue": "^1.1.2",
     "gridsome": "^0.7.0",
+    "gridsome-plugin-i18n": "^1.6.0",
     "gridsome-plugin-netlify-cms": "^1.0.9",
     "netlify-cms": "^2.10.78",
     "particles.vue": "^2.1.11",
