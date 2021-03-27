@@ -36,7 +36,7 @@
             >{{ $t(item.name) }}</b-nav-item
           >
           <b-nav-item-dropdown
-            class="navbar__locale-picker"
+            class="navbar__link navbar__locale-picker"
             :text="$i18n.locale.substring(0, 2).toUpperCase()"
             right
           >
@@ -44,6 +44,11 @@
               @click.prevent="localeChanged(locale.locale)"
               v-for="locale in availableLocales"
               :key="locale.locale"
+              class="navbar__locale"
+              :class="{
+                'navbar__locale--active':
+                  locale.locale === $i18n.locale.toString(),
+              }"
             >
               {{ locale.label }}
             </b-dropdown-item>
@@ -63,12 +68,12 @@ export default {
       availableLocales: [
         {
           locale: "el-gr",
-          label: "Ελληνικά"
+          label: "Ελληνικά",
         },
         {
           locale: "en-gb",
-          label: "English"
-        }
+          label: "English",
+        },
       ],
       currentScrolledSection: "",
       menuItems: [
@@ -210,7 +215,28 @@ export default {
   }
 
   &__locale-picker {
-    min-width: 0 !important;
+    ul {
+      background: transparent !important;
+    }
+  }
+
+  &__locale {
+    text-transform: capitalize;
+
+    &--active {
+      a {
+        color: white !important;
+      }
+    }
+
+    a {
+      color: rgba(255, 255, 255, 0.5);
+      
+      &:hover {
+        background: transparent !important;
+        color: white !important;
+      }
+    }
   }
 
   &__link {
@@ -219,7 +245,7 @@ export default {
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.7s;
 
-    .active {
+    &--active {
       color: white !important;
       border-bottom: 1px solid $light-blue;
 
