@@ -124,6 +124,15 @@ collections:
           value_type: "int",
           hint: "Order in which you want the question to appear in FAQ section",
         }
+      - {
+          label: "Language",
+          name: "locale",
+          widget: "select",
+          options: [
+            { label: "Greek", value: "el-gr"},
+            { label: "English", value: "en-gb"}
+          ] 
+        }
       - { label: "Answer", name: "body", widget: "markdown" }
   - name: "galleryImage"
     label: "Gallery Image"

@@ -2,14 +2,13 @@
   <section
     class="section"
     id="whoweare"
-    style="margin-top: 450px; width: 100%"
+    style="margin-top: 450px; width: 100%;"
   >
-    <h2>Who we are</h2>
     <div class="tiles">
       <div class="tile" v-for="tile in gridTiles" :key="tile.title">
         <font-awesome class="tile__icon" :icon="tile.icon" size="3x" />
-        <span class="tile__title">{{ tile.title }}</span>
-        <span class="tile__text">{{ tile.text }}</span>
+        <span class="tile__title">{{ $t(tile.title) }}</span>
+        <span class="tile__text">{{ $t(tile.text) }}</span>
       </div>
     </div>
   </section>
@@ -21,22 +20,19 @@ export default {
     return {
       gridTiles: [
         {
-          title: "Development",
+          title: "technology",
           icon: "file-code",
-          text:
-            "Our team is comprised of developers and engineers of all skill levels and we take on various project with the aim of improvement",
+          text: "technologyText",
         },
         {
-          title: "Learning",
+          title: "learning",
           icon: "graduation-cap",
-          text:
-            "We organize a large number of informative tech talks each year and we offer a hub of discussion and growth",
+          text: "learningText",
         },
         {
-          title: "Volunteering",
+          title: "volunteering",
           icon: "user-friends",
-          text:
-            "Apart from our technological interests, we aim to give back to our community through volunteering events",
+          text: "volunteeringText",
         },
       ],
     };
@@ -64,6 +60,7 @@ export default {
   width: 350px;
 
   &__title {
+    text-transform: capitalize;
     font-weight: 600;
     font-size: 25px;
     margin-bottom: 15px;

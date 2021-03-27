@@ -24,14 +24,14 @@
             @click.prevent="scrollDone('#faq')"
             href="#faq"
             class="hero__btn1"
-            >LEARN ABOUT US</a
+            >{{ $t("whoWeAre") }}</a
           >
           <a
-            v-scroll-to="{ el: '#contact', offset: scrollOffset }"
-            @click.prevent="scrollDone('#contact')"
-            href="#contact"
+            v-scroll-to="{ el: '#latest', offset: scrollOffset }"
+            @click.prevent="scrollDone('#latest')"
+            href="#latest"
             class="hero__btn2"
-            >GET IN TOUCH</a
+            >{{ $t("whatWeDo") }}</a
           >
         </div>
       </div>

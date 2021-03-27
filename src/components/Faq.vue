@@ -1,9 +1,9 @@
 <template>
   <section class="section" id="faq">
-    <h2>Frequent Questions</h2>
+    <h2>{{ $t("faq") }}</h2>
     <div class="faq" role="tablist">
       <faq-card
-        v-for="(question, index) in $static.faq.edges"
+        v-for="(question, index) in localizedQuestions"
         :key="question.node.question"
         :question="question.node"
         :index="index"
@@ -19,6 +19,7 @@ query {
       node {
         id,
         question,
+        locale,
         content,
         order
       }
@@ -32,5 +33,12 @@ import FaqCard from "@/components/FaqCard.vue";
 
 export default {
   components: { FaqCard },
+  computed: {
+    localizedQuestions() {
+      return this.$static.faq.edges.filter( q =>
+        q.node.locale === this.$i18n.locale.toString()
+      )
+    }
+  },
 };
 </script>

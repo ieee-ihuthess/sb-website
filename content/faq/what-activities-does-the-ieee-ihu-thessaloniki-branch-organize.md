@@ -1,17 +1,15 @@
 ---
-question: What activities does the IEEE IHU Thessaloniki branch organize?
+question: Τι δραστηριότητες διοργανώνει το IEEE IHU Thessaloniki Student Branch;
 order: 2
+locale: el-gr
 ---
-  - Seminars, workshops and lectures by distinguished scientists in order to educate and inform students about topics related to Computer Science.
+  - Σεμινάρια, workshops και διαλέξεις από διακεκριμένους επιστήμονες και ανθρώπους του χώρου με στόχο την εκπαίδευση και την ενημέρωση των φοιτητών και των παρευρισκόμενων για τεχνολογικά θέματα.
 
 
-  - Educational trips and visits to conferences and institutions engaged in the research and development of related sciences fields.
+  - Εκπαιδευτικά ταξίδια και επισκέψεις σε συνέδρια σχετικά με τον χώρο της επιστήμης Πληροφορικής και Ηλεκτρονικών Συστημάτων.
 
 
-  - Participating in student competitions under the auspices of IEEE or others technological organizations.
+  - Συμμετοχή σε φοιτητικούς διαγωνισμούς υπο την αιγίδα του IEEE και άλλων τεχνολογικών διαγωνισμών.
 
 
-  - Informing students about the activities of IEEE and opportunities provided to them by the organization.
-
-
-  - Undertaking various tech projects within the Student Branch community.
+  - Υλοποίηση projects μέσα στην κοινότητα του φοιτητικού παραρτήματος.

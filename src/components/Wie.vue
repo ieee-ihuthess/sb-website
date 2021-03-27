@@ -12,9 +12,7 @@
       <h3 class="quote__author">-Elizabeth Holmes</h3>
     </div>
     <p class="description">
-      Women In Engineering is a IEEE Afilliate Group, dedicated to changing the
-      face of engineering by promoting women in STEM & leadership roles,
-      inspiring young girls to achieve their goals in science.
+      {{ $t("wieText") }}
     </p>
   </section>
 </template>

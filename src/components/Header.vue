@@ -33,8 +33,26 @@
             v-for="item in menuItems"
             :key="item.name"
             :href="item.target"
-            >{{ item.name }}</b-nav-item
+            >{{ $t(item.name) }}</b-nav-item
           >
+          <b-nav-item-dropdown
+            class="navbar__link navbar__locale-picker"
+            :text="$i18n.locale.substring(0, 2).toUpperCase()"
+            right
+          >
+            <b-dropdown-item
+              @click.prevent="localeChanged(locale.locale)"
+              v-for="locale in availableLocales"
+              :key="locale.locale"
+              class="navbar__locale"
+              :class="{
+                'navbar__locale--active':
+                  locale.locale === $i18n.locale.toString(),
+              }"
+            >
+              {{ locale.label }}
+            </b-dropdown-item>
+          </b-nav-item-dropdown>
         </b-navbar-nav>
       </b-collapse>
     </b-container>
@@ -46,17 +64,25 @@ export default {
   name: "TheHeader",
   data() {
     return {
+      currentLocale: this.$i18n.locale.toString(),
+      availableLocales: [
+        {
+          locale: "el-gr",
+          label: "Ελληνικά",
+        },
+        {
+          locale: "en-gb",
+          label: "English",
+        },
+      ],
+      currentScrolledSection: "",
       menuItems: [
         {
-          name: "Home",
+          name: "home",
           target: "#home",
         },
         {
-          name: "Who We Are",
-          target: "#whoweare",
-        },
-        {
-          name: "Gallery",
+          name: "gallery",
           target: "#gallery",
         },
         {
@@ -68,21 +94,24 @@ export default {
           target: "#faq",
         },
         {
-          name: "Latest Events",
+          name: "newsAndEvents",
           target: "#latest",
         },
         {
-          name: "Members",
+          name: "members",
           target: "#members",
         },
         {
-          name: "Contact Us",
+          name: "contact",
           target: "#contact",
         },
       ],
       logosrc: require("@/assets/img/sb-logo-min.png"),
       transparentNav: true,
     };
+  },
+  created() {
+    this.$root.$on("bv::scrollspy::activate", this.onScrollToSection);
   },
   mounted() {
     if (process.isClient) {
@@ -102,12 +131,14 @@ export default {
     },
   },
   methods: {
+    onScrollToSection(target) {
+      this.$data.currentScrolledSection = target;
+    },
     onScroll() {
       if (process.isClient) {
         if (screen.width < 990) this.$data.transparentNav = false;
         const currentScrollPosition =
           window.pageYOffset || document.documentElement.scrollTop;
-
         if (currentScrollPosition < 0) {
           return;
         }
@@ -130,6 +161,15 @@ export default {
     scrollDone(target) {
       history.pushState({}, null, this.$route.path + target);
     },
+    localeChanged(locale) {
+      this.$router.push({
+        path: this.$tp(
+          this.$route.path + this.currentScrolledSection,
+          locale,
+          true
+        ),
+      });
+    },
   },
 };
 </script>
@@ -143,7 +183,7 @@ export default {
   padding-right: 50px !important;
   transition: background 1s;
 
-  @media (max-width: $screen-md-min) {
+  @media (max-width: $screen-lg-min) {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
@@ -151,7 +191,7 @@ export default {
   &--transparent {
     background: none !important;
 
-    @media (max-width: $screen-md-min) {
+    @media (max-width: $screen-lg-min) {
       background: $dark-blue !important;
     }
   }
@@ -174,6 +214,39 @@ export default {
     }
   }
 
+  &__locale-picker {
+    @media (max-width: $screen-lg-min) {
+      ul {
+        background: transparent !important;
+      }
+    }
+  }
+
+  &__locale {
+    text-transform: capitalize;
+
+    @media (max-width: $screen-lg-min) {
+      &--active {
+        a {
+          color: white !important;
+
+          &:hover {
+            background: transparent;
+          }
+        }
+      }
+
+      a {
+        color: rgba(255, 255, 255, 0.5);
+
+        &:hover {
+            background: transparent;
+            color: white;
+          }
+      }
+    }
+  }
+
   &__link {
     text-transform: uppercase;
     margin-left: 10px;
@@ -184,7 +257,7 @@ export default {
       color: white !important;
       border-bottom: 1px solid $light-blue;
 
-      @media (max-width: $screen-md-min) {
+      @media (max-width: $screen-lg-min) {
         border-bottom: none;
       }
     }
@@ -193,7 +266,7 @@ export default {
       border-bottom: 1px solid $light-blue;
     }
 
-    @media (max-width: $screen-md-min) {
+    @media (max-width: $screen-lg-min) {
       border-bottom: none;
 
       &:hover {

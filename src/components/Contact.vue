@@ -1,6 +1,6 @@
 <template>
   <section class="section" id="contact">
-    <h2>Contact us</h2>
+    <h2> {{ $t('contact')}} </h2>
     <div class="col-md-12 col-md-offset-2">
       <form
         name="contact"
@@ -14,13 +14,13 @@
         </p>
         <div class="row">
           <div class="col-md-6 field">
-            <label for="name" class="field__title">Name</label>
+            <label for="name" class="field__title">{{ $t("name") }}</label>
             <input
               id="name"
               type="text"
               class="form-control"
-              name="name"
-              placeholder="Name*"
+              :name="$t('name')"
+              :placeholder="$t('name').charAt(0).toUpperCase() + $t('name').slice(1)"
               v-model="form.name"
               required
             />
@@ -32,19 +32,19 @@
               class="form-control"
               type="email"
               name="email"
-              placeholder="Email*"
+              placeholder="Email"
               v-model="form.email"
               required
             />
           </div>
           <div class="col-md-12 field">
-            <label for="message" class="field__title">Message</label>
+            <label for="message" class="field__title">{{ $t("message") }}</label>
             <textarea
               id="message"
               rows="5"
               class="form-control"
-              name="message"
-              placeholder="Message*"
+              :name="$t('message')"
+              :placeholder="$t('message').charAt(0).toUpperCase() + $t('message').slice(1)"
               v-model="form.message"
               required
             ></textarea>
@@ -56,7 +56,7 @@
             <b-alert variant="danger" v-if="submitFailed"
               >Something went wrong. {{ errorMessage }}</b-alert
             >
-            <b-button class="submit" type="submit">Submit Message</b-button>
+            <b-button class="submit" type="submit"> {{ $t("submit")}} </b-button>
           </div>
         </div>
       </form>
@@ -77,8 +77,10 @@ export default {
   methods: {
     encode(data) {
       return Object.keys(data)
-      .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
-      .join('&')
+        .map(
+          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join("&");
     },
     handleSubmit(e) {
       fetch("/", {
@@ -93,13 +95,13 @@ export default {
           this.$data.submitSuccessful = true;
           this.$data.submitFailed = false;
           this.$data.errorMessage = "";
-          console.log(this.$data.form)
+          console.log(this.$data.form);
         })
         .catch((e) => {
           this.$data.submitSuccessful = false;
           this.$data.submitFailed = true;
           this.$data.errorMessage = e;
-          console.log(this.$data.form)
+          console.log(this.$data.form);
         });
     },
   },
@@ -117,6 +119,7 @@ textarea {
   margin-bottom: 50px;
 
   &__title {
+    text-transform: capitalize;
     color: $blue;
     margin-bottom: 15px;
     display: block;
@@ -127,6 +130,7 @@ textarea {
 .submit {
   background: $blue;
   color: white;
+  text-transform: capitalize;
   border-radius: 0;
 
   &:hover {
