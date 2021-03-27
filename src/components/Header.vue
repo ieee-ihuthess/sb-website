@@ -36,15 +36,16 @@
             >{{ $t(item.name) }}</b-nav-item
           >
           <b-nav-item-dropdown
+            class="navbar__locale-picker"
             :text="$i18n.locale.substring(0, 2).toUpperCase()"
             right
           >
             <b-dropdown-item
-              @click.prevent="localeChanged(locale)"
+              @click.prevent="localeChanged(locale.locale)"
               v-for="locale in availableLocales"
-              :key="locale"
+              :key="locale.locale"
             >
-              {{ locale }}
+              {{ locale.label }}
             </b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>
@@ -59,7 +60,16 @@ export default {
   data() {
     return {
       currentLocale: this.$i18n.locale.toString(),
-      availableLocales: this.$i18n.availableLocales,
+      availableLocales: [
+        {
+          locale: "el-gr",
+          label: "Ελληνικά"
+        },
+        {
+          locale: "en-gb",
+          label: "English"
+        }
+      ],
       currentScrolledSection: "",
       menuItems: [
         {
@@ -197,6 +207,10 @@ export default {
     &__title {
       align-self: center;
     }
+  }
+
+  &__locale-picker {
+    min-width: 0 !important;
   }
 
   &__link {

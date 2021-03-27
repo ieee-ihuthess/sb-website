@@ -38,7 +38,7 @@
             />
           </div>
           <div class="col-md-12 field">
-            <label for="message" class="field__title">{{ $t("message  ") }}</label>
+            <label for="message" class="field__title">{{ $t("message") }}</label>
             <textarea
               id="message"
               rows="5"
