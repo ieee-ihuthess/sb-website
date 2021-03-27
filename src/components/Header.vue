@@ -183,7 +183,7 @@ export default {
   padding-right: 50px !important;
   transition: background 1s;
 
-  @media (max-width: $screen-md-min) {
+  @media (max-width: $screen-lg-min) {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
@@ -191,7 +191,7 @@ export default {
   &--transparent {
     background: none !important;
 
-    @media (max-width: $screen-md-min) {
+    @media (max-width: $screen-lg-min) {
       background: $dark-blue !important;
     }
   }
@@ -215,26 +215,34 @@ export default {
   }
 
   &__locale-picker {
-    ul {
-      background: transparent !important;
+    @media (max-width: $screen-lg-min) {
+      ul {
+        background: transparent !important;
+      }
     }
   }
 
   &__locale {
     text-transform: capitalize;
 
-    &--active {
-      a {
-        color: white !important;
-      }
-    }
+    @media (max-width: $screen-lg-min) {
+      &--active {
+        a {
+          color: white !important;
 
-    a {
-      color: rgba(255, 255, 255, 0.5);
-      
-      &:hover {
-        background: transparent !important;
-        color: white !important;
+          &:hover {
+            background: transparent;
+          }
+        }
+      }
+
+      a {
+        color: rgba(255, 255, 255, 0.5);
+
+        &:hover {
+            background: transparent;
+            color: white;
+          }
       }
     }
   }
@@ -245,11 +253,11 @@ export default {
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.7s;
 
-    &--active {
+    .active {
       color: white !important;
       border-bottom: 1px solid $light-blue;
 
-      @media (max-width: $screen-md-min) {
+      @media (max-width: $screen-lg-min) {
         border-bottom: none;
       }
     }
@@ -258,7 +266,7 @@ export default {
       border-bottom: 1px solid $light-blue;
     }
 
-    @media (max-width: $screen-md-min) {
+    @media (max-width: $screen-lg-min) {
       border-bottom: none;
 
       &:hover {
