@@ -51,12 +51,28 @@
       <p>{{ event.description }}</p>
       <br />
     </div>
+    <b-button
+      class="button--primary"
+      style="width: 200px;"
+      v-b-modal="'eventModal' + index"
+      >Show more</b-button
+    >
+    <event-modal :event="event" :index="index"></event-modal>
   </div>
 </template>
 
 <script>
+import EventModal from "@/components/EventModal.vue";
+
 export default {
+  components: {
+    EventModal,
+  },
   props: {
+    index: {
+      type: Number,
+      required: true,
+    },
     event: {
       type: Object,
       required: true,
@@ -80,7 +96,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "~/assets/scss/variables";
 
 .event {

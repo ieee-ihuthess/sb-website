@@ -1,11 +1,12 @@
 <template>
   <section class="section" id="latest">
-    <h2> {{ $t('newsAndEvents')}} </h2>
+    <h2 class="title"> {{ $t('newsAndEvents')}} </h2>
     <div class="events">
       <event-card
-        v-for="event in $static.events.edges"
+        v-for="(event,index) in $static.events.edges"
         :key="event.node.id"
         :event="event.node"
+        :index="index"
       />
     </div>
   </section>
