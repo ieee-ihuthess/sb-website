@@ -1,6 +1,6 @@
 <template>
   <section class="section" id="gallery">
-    <h2>Gallery</h2>
+    <h2 class="title">Gallery</h2>
     <div>
       <b-carousel
         id="carousel-fade"

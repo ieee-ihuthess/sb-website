@@ -1,6 +1,6 @@
 <template>
   <section class="section" id="contact">
-    <h2> {{ $t('contact')}} </h2>
+    <h2 class="title"> {{ $t('contact')}} </h2>
     <div class="col-md-12 col-md-offset-2">
       <form
         name="contact"

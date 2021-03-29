@@ -48,6 +48,7 @@ export default {
 
 <style lang="scss">
 @import "~/assets/scss/variables";
+@import "~/assets/scss/overwrites";
 
 * {
   font-family: "Manrope",sans-serif;
@@ -58,7 +59,7 @@ h1 {
   font-size: 2.5em;
 }
 
-h2 {
+.title {
   font-family: "Roboto",sans-serif;
   font-weight: 300;
   text-transform: uppercase;
@@ -67,7 +68,7 @@ h2 {
   font-size: 1.8em;
 }
 
-h2:before {
+.title:before {
   content: "";
   display: block;
   width: 40px;

@@ -1,6 +1,6 @@
 <template>
   <section class="section wie" id="wie">
-    <h2>Women in Engineering</h2>
+    <h2 class="title">Women in Engineering</h2>
     <div class="full-width">
       <div class="wie__image"></div>
       <div class="quote">

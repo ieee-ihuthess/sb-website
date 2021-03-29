@@ -1,0 +1,33 @@
+@import "./variables";
+
+.button {
+  &--primary {
+    background-color: $blue;
+
+    &:hover {
+      background: $light-blue !important;
+      color: white !important;
+    }
+
+    &:focus {
+      background: $light-blue !important;
+      color: white !important;
+    }
+  }
+
+  &--outlined {
+    border: 1px solid $blue;
+    background: transparent;
+    color: $blue;
+
+    &:hover {
+      color: white !important;
+      background: $blue !important;
+    }
+
+    &:focus {
+      color: white !important;
+      background: $blue !important;
+    }
+  }
+}

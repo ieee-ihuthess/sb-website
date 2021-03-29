@@ -1,6 +1,6 @@
 <template>
   <section class="section" id="faq">
-    <h2>{{ $t("faq") }}</h2>
+    <h2 class="title">{{ $t("faq") }}</h2>
     <div class="faq" role="tablist">
       <faq-card
         v-for="(question, index) in localizedQuestions"
