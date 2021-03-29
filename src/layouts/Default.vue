@@ -1,21 +1,49 @@
 <template>
-  <div class="layout">
-    <the-header />
-    <b-container class="container--large">
-      <slot />
-    </b-container>
-    <the-footer />
+  <div>
+    <transition appear name="slide-fade">
+      <loading-overlay v-if="mountOverlay" />
+    </transition>
+    <div :class="showContent ? 'layout' : 'layout layout--hidden'">
+      <the-header />
+      <b-container class="container--large">
+        <slot />
+      </b-container>
+      <the-footer />
+    </div>
   </div>
 </template>
 
 <script>
 import TheHeader from "~/components/Header.vue";
 import TheFooter from "~/components/Footer.vue";
+import LoadingOverlay from "~/components/LoadingOverlay.vue";
 
 export default {
+  async mounted() {
+    await document.fonts.ready;
+    this.$nextTick(function() {
+      this.handleLoad();
+    });
+  },
+  methods: {
+    handleLoad() {
+      setTimeout(() => {
+        this.showContent = true;
+        this.mountOverlay = false;
+      }, this.loaderMS);
+    },
+  },
+  data() {
+    return {
+      mountOverlay: true,
+      showContent: false,
+      loaderMS: 2000,
+    };
+  },
   components: {
     TheHeader,
     TheFooter,
+    LoadingOverlay,
   },
 };
 </script>
@@ -30,6 +58,7 @@ query {
 
 <style lang="scss">
 @import "~/assets/scss/variables";
+@import "~/assets/scss/animations";
 
 body {
   margin: 0;
@@ -40,6 +69,11 @@ body {
 
 .layout {
   margin: 0 auto;
+  transition: opacity 0.5s;
+
+  &--hidden {
+    opacity: 0;
+  }
 }
 
 .container--large {
