@@ -6,6 +6,7 @@
         <carousel
           :nav="false"
           :navText="['prev', 'next']"
+          :margin="-50"
           :responsive="{
             0: { items: 1, center: true, dots: false, nav: true },
             600: { items: 2, dots: true, nav: false },
