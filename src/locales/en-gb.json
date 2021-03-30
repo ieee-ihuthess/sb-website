@@ -15,5 +15,8 @@
     "faq": "frequent questions",
     "name": "name",
     "message": "message",
-    "submit": "submit"
+    "submit": "submit",
+    "showMore": "show more",
+    "close": "close",
+    "watch": "watch"
 }

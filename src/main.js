@@ -4,7 +4,6 @@ import VueScrollactive from "vue-scrollactive";
 import VueScrollTo from "vue-scrollto";
 import Particles from "particles.vue";
 import VueTypedJs from "vue-typed-js";
-import VueShave from "vue-shave";
 
 import {
   VBScrollspyPlugin,
@@ -120,7 +119,6 @@ export default function(Vue, { router, head, isClient }) {
   Vue.use(VueScrollactive);
   Vue.use(VueScrollTo);
   Vue.use(VueTypedJs);
-  Vue.use(VueShave);
 
   Vue.use(Particles);
   if (process.isClient) {

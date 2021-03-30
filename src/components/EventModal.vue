@@ -37,32 +37,9 @@
             :icon="[linkInfo[service]['iconType'], linkInfo[service]['icon']]"
             size="md"
           />
-          {{ linkInfo[service]['text'] }}
+          {{ $t(linkInfo[service]["text"]) }}
         </a>
       </div>
-      <!-- <h4 class="title event-modal__subheading">
-        PHOTOS
-      </h4>
-      <b-carousel
-        id="carousel-1"
-        v-model="slide"
-        :interval="4000"
-        controls
-        indicators
-        background="#ababab"
-        img-width="1024"
-        img-height="480"
-      >
-        <b-carousel-slide
-          img-src="https://picsum.photos/1024/480/?image=58"
-        ></b-carousel-slide>
-        <b-carousel-slide
-          img-src="https://picsum.photos/1024/480/?image=58"
-        ></b-carousel-slide>
-        <b-carousel-slide
-          img-src="https://picsum.photos/1024/480/?image=58"
-        ></b-carousel-slide>
-      </b-carousel> -->
     </b-container>
 
     <template #modal-footer="{close}">
@@ -70,9 +47,10 @@
         <b-button
           variant="primary"
           class="float-right button--primary"
+          style="text-transform: capitalize"
           @click="close()"
         >
-          Close
+          {{ $t("close") }}
         </b-button>
       </div>
     </template>
@@ -102,7 +80,7 @@ export default {
         youtube: {
           icon: "youtube",
           iconType: "fab",
-          text: "Watch At YouTube",
+          text: "watch",
         },
         slides: {
           icon: "file-powerpoint",

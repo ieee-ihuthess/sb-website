@@ -32,7 +32,7 @@
     <b-button
       class="button--primary event__show-button"
       v-b-modal="'eventModal' + index"
-      >Show more</b-button
+      >{{ $t("showMore") }}</b-button
     >
     <event-modal :event="event" :index="index"></event-modal>
   </div>
@@ -40,7 +40,6 @@
 
 <script>
 import EventModal from "@/components/EventModal.vue";
-import shave from "shave";
 
 export default {
   components: {
@@ -58,15 +57,15 @@ export default {
   },
   methods: {
     getPreviewHtml(content, title) {
-      const HTMLtext = content.replace('<p>', '').replace('</p>', '');
+      const HTMLtext = content.replace("<p>", "").replace("</p>", "");
       let substringLength = 0;
       if (title.length < 29) substringLength = 420;
       else if (title.length >= 29 && title.length < 58) substringLength = 350;
       else substringLength = 300;
       if (content.length <= substringLength) return HTMLtext;
-      else return HTMLtext.substring(0, substringLength) + '...';
-    }
-  }
+      else return HTMLtext.substring(0, substringLength) + "...";
+    },
+  },
 };
 </script>
 
@@ -140,6 +139,7 @@ export default {
   &__show-button {
     width: 200px;
     margin-top: auto;
+    text-transform: capitalize;
   }
 }
 </style>
