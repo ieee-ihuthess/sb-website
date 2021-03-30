@@ -1,6 +1,6 @@
 <template>
   <section class="section" id="contact">
-    <h2 class="title"> {{ $t('contact')}} </h2>
+    <h2 class="title">{{ $t("contact") }}</h2>
     <div class="col-md-12 col-md-offset-2">
       <form
         name="contact"
@@ -20,7 +20,11 @@
               type="text"
               class="form-control"
               :name="$t('name')"
-              :placeholder="$t('name').charAt(0).toUpperCase() + $t('name').slice(1)"
+              :placeholder="
+                $t('name')
+                  .charAt(0)
+                  .toUpperCase() + $t('name').slice(1)
+              "
               v-model="form.name"
               required
             />
@@ -38,13 +42,19 @@
             />
           </div>
           <div class="col-md-12 field">
-            <label for="message" class="field__title">{{ $t("message") }}</label>
+            <label for="message" class="field__title">{{
+              $t("message")
+            }}</label>
             <textarea
               id="message"
               rows="5"
               class="form-control"
               :name="$t('message')"
-              :placeholder="$t('message').charAt(0).toUpperCase() + $t('message').slice(1)"
+              :placeholder="
+                $t('message')
+                  .charAt(0)
+                  .toUpperCase() + $t('message').slice(1)
+              "
               v-model="form.message"
               required
             ></textarea>
@@ -56,7 +66,13 @@
             <b-alert variant="danger" v-if="submitFailed"
               >Something went wrong. {{ errorMessage }}</b-alert
             >
-            <b-button class="submit" type="submit"> {{ $t("submit")}} </b-button>
+            <b-button
+              class="button--primary"
+              style="text-transform: capitalize;"
+              type="submit"
+            >
+              {{ $t("submit") }}
+            </b-button>
           </div>
         </div>
       </form>
@@ -124,18 +140,6 @@ textarea {
     margin-bottom: 15px;
     display: block;
     font-weight: 700;
-  }
-}
-
-.submit {
-  background: $blue;
-  color: white;
-  text-transform: capitalize;
-  border-radius: 0;
-
-  &:hover {
-    background: $light-blue !important;
-    color: white !important;
   }
 }
 </style>
