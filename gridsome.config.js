@@ -2,7 +2,7 @@ const i18n = require('./src/plugins/i18n')
 
 module.exports = {
   siteName: "IEEE Student Branch - IHU Thessaloniki",
-  siteUrl: "https://relaxed-raman-07896d.netlify.app",
+  siteUrl: "https://ieeeihuthess.org",
   titleTemplate: "%s",
   plugins: [
     i18n,
