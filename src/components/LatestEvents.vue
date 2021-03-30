@@ -39,7 +39,8 @@ query {
           youtube,
           facebook,
           slides
-        }
+        },
+        registrationLink
       }
     }
   }

@@ -26,6 +26,18 @@
       <p v-html="event.content"></p>
       <div class="event-modal__links">
         <a
+          v-if="
+            !!event.registrationLink &&
+              event.registrationLink != '#' &&
+              new Date(event.date) > new Date()
+          "
+          class="btn button--secondary event-modal__register mr-2"
+          :href="event.registrationLink"
+          target="_blank"
+        >
+          {{ $t("registerNow") }}
+        </a>
+        <a
           v-for="(link, service) in validLinks"
           :key="link"
           class="btn button--outlined event-modal__button mr-2"
@@ -141,6 +153,11 @@ export default {
     position: absolute;
     top: 1rem;
     right: 1rem;
+  }
+
+  &__register {
+    color: white;
+    font-weight: 600;
   }
 
   &__title {
