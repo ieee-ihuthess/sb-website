@@ -1,16 +1,32 @@
 @import "./variables";
 
 .button {
+  border: none !important;
+
   &--primary {
     background-color: $blue;
 
     &:hover {
-      background: $light-blue !important;
+      background: darken($blue, 5%) !important;
       color: white !important;
     }
 
     &:focus {
-      background: $light-blue !important;
+      background: darken($blue, 5%) !important;
+      color: white !important;
+    }
+  }
+
+  &--secondary {
+    background-color: $pale-blue;
+
+    &:hover {
+      background: darken($pale-blue, 5%) !important;
+      color: white !important;
+    }
+
+    &:focus {
+      background: darken($pale-blue, 5%) !important;
       color: white !important;
     }
   }

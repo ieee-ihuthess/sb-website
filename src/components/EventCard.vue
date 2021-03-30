@@ -18,6 +18,12 @@
           new Date(event.date).toLocaleString("default", { month: "short" })
         }}</span>
       </div>
+      <div
+        class="event__upcoming-banner"
+        v-if="new Date(event.date) > new Date()"
+      >
+        {{$t("upcoming")}}
+      </div>
     </div>
     <div class="event__info-container">
       <h4 class="event__title">
@@ -30,9 +36,19 @@
       <br />
     </div>
     <b-button
+      v-if="new Date(event.date) < new Date()"
       class="button--primary event__show-button"
       v-b-modal="'eventModal' + index"
       >{{ $t("showMore") }}</b-button
+    >
+    <b-button
+      v-else
+      class="button--secondary event__show-button"
+      style="border: none !important;"
+      v-b-modal="'eventModal' + index"
+      >
+      {{$t("join")  }}
+      </b-button
     >
     <event-modal :event="event" :index="index"></event-modal>
   </div>
@@ -100,6 +116,17 @@ export default {
     background: $blue;
     color: white;
     padding: 10px 15px;
+  }
+
+  &__upcoming-banner {
+    padding: 0.5rem;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: $pale-blue;
+    font-weight: 600;
+    text-transform: capitalize;
   }
 
   &__links {
