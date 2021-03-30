@@ -1,15 +1,16 @@
 <template>
   <section id="members" class="section">
-    <h2 class="title">{{ $t('members') }}</h2>
+    <h2 class="title">{{ $t("members") }}</h2>
     <ClientOnly>
       <carousel
         :nav="false"
         :navText="['prev', 'next']"
-        :margin="-50"
+        :stagePadding="50"
+        :margin="20"
         :responsive="{
           0: { items: 1, center: true, dots: false, nav: true },
           600: { items: 2, dots: true, nav: false },
-          1000: { items: 4, dots: true, nav: false },
+          1200: { items: 3, dots: true, nav: false },
         }"
       >
         <member-card
@@ -70,7 +71,8 @@ export default {
   }
 }
 
-.owl-prev, .owl-next {
-  background: $blue !important;  
+.owl-prev,
+.owl-next {
+  background: $blue !important;
 }
 </style>
