@@ -1,5 +1,5 @@
 <template>
-  <b-modal size="lg" :id="'eventModal'+index" :title="event.title">
+  <b-modal size="lg" :id="'eventModal' + index" :title="event.title">
     <template #modal-header="{ close }">
       <cld-image
         :publicId="getImageCloudinaryId(event.image)"
@@ -23,41 +23,24 @@
       </b-button>
     </template>
     <b-container class="event-modal__content">
-      <p>{{ event.description }}</p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-        voluptatum odit deleniti impedit earum omnis consequatur tempore
-        praesentium enim ducimus alias saepe dolor aliquam eos, libero nostrum
-        quibusdam aliquid. Soluta!
-      </p>
-
+      <p v-html="event.content"></p>
       <div class="event-modal__links">
-        <b-button class="button--outlined event-modal__button">
+        <a
+          v-for="(link, service) in validLinks"
+          :key="link"
+          class="btn button--outlined event-modal__button mr-2"
+          :href="link"
+          target="_blank"
+        >
           <font-awesome
             class="event-modal__link-icon"
-            :icon="['fab', 'youtube']"
+            :icon="[linkInfo[service]['iconType'], linkInfo[service]['icon']]"
             size="md"
           />
-          Watch At YouTube
-        </b-button>
-        <b-button class="button--outlined event-modal__button">
-          <font-awesome
-            class="event-modal__link-icon"
-            :icon="['fab', 'youtube']"
-            size="md"
-          />
-          Watch At YouTube
-        </b-button>
-        <b-button class="button--outlined event-modal__button">
-          <font-awesome
-            class="event-modal__link-icon"
-            :icon="['fab', 'youtube']"
-            size="md"
-          />
-          Watch At YouTube
-        </b-button>
+          {{ linkInfo[service]['text'] }}
+        </a>
       </div>
-      <h4 class="title event-modal__subheading">
+      <!-- <h4 class="title event-modal__subheading">
         PHOTOS
       </h4>
       <b-carousel
@@ -79,20 +62,20 @@
         <b-carousel-slide
           img-src="https://picsum.photos/1024/480/?image=58"
         ></b-carousel-slide>
-      </b-carousel>
+      </b-carousel> -->
     </b-container>
 
-     <template #modal-footer>
-        <div class="w-100">
-          <b-button
-            variant="primary"
-            class="float-right button--primary"
-            @click="show=false"
-          >
-            Close
-          </b-button>
-        </div>
-      </template>
+    <template #modal-footer="{close}">
+      <div class="w-100">
+        <b-button
+          variant="primary"
+          class="float-right button--primary"
+          @click="close()"
+        >
+          Close
+        </b-button>
+      </div>
+    </template>
   </b-modal>
 </template>
 
@@ -111,20 +94,34 @@ export default {
   data() {
     return {
       linkInfo: {
-        fbLink: {
+        facebook: {
           icon: "facebook",
-          text: "Facebook Event",
+          iconType: "fab",
+          text: "FB Event",
         },
-        ytLink: {
+        youtube: {
           icon: "youtube",
+          iconType: "fab",
           text: "Watch At YouTube",
         },
-        slidesLink: {
+        slides: {
           icon: "file-powerpoint",
-          text: "Get The Slides",
+          iconType: "fas",
+          text: "Slides",
         },
       },
     };
+  },
+  computed: {
+    validLinks() {
+      let validLinksObject = {};
+      for (const [service, linkValue] of Object.entries(
+        this.$props.event.links
+      )) {
+        if (linkValue !== "#") validLinksObject[service] = linkValue;
+      }
+      return validLinksObject;
+    },
   },
 };
 </script>

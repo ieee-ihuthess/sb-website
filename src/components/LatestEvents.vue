@@ -1,51 +1,65 @@
 <template>
   <section class="section" id="latest">
-    <h2 class="title"> {{ $t('newsAndEvents')}} </h2>
+    <h2 class="title">{{ $t("newsAndEvents") }}</h2>
     <div class="events">
-      <event-card
-        v-for="(event,index) in $static.events.edges"
-        :key="event.node.id"
-        :event="event.node"
-        :index="index"
-      />
+      <ClientOnly>
+        <carousel
+          :nav="false"
+          :navText="['prev', 'next']"
+          :responsive="{
+            0: { items: 1, center: true, dots: false, nav: true },
+            600: { items: 2, dots: true, nav: false },
+            1000: { items: 3, dots: true, nav: false },
+          }"
+        >
+          <event-card
+            v-for="(event, index) in $static.events.edges"
+            :key="event.node.id"
+            :event="event.node"
+            :index="index"
+          />
+        </carousel>
+      </ClientOnly>
     </div>
   </section>
 </template>
 
-
 <static-query>
 query {
-  events: allEvent(sortBy: "date", order: DESC, limit: 3) {
+  events: allEvent(sortBy: "date", order: DESC) {
     edges {
       node {
         id,
         title,
-        description,
+        content,
         image,
         date,
-        fbLink,
-        ytLink
+        links {
+          youtube,
+          facebook,
+          slides
+        }
       }
     }
   }
 }
 </static-query>
 
-
 <script>
 import EventCard from "@/components/EventCard.vue";
 
 export default {
-  components: { EventCard },
+  components: { EventCard }
 };
 </script>
 
-
 <style lang="scss">
-.events {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  grid-gap: 20px;
-  justify-items: center;
-}
+// .events {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+//   grid-gap: 20px;
+//   justify-items: center;
+// }
+
+
 </style>

@@ -19,41 +19,18 @@
         }}</span>
       </div>
     </div>
-    <div>
-      <div class="event__links">
-        <a
-          v-if="event.fbLink !== '#'"
-          class="event__link"
-          rel="noopener"
-          :href="event.fbLink"
-          :aria-label="event.title + ' Facebook link'"
-        >
-          <font-awesome
-            class="event__icon"
-            :icon="['fab', 'facebook']"
-            size="lg"
-          />
-        </a>
-        <a
-          v-if="event.ytLink !== '#'"
-          class="event__link"
-          :href="event.ytLink"
-          :aria-label="event.title + ' YouTube link'"
-        >
-          <font-awesome
-            class="event__icon"
-            :icon="['fab', 'youtube']"
-            size="lg"
-          />
-        </a>
-      </div>
-      <h4 class="event__title">{{ event.title }}</h4>
-      <p>{{ event.description }}</p>
+    <div class="event__info-container">
+      <h4 class="event__title">
+        {{ event.title }}
+      </h4>
+      <p
+        class="event__description"
+        v-html="getPreviewHtml(event.content, event.title)"
+      ></p>
       <br />
     </div>
     <b-button
-      class="button--primary"
-      style="width: 200px;"
+      class="button--primary event__show-button"
       v-b-modal="'eventModal' + index"
       >Show more</b-button
     >
@@ -63,6 +40,7 @@
 
 <script>
 import EventModal from "@/components/EventModal.vue";
+import shave from "shave";
 
 export default {
   components: {
@@ -76,23 +54,19 @@ export default {
     event: {
       type: Object,
       required: true,
-      validator: (event) => {
-        return (
-          !!event.title &&
-          typeof event.title == "string" &&
-          !!event.description &&
-          event.description.length <= 450 &&
-          typeof event.description == "string" &&
-          !!event.image &&
-          typeof event.image == "string" &&
-          !!event.date &&
-          new Date(event.date) instanceof Date &&
-          !!event.fbLink &&
-          typeof event.fbLink == "string"
-        );
-      },
     },
   },
+  methods: {
+    getPreviewHtml(content, title) {
+      const HTMLtext = content.replace('<p>', '').replace('</p>', '');
+      let substringLength = 0;
+      if (title.length < 29) substringLength = 420;
+      else if (title.length >= 29 && title.length < 58) substringLength = 350;
+      else substringLength = 300;
+      if (content.length <= substringLength) return HTMLtext;
+      else return HTMLtext.substring(0, substringLength) + '...';
+    }
+  }
 };
 </script>
 
@@ -104,6 +78,7 @@ export default {
   flex-direction: column;
   padding: 15px;
   width: 350px;
+  height: 600px;
 
   @media (max-width: $screen-md-min) {
     margin-bottom: 60px;
@@ -146,14 +121,25 @@ export default {
     }
   }
 
+  &__info-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__title {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 1rem 0;
+    font-size: 1.4em;
+  }
+
+  &__description {
+    p {
+      margin-bottom: 0 !important;
+    }
   }
 
   &__show-button {
-    border-radius: 0 !important;
-    background: $blue;
+    width: 200px;
+    margin-top: auto;
   }
 }
 </style>

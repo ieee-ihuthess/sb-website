@@ -4,6 +4,7 @@ import VueScrollactive from "vue-scrollactive";
 import VueScrollTo from "vue-scrollto";
 import Particles from "particles.vue";
 import VueTypedJs from "vue-typed-js";
+import VueShave from "vue-shave";
 
 import {
   VBScrollspyPlugin,
@@ -14,7 +15,7 @@ import {
   ButtonPlugin,
   CarouselPlugin,
   NavbarPlugin,
-  ModalPlugin
+  ModalPlugin,
 } from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
@@ -37,7 +38,7 @@ import {
   faChevronUp,
   faChevronDown,
   faTimes,
-  faFilePowerpoint
+  faFilePowerpoint,
 } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Cloudinary from "cloudinary-vue";
@@ -114,12 +115,12 @@ export default function(Vue, { router, head, isClient }) {
   Vue.use(LayoutPlugin);
   Vue.use(CarouselPlugin);
   Vue.use(ButtonPlugin);
-  Vue.use(NavbarPlugin)
-  Vue.use(ModalPlugin)
+  Vue.use(NavbarPlugin);
+  Vue.use(ModalPlugin);
   Vue.use(VueScrollactive);
   Vue.use(VueScrollTo);
   Vue.use(VueTypedJs);
-  
+  Vue.use(VueShave);
 
   Vue.use(Particles);
   if (process.isClient) {
