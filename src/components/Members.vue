@@ -1,10 +1,11 @@
 <template>
   <section id="members" class="section">
-    <h2>{{ $t('members') }}</h2>
+    <h2 class="title">{{ $t('members') }}</h2>
     <ClientOnly>
       <carousel
         :nav="false"
         :navText="['prev', 'next']"
+        :margin="-50"
         :responsive="{
           0: { items: 1, center: true, dots: false, nav: true },
           600: { items: 2, dots: true, nav: false },

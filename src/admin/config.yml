@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: joj0s/sb-website
+  repo: ieee-ihuthess/sb-website
   branch: main
 
 media_library:
@@ -83,9 +83,8 @@ collections:
         name: "title"
         widget: "string"
       - label: "Event Description"
-        name: "description"
-        pattern: ['.{,450}', "Maximum length is 450 characters."]
-        widget: "text"
+        name: "body"
+        widget: "markdown"
       - label: "Event Image"
         name: "image"
         widget: "image"
@@ -99,14 +98,40 @@ collections:
       - label: "Event Date"
         name: "date"
         widget: "datetime"
-      - label: "Facebook link"
-        name: "fbLink"
-        widget: "string"
+      - label: "Event Photos"
+        name: "photos"
         required: false
-        default: "#"
-        hint: "If you want no link to appear, insert '#' as the value."
-      - label: "Youtube link"
-        name: "ytLink"
+        widget: "list"
+        summary: '{{fields.image}}'
+        field: {label: Image, name: image, widget: image}
+      - label: "Event Links"
+        name: "links"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {
+              label: "YouTube Link",
+              name: "youtube",
+              widget: "string",
+              required: false,
+              default: "#",
+            }
+          - {
+              label: "Facebook Link",
+              name: "facebook",
+              widget: "string",
+              required: false,
+              default: "#",
+            }
+          - {
+              label: "Slides link",
+              name: "slides",
+              widget: "string",
+              required: false,
+              default: "#",
+            }
+      - label: "Registration Form"
+        name: "registrationLink"
         widget: "string"
         required: false
         default: "#"

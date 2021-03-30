@@ -14,6 +14,7 @@ import {
   ButtonPlugin,
   CarouselPlugin,
   NavbarPlugin,
+  ModalPlugin,
 } from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
@@ -35,6 +36,8 @@ import {
   faUserFriends,
   faChevronUp,
   faChevronDown,
+  faTimes,
+  faFilePowerpoint,
 } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Cloudinary from "cloudinary-vue";
@@ -53,7 +56,9 @@ library.add(
   faChevronUp,
   faChevronDown,
   faGraduationCap,
-  faUserFriends
+  faUserFriends,
+  faTimes,
+  faFilePowerpoint
 );
 
 export default function(Vue, { router, head, isClient }) {
@@ -109,12 +114,11 @@ export default function(Vue, { router, head, isClient }) {
   Vue.use(LayoutPlugin);
   Vue.use(CarouselPlugin);
   Vue.use(ButtonPlugin);
-  Vue.use(NavbarPlugin)
-
+  Vue.use(NavbarPlugin);
+  Vue.use(ModalPlugin);
   Vue.use(VueScrollactive);
   Vue.use(VueScrollTo);
   Vue.use(VueTypedJs);
-  
 
   Vue.use(Particles);
   if (process.isClient) {

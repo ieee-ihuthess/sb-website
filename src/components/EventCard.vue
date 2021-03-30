@@ -18,69 +18,74 @@
           new Date(event.date).toLocaleString("default", { month: "short" })
         }}</span>
       </div>
-    </div>
-    <div>
-      <div class="event__links">
-        <a
-          v-if="event.fbLink !== '#'"
-          class="event__link"
-          rel="noopener"
-          :href="event.fbLink"
-          :aria-label="event.title + ' Facebook link'"
-        >
-          <font-awesome
-            class="event__icon"
-            :icon="['fab', 'facebook']"
-            size="lg"
-          />
-        </a>
-        <a
-          v-if="event.ytLink !== '#'"
-          class="event__link"
-          :href="event.ytLink"
-          :aria-label="event.title + ' YouTube link'"
-        >
-          <font-awesome
-            class="event__icon"
-            :icon="['fab', 'youtube']"
-            size="lg"
-          />
-        </a>
+      <div
+        class="event__upcoming-banner"
+        v-if="new Date(event.date) > new Date()"
+      >
+        {{$t("upcoming")}}
       </div>
-      <h4 class="event__title">{{ event.title }}</h4>
-      <p>{{ event.description }}</p>
+    </div>
+    <div class="event__info-container">
+      <h4 class="event__title">
+        {{ event.title }}
+      </h4>
+      <p
+        class="event__description"
+        v-html="getPreviewHtml(event.content, event.title)"
+      ></p>
       <br />
     </div>
+    <b-button
+      v-if="new Date(event.date) < new Date()"
+      class="button--primary event__show-button"
+      v-b-modal="'eventModal' + index"
+      >{{ $t("showMore") }}</b-button
+    >
+    <b-button
+      v-else
+      class="button--secondary event__show-button"
+      style="border: none !important;"
+      v-b-modal="'eventModal' + index"
+      >
+      {{$t("join")  }}
+      </b-button
+    >
+    <event-modal :event="event" :index="index"></event-modal>
   </div>
 </template>
 
 <script>
+import EventModal from "@/components/EventModal.vue";
+
 export default {
+  components: {
+    EventModal,
+  },
   props: {
+    index: {
+      type: Number,
+      required: true,
+    },
     event: {
       type: Object,
       required: true,
-      validator: (event) => {
-        return (
-          !!event.title &&
-          typeof event.title == "string" &&
-          !!event.description &&
-          event.description.length <= 450 &&
-          typeof event.description == "string" &&
-          !!event.image &&
-          typeof event.image == "string" &&
-          !!event.date &&
-          new Date(event.date) instanceof Date &&
-          !!event.fbLink &&
-          typeof event.fbLink == "string"
-        );
-      },
+    },
+  },
+  methods: {
+    getPreviewHtml(content, title) {
+      const HTMLtext = content.replace("<p>", "").replace("</p>", "");
+      let substringLength = 0;
+      if (title.length < 29) substringLength = 420;
+      else if (title.length >= 29 && title.length < 58) substringLength = 350;
+      else substringLength = 300;
+      if (content.length <= substringLength) return HTMLtext;
+      else return HTMLtext.substring(0, substringLength) + "...";
     },
   },
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "~/assets/scss/variables";
 
 .event {
@@ -88,6 +93,7 @@ export default {
   flex-direction: column;
   padding: 15px;
   width: 350px;
+  height: 600px;
 
   @media (max-width: $screen-md-min) {
     margin-bottom: 60px;
@@ -112,6 +118,17 @@ export default {
     padding: 10px 15px;
   }
 
+  &__upcoming-banner {
+    padding: 0.5rem;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: $pale-blue;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
   &__links {
     display: flex;
     margin-top: 15px;
@@ -130,14 +147,26 @@ export default {
     }
   }
 
+  &__info-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__title {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 1rem 0;
+    font-size: 1.4em;
+  }
+
+  &__description {
+    p {
+      margin-bottom: 0 !important;
+    }
   }
 
   &__show-button {
-    border-radius: 0 !important;
-    background: $blue;
+    width: 200px;
+    margin-top: auto;
+    text-transform: capitalize;
   }
 }
 </style>

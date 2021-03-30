@@ -15,5 +15,11 @@
     "faq": "frequent questions",
     "name": "name",
     "message": "message",
-    "submit": "submit"
+    "submit": "submit",
+    "showMore": "show more",
+    "close": "close",
+    "watch": "Watch",
+    "upcoming": "upcoming!",
+    "join": "join!",
+    "registerNow": "Register Now!"
 }
