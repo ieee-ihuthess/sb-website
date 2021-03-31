@@ -87,6 +87,7 @@ export default {
 
   &__heading {
     padding-right: 10px;
+    font-size: 1.6em;
   }
 
   &__heading.not-collapsed {
