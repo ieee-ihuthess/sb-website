@@ -11,7 +11,11 @@
       <p class="wie__description">
         {{ $t("wieText") }}
       </p>
-      <a href="" class="wie__cta btn button--outlined ">
+      <a
+        href="https://www.facebook.com/wie.ihuthess"
+        target="_blank"
+        class="wie__cta btn button--outlined "
+      >
         <font-awesome :icon="['fab', 'facebook-f']" size="1x" />
         <span> WiE Page</span>
       </a>
