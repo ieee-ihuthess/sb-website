@@ -1,5 +1,11 @@
 @import "./variables";
 
+button {
+  &:focus {
+    outline: none !important;
+  }
+}
+
 .button {
   border: none !important;
   text-transform: capitalize;
