@@ -28,7 +28,7 @@
 export default {
   data() {
     return {
-      image: require("@/assets/img/wie.png"),
+      image: require("@/assets/svg/wie.svg"),
     };
   },
 };
@@ -68,6 +68,7 @@ export default {
 
   &__image {
     grid-area: img;
+    margin: 0 auto;
     width: 80% !important;
   }
 
