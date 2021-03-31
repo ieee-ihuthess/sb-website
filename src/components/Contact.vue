@@ -56,7 +56,7 @@
             <b-alert variant="danger" v-if="submitFailed"
               >Something went wrong. {{ errorMessage }}</b-alert
             >
-            <b-button class="submit" type="submit"> {{ $t("submit")}} </b-button>
+            <b-button class="button button--primary" type="submit"> {{ $t("submit")}} </b-button>
           </div>
         </div>
       </form>
@@ -124,18 +124,6 @@ textarea {
     margin-bottom: 15px;
     display: block;
     font-weight: 700;
-  }
-}
-
-.submit {
-  background: $blue;
-  color: white;
-  text-transform: capitalize;
-  border-radius: 0;
-
-  &:hover {
-    background: $light-blue !important;
-    color: white !important;
   }
 }
 </style>

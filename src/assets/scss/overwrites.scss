@@ -2,7 +2,8 @@
 
 .button {
   border: none !important;
-
+  text-transform: capitalize;
+  
   &--primary {
     background-color: $blue;
 
