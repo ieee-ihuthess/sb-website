@@ -14,9 +14,12 @@
       </a>
     </div>
     <hr />
-    <span class="credit"
-      >© IEEE International Hellenic University, Thessaloniki Department</span
-    >
+    <div class="credits">
+      <span class="credit">© IEEE International Hellenic University, Thessaloniki Department</span>
+      <a target="_blank" class="reference" href="https://www.vecteezy.com/free-vector/cartoon"
+        >Cartoon Vectors by Vecteezy</a
+      >
+    </div>
   </footer>
 </template>
 
@@ -93,8 +96,16 @@ hr {
   width: 70px;
 }
 
-.credit {
+.credits {
+  display: flex;
+  flex-direction: column;
   color: white;
   margin-top: 20px;
+}
+
+.reference {
+  color: rgb(214, 214, 214);
+  margin-top: 10px;
+  font-size: 12px;
 }
 </style>

@@ -30,6 +30,7 @@ import {
   faLeanpub,
   faGithub,
   faGitlab,
+  faFacebookF,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faFileCode,
@@ -48,6 +49,7 @@ config.autoAddCss = false;
 
 library.add(
   faFacebook,
+  faFacebookF,
   faInstagram,
   faLinkedin,
   faGithub,
@@ -100,7 +102,7 @@ export default function(Vue, { router, head, isClient }) {
   });
   Vue.use(Cloudinary, {
     configuration: { cloudName: "dk5dlrnv1" },
-  }); 
+  });
   Vue.use(VBScrollspyPlugin);
   Vue.use(NavPlugin);
   Vue.use(AlertPlugin);
