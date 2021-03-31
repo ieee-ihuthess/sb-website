@@ -39,6 +39,7 @@ import {
   faChevronDown,
   faTimes,
   faFilePowerpoint,
+  faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Cloudinary from "cloudinary-vue";
@@ -59,7 +60,8 @@ library.add(
   faGraduationCap,
   faUserFriends,
   faTimes,
-  faFilePowerpoint
+  faFilePowerpoint,
+  faEnvelope
 );
 
 export default function(Vue, { router, head, isClient }) {
@@ -98,16 +100,7 @@ export default function(Vue, { router, head, isClient }) {
   });
   Vue.use(Cloudinary, {
     configuration: { cloudName: "dk5dlrnv1" },
-  });
-  Vue.use(
-    VBScrollspyPlugin,
-    NavPlugin,
-    AlertPlugin,
-    CardPlugin,
-    LayoutPlugin,
-    ButtonPlugin,
-    CarouselPlugin
-  );
+  }); 
   Vue.use(VBScrollspyPlugin);
   Vue.use(NavPlugin);
   Vue.use(AlertPlugin);

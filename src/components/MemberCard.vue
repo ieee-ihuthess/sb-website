@@ -2,7 +2,7 @@
   <div class="member">
     <g-image :src="member.image" :alt="member.name" width="250" />
     <div class="member__info">
-      <h4 class="member__name">{{ member.name }}</h4>
+      <h3 class="member__name">{{ member.name }}</h3>
       <h4 class="member__designation">{{ member.designation }}</h4>
     </div>
     <ul class="member__social-list">

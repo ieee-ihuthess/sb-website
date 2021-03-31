@@ -2,7 +2,8 @@
 
 .button {
   border: none !important;
-
+  text-transform: capitalize;
+  
   &--primary {
     background-color: $blue;
 
@@ -45,5 +46,22 @@
       color: white !important;
       background: $blue !important;
     }
+  }
+}
+
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+
+  &:focus {
+    clip: auto;
+    height: auto;
+    overflow: auto;
+    position: absolute;
+    width: auto;
   }
 }
