@@ -20,10 +20,13 @@
       </div>
     </div>
     <div class="event__info-container">
-      <h4 class="event__title">
+      <h3 class="event__title">
         {{ event.title }}
-      </h4>
-      <p class="event__description" v-html="getPreviewHtml(event.content, event.title)"></p>
+      </h3>
+      <p
+        class="event__description"
+        v-html="getPreviewHtml(event.content, event.title)"
+      ></p>
       <br />
     </div>
     <b-button

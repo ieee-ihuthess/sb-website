@@ -9,7 +9,8 @@
         target="_blank"
         class="social-link"
       >
-        <font-awesome :icon="['fab', link.icon]" size="2x" />
+        <font-awesome aria-hidden="true" :icon="[link.iconType, link.icon]" size="2x" />
+        <span class="visually-hidden">{{ link.text }}</span>
       </a>
     </div>
     <hr />
@@ -26,19 +27,33 @@ export default {
       socialLinks: [
         {
           icon: "facebook",
+          iconType: "fab",
+          text: "Facebook page",
           to: "https://www.facebook.com/ieee.ihuthess/",
         },
         {
           icon: "instagram",
+          iconType: "fab",
+          text: "Instagram page",
           to: "https://www.instagram.com/ieee.ihuthess/",
         },
         {
           icon: "youtube",
+          iconType: "fab",
+          text: "YouTube channel",
           to: "https://www.youtube.com/channel/UCmzjQYFb33sHrWKVWv-VW0A",
         },
         {
           icon: "github",
+          iconType: "fab",
+          text: "GitHub page",
           to: "https://github.com/ieee-ihuthess",
+        },
+        {
+          icon: "envelope",
+          iconType: "fas",
+          text: "Email",
+          to: "mailto:ieeeihuthessaloniki@gmail.com",
         },
       ],
     };
@@ -47,6 +62,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "~/assets/scss/variables";
+@import "~/assets/scss/overwrites";
 
 .footer {
   margin-top: 100px;

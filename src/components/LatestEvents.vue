@@ -56,6 +56,7 @@ export default {
 };
 </script>
 
+
 <style lang="scss">
 .events {
   .owl-dot {
@@ -63,3 +64,4 @@ export default {
   }
 }
 </style>
+
