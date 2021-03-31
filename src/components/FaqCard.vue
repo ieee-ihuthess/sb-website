@@ -101,6 +101,12 @@ export default {
     }
   }
 
+  &__top-wrapper {
+    &:focus {
+      outline: none;
+    }
+  }
+
   &__icon.not-collapsed {
     color: $dark-gray;
     transform: rotate(0deg);
