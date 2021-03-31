@@ -1,6 +1,6 @@
 <template>
   <div>
-    <transition appear name="slide-fade">
+    <transition name="slide-fade">
       <loading-overlay v-if="mountOverlay" />
     </transition>
     <div :class="showContent ? 'layout' : 'layout layout--hidden'">
@@ -19,11 +19,9 @@ import TheFooter from "~/components/Footer.vue";
 import LoadingOverlay from "~/components/LoadingOverlay.vue";
 
 export default {
-  async mounted() {
-    await document.fonts.ready;
-    this.$nextTick(function() {
-      this.handleLoad();
-    });
+  mounted() {
+    this.mountOverlay = true;
+    this.handleLoad();
   },
   methods: {
     handleLoad() {
@@ -35,7 +33,7 @@ export default {
   },
   data() {
     return {
-      mountOverlay: true,
+      mountOverlay: false,
       showContent: false,
       loaderMS: 2000,
     };

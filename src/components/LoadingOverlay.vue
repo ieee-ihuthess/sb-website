@@ -7,10 +7,6 @@
 
 <script>
 export default {
-  props: {},
-  mounted() {
-    this.path_length = this.$refs["path"].getTotalLength();
-  },
   data() {
     return {
       logosrc: require("@/assets/svg/overlay_logo.svg"),
