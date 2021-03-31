@@ -6,7 +6,7 @@ socialLinks:
   facebook: https://www.facebook.com/dpliakos
   instagram: "#"
   github: https://github.com/dPliakos
-  gitlab: "#"
-  linkedin: "#"
+  gitlab: "https://gitlab.com/dpliakos"
+  linkedin: "https://www.linkedin.com/in/dimitris-pliakos-847b2291/"
 date: 2021-02-11T10:45:15.930Z
 ---
