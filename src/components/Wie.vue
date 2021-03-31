@@ -16,8 +16,8 @@
         target="_blank"
         class="wie__cta btn button--outlined "
       >
-        <font-awesome :icon="['fab', 'facebook-f']" size="1x" />
-        <span> WiE Page</span>
+        <font-awesome :icon="['fab', 'facebook-f']" size="1x" class="mr-2"/>
+        <span> {{$t("wieCta")}} </span>
       </a>
       <img :src="image" class="wie__image" />
     </div>
@@ -51,6 +51,14 @@ export default {
   &__quote {
     grid-area: quote;
 
+    &:after {
+    content: "";
+    display: block;
+    width: 100px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid $pale-blue;
+}
+
     h3 {
       font-size: 1.3rem;
     }
@@ -58,7 +66,7 @@ export default {
 
   &__description {
     grid-area: description;
-    font-size: 1.1rem;
+    font-size: 1.3em !important;
   }
 
   &__cta {
