@@ -15,6 +15,7 @@ import {
   CarouselPlugin,
   NavbarPlugin,
   ModalPlugin,
+  SpinnerPlugin,
 } from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
@@ -121,6 +122,7 @@ export default function(Vue, { router, head, isClient }) {
   Vue.use(VueTypedJs);
 
   Vue.use(Particles);
+  Vue.use(SpinnerPlugin);
   if (process.isClient) {
     const Carousel = require("vue-owl-carousel");
     Vue.component("carousel", Carousel);
