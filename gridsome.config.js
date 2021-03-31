@@ -40,5 +40,16 @@ module.exports = {
         publicPath: `/admin`,
       },
     },
+    {
+      use: 'gridsome-plugin-purgecss',
+      options: {
+        content: [
+          './src/**/*.vue',
+          './src/**/*.js',
+          './src/**/*.md'
+        ],
+        defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
+      }
+    }
   ],
 };
