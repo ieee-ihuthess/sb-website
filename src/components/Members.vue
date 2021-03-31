@@ -4,7 +4,7 @@
     <ClientOnly>
       <carousel
         :nav="false"
-        :navText="['🠔', '🠖']"
+        :navText="['Prev', 'Next']"
         :autoWidth="false"
         :responsive="{
           0: { items: 1, center: true, dots: false, nav: true, margin: -70 },
