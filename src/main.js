@@ -98,15 +98,6 @@ export default function(Vue, { router, head, isClient }) {
   Vue.use(Cloudinary, {
     configuration: { cloudName: "dk5dlrnv1" },
   });
-  Vue.use(
-    VBScrollspyPlugin,
-    NavPlugin,
-    AlertPlugin,
-    CardPlugin,
-    LayoutPlugin,
-    ButtonPlugin,
-    CarouselPlugin
-  );
   Vue.use(VBScrollspyPlugin);
   Vue.use(NavPlugin);
   Vue.use(AlertPlugin);
