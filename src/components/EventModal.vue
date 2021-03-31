@@ -126,7 +126,7 @@ export default {
 .event-modal {
   &__cover {
     width: 100%;
-    background: #191148;
+    background: #0a1731;
     position: relative;
 
     > img {
