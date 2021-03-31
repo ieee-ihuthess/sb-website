@@ -10,9 +10,9 @@
         :test="'toggle' + index"
         v-b-toggle="'accordion' + index"
       >
-        <h4 class="question__heading" :ref="'heading' + index">
+        <h3 class="question__heading" :ref="'heading' + index">
           {{ question.question }}
-        </h4>
+        </h3>
         <i class="question__toggle">
           <font-awesome
             :ref="'icon' + index"
