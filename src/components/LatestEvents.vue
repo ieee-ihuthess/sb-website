@@ -6,11 +6,12 @@
         <carousel
           :nav="false"
           :navText="['prev', 'next']"
-          :margin="-50"
           :responsive="{
-            0: { items: 1, center: true, dots: false, nav: true },
-            600: { items: 2, dots: true, nav: false },
-            1000: { items: 3, dots: true, nav: false },
+            0: { items: 1, center: true, dots: false, nav: true, margin: -35 },
+            400: { items: 1, center: true, dots: false, nav: true, margin: -85 },
+            600: { items: 1, center: true, dots: false, nav: true, margin: -125 },
+            768: { items: 2, dots: true, nav: false, margin: -40 },
+            1200: { items: 3, dots: true, nav: false, margin: -50 },
           }"
         >
           <event-card
@@ -51,6 +52,16 @@ query {
 import EventCard from "@/components/EventCard.vue";
 
 export default {
-  components: { EventCard }
+  components: { EventCard },
 };
 </script>
+
+
+<style lang="scss">
+.events {
+  .owl-dot {
+    margin-top: 40px;
+  }
+}
+</style>
+

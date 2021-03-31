@@ -2,10 +2,9 @@
   <div class="event">
     <div class="event__top_wrapper">
       <cld-image
+        class="event__image"
         :publicId="getImageCloudinaryId(event.image)"
         secure="true"
-        height="180"
-        width="320"
         loading="lazy"
         :alt="event.title + ' cover image'"
       >
@@ -14,15 +13,10 @@
       <div class="event__date">
         <span>{{ new Date(event.date).getDate() }}</span>
         <br />
-        <span>{{
-          new Date(event.date).toLocaleString("default", { month: "short" })
-        }}</span>
+        <span>{{ new Date(event.date).toLocaleString("default", { month: "short" }) }}</span>
       </div>
-      <div
-        class="event__upcoming-banner"
-        v-if="new Date(event.date) > new Date()"
-      >
-        {{$t("upcoming")}}
+      <div class="event__upcoming-banner" v-if="new Date(event.date) > new Date()">
+        {{ $t("upcoming") }}
       </div>
     </div>
     <div class="event__info-container">
@@ -46,10 +40,9 @@
       class="button--secondary event__show-button"
       style="border: none !important;"
       v-b-modal="'eventModal' + index"
-      >
-      {{$t("join")  }}
-      </b-button
     >
+      {{ $t("join") }}
+    </b-button>
     <event-modal :event="event" :index="index"></event-modal>
   </div>
 </template>
@@ -73,13 +66,13 @@ export default {
   },
   methods: {
     getPreviewHtml(content, title) {
-      const HTMLtext = content.replace("<p>", "").replace("</p>", "");
-      let substringLength = 0;
-      if (title.length < 29) substringLength = 420;
-      else if (title.length >= 29 && title.length < 58) substringLength = 350;
-      else substringLength = 300;
-      if (content.length <= substringLength) return HTMLtext;
-      else return HTMLtext.substring(0, substringLength) + "...";
+      const HTMLtext = content.replaceAll("<p>", "").replaceAll("</p>", "");
+      const maxTextLength = 400;
+      const totalTextLength = (content + title).length;
+      const diff = maxTextLength - totalTextLength;
+      if (diff < 0) {
+        return HTMLtext.slice(0, diff) + "..."; //remove chars from the end of paragraph
+      } else return HTMLtext;
     },
   },
 };
@@ -92,8 +85,9 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 15px;
-  width: 350px;
-  height: 600px;
+  width: 300px;
+  height: 615px;
+  justify-content: space-around;
 
   @media (max-width: $screen-md-min) {
     margin-bottom: 60px;
@@ -102,11 +96,7 @@ export default {
   &__top_wrapper {
     display: inline-block;
     position: relative;
-  }
-
-  &__image {
-    height: 180px;
-    width: 320px;
+    width: 100%;
   }
 
   &__date {
@@ -167,6 +157,16 @@ export default {
     width: 200px;
     margin-top: auto;
     text-transform: capitalize;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    width: 350px;
+    height: 600px;
+
+    &__image {
+      height: 180px;
+      width: 320px;
+    }
   }
 }
 </style>

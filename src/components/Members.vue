@@ -1,15 +1,19 @@
 <template>
   <section id="members" class="section">
-    <h2 class="title">{{ $t('members') }}</h2>
+    <h2 class="title">{{ $t("members") }}</h2>
     <ClientOnly>
       <carousel
         :nav="false"
         :navText="['prev', 'next']"
-        :margin="-50"
+        :autoWidth="false"
         :responsive="{
-          0: { items: 1, center: true, dots: false, nav: true },
-          600: { items: 2, dots: true, nav: false },
-          1000: { items: 4, dots: true, nav: false },
+          0: { items: 1, center: true, dots: false, nav: true, margin: -70 },
+          400: { items: 1, center: true, dots: false, nav: true, margin: -100 },
+          470: { items: 1, center: true, dots: false, nav: true, margin: -180 },
+          768: { items: 2, dots: true, nav: false, margin: -70 },
+          992: { items: 3, dots: true, nav: false, margin: -70 },
+          1200: { items: 3, dots: true, nav: false, margin: -100 },
+          1250: { items: 4, dots: true, nav: false, margin: -70 },
         }"
       >
         <member-card
@@ -70,7 +74,8 @@ export default {
   }
 }
 
-.owl-prev, .owl-next {
-  background: $blue !important;  
+.owl-prev,
+.owl-next {
+  background: $blue !important;
 }
 </style>
