@@ -1,7 +1,7 @@
 ---
 title: All you need to know about Google Summer of Code 2021
 image: https://res.cloudinary.com/dk5dlrnv1/image/upload/v1617037245/events/160198106_4301751676521600_8080771932453069947_o.jpg_i82thm.jpg
-date: 2021-03-29T16:59:20.745Z
+date: 2021-03-17T17:59:20.745Z
 links:
   youtube: "#"
   facebook: https://www.facebook.com/events/124062646319561/
