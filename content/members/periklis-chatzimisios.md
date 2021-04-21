@@ -8,5 +8,5 @@ socialLinks:
   github: "#"
   gitlab: "#"
   linkedin: https://www.linkedin.com/in/periklis-chatzimisios/
-date: 2021-02-10T10:43:25.930Z
+date: 2019-02-10T10:43:00.000Z
 ---
