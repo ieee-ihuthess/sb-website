@@ -10,9 +10,9 @@ registrationLink: "#"
 ---
 Mε αφορμή την ημέρα της γυναίκας (8 Μαρτίου) και στα πλαίσια του ΙEEE Greece Section Women In Engineering Week 2021, το IEEE Women In Engineering Affinity Group του IEEE Student Branch IHU Thessaloniki, διοργανώνει μια πολύ ενδιαφέρουσα εκδήλωση!
 
-❓Θέμα: "Women's role in Engineering & Technology"
+Θέμα: "Women's role in Engineering & Technology"
 
-💁‍♀️Ομιλήτριες: Δρ.Κατερίνα Ασδρέ, Δρ.Αγάπη Μεσοδιακάκη
+Ομιλήτριες: Δρ.Κατερίνα Ασδρέ, Δρ.Αγάπη Μεσοδιακάκη
 
 Λίγα βιογραφικά στοιχεία για τις ομιλήτριες:
 Η Κατερίνα Ασδρέ είναι κάτοχος πτυχίου Πληροφορικής,

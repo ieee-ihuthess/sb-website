@@ -11,9 +11,9 @@ registrationLink: "#"
 Το Φοιτητικό Παράρτημα IEEE International Hellenic University (Thessaloniki) συνεχίζει την πραγματοποίηση 💻 online ομιλιών μέσω της πρωτοβουλίας IEEEIHUThess goes online!
 Σας προσκαλούμε στη δεύτερη παρουσίαση με θέμα: "Reverse Engineering - APT Attacks" που διοργανώνουμε σε συνεργασία με το OWASP IHU Student Chapter.
 
-- 📆 Τετάρτη 22 Απριλίου 2020
-- 🕖 στις 18:00
-- 💻 στην πλατφόρμα Zoom
-- 💁🏻‍♂️ με ομιλητή τον Χαραλάμπη Κακλαμάνο, OWASP IHU Student Chapter Leader.
+- Τετάρτη 22 Απριλίου 2020
+- Στις 18:00
+- Στην πλατφόρμα Zoom
+- Με ομιλητή τον Χαραλάμπη Κακλαμάνο, OWASP IHU Student Chapter Leader.
 
-Μέσω της παρουσίασης θα γνωρίσουμε τι είναι το Reverse Engineering, πως χρησιμοποιείται, τι είναι οι APT attacks και άλλα πολλά! 
+Μέσω της παρουσίασης θα γνωρίσουμε τι είναι το Reverse Engineering, πως χρησιμοποιείται, τι είναι οι APT attacks και άλλα πολλά!

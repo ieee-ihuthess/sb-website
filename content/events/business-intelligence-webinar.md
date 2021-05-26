@@ -16,4 +16,3 @@ Webinar on “Business Intelligence in the Cloud with Microsoft PowerBI”| Πα
 💁🏻‍♂‍ Ποιος: Andreas Hubner (Managing Director) and Stefanos Tragalos (IT Project Manager)
 
 Στο τέλος της εκδήλωσης θα ακολουθήσει συζήτηση σχετικά με τις δυνατότητες απασχόλησης στην Γερμανία και το εξωτερικό!
-

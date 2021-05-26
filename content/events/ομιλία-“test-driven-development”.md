@@ -10,12 +10,14 @@ registrationLink: "#"
 ---
 Το Φοιτητικό Παράρτημα IEEE International Hellenic University (Thessaloniki) συνεχίζει την πραγματοποίηση 💻 online ομιλιών μέσω της πρωτοβουλίας IEEEIHUThess goes online!
 Μετά από την στήριξη σας στις πρώτες 3 ομιλίες, συνεχίζουμε δυναμικά και σας προσκαλούμε αυτή την Τετάρτη στην διαδικτυακή ομιλία σχετική με το Software: “Test Driven Development”.
-- 📆 Τετάρτη 6 Μαΐου 2020
-- 🕖 18:00-19:00
-- 💻 στην πλατφόρμα Zoom
-- 💁🏻‍♂‍ με ομιλητή τον Αλέξη Παυλίδη, Apprentice Software Craftsman at Codurance (London)
+
+- Τετάρτη 6 Μαΐου 2020
+- 18:00-19:00
+- Στην πλατφόρμα Zoom
+- Με ομιλητή τον Αλέξη Παυλίδη, Apprentice Software Craftsman at Codurance (London)
 
 Μέσω της παρουσίασης θα συζητήσουμε για το Test Driven Developement (TDD) όπως:
+
 - Τι είναι το TDD
 - Γιατί είναι χρήσιμο
 - Πως χρησιμοποιείται
