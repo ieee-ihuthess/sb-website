@@ -16,7 +16,4 @@ registrationLink: https://forms.gle/Jy2CHXXeuuvVoLAe7
 - Zoom Meetings
 - Oμιλητής: Γιώργος Καρανικόλας, φοιτητής του τμήματος Μηχανικών Πληροφορικής & Ηλεκτρονικών συστημάτων του Διεθνούς Πανεπιστημίου της Ελλάδος.
 
-Το link του Zoom Meeting που θα φιλοξενήσει τo event μας θα σας αποσταλεί λίγο πριν την έναρξή της.
-
-Σας περιμένουμε!
 #ieee #ieeeihuthess #ieeexp #onlineevent #androiddevelopment
