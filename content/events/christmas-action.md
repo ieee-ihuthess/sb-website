@@ -8,7 +8,7 @@ links:
   slides: "#"
 registrationLink: "#"
 ---
-![❗️](https://static.xx.fbcdn.net/images/emoji.php/v9/t50/1/16/2757.png)![❗️](https://static.xx.fbcdn.net/images/emoji.php/v9/t50/1/16/2757.png)![🎄](https://static.xx.fbcdn.net/images/emoji.php/v9/t7/1/16/1f384.png)Με αφορμή τον ερχομό των Χριστουγέννων το IEEE Student Branch (International Hellenic University - Thessaloniki) συλλέγει τρόφιμα και είδη υγιεινής με σκοπό να ενισχύσει τις ομάδες "Ο άλλος άνθρωπος" Κοινωνική κουζίνα “Ο Άλλος Άνθρωπος” Θεσσαλονίκη και Albatros.
+Με αφορμή τον ερχομό των Χριστουγέννων το IEEE Student Branch (International Hellenic University - Thessaloniki) συλλέγει τρόφιμα και είδη υγιεινής με σκοπό να ενισχύσει τις ομάδες "Ο άλλος άνθρωπος" Κοινωνική κουζίνα “Ο Άλλος Άνθρωπος” Θεσσαλονίκη και Albatros.
 
 ![🛍️](https://static.xx.fbcdn.net/images/emoji.php/v9/taf/1/16/1f6cd.png) ΤΙ ΣΥΛΛΕΓΟΥΜΕ :
 
