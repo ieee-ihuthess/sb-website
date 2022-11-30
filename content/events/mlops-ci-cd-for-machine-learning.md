@@ -8,4 +8,4 @@ links:
   slides: "#"
 registrationLink: https://forms.gle/v9FFCXbm56KZcyAp9
 ---
-As participant of the Google Summer of Code 2022 Radis was responsible to automate the ML model evaluation process for FLINT (Full Lands Integration Tool),  an open-source software technology designed for measurement-reporting-verifying greenhouse gas emissions. At this event he will introduce us to the design process and tooling based on the experience that he gained
+As participant of the Google Summer of Code 2022 Radis was responsible for applying ci pronciples in technically demanding workflows for an organization specializing in MRV software. At this event he will introduce us to the design process, tooling and implementation of MLOps practices based on the experience that he gained
