@@ -4,7 +4,7 @@ image: https://res.cloudinary.com/dk5dlrnv1/image/upload/v1669807934/events/fb_p
 date: 2022-12-07T16:30:43.973Z
 links:
   youtube: "#"
-  facebook: "#"
+  facebook: https://www.facebook.com/events/519598829896404
   slides: "#"
 registrationLink: https://forms.gle/v9FFCXbm56KZcyAp9
 ---
