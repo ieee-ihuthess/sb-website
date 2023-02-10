@@ -119,7 +119,7 @@ media intelligence και η eΜΜ για αποδελτίωση ραδιοφώ�
 περισσότερους από 2,500 επαγγελματίες, διαθέτοντας σημαντική εμπειρία και γνώση σε ελεγκτικές,
 συμβουλευτικές, χρηματοοικονομικές, φορολογικές και νομικές υπηρεσίες και σε υπηρεσίες
 διαχείρισης κινδύνου.  
- 
+
 Ακολουθούμε το επιχειρηματικό μοντέλο της Deloitte και μέσα από την συνεργασία όλων των ομάδων
 των επαγγελματιών μας, αξιοποιούμε πάντα τα πιο σύγχρονα εργαλεία και τεχνολογίες σε συνδυασμό
 με τις κατάλληλες δεξιότητές μας, ώστε να προσφέρουμε καινοτόμες και αποτελεσματικές λύσεις
@@ -143,6 +143,8 @@ media intelligence και η eΜΜ για αποδελτίωση ραδιοφώ�
 
 * #### Interlife
 
+  ![](https://res.cloudinary.com/dk5dlrnv1/image/upload/v1676039689/events/carrer%20day%2023/Companies%20Logo/interlife_logo_ubgl6n.png "Interlife")
+
  Διεύθυνση: 14ο χλμ. Ε.Ο. Θεσσαλονίκης - Πολυγύρου
 570 01 Θέρμη, Θεσσαλονίκη
 
@@ -159,6 +161,8 @@ media intelligence και η eΜΜ για αποδελτίωση ραδιοφώ�
 [cvs@artsound.gr](mailto:cvs@artsound.gr)
 
 * #### ArtAbout
+
+  ![](https://res.cloudinary.com/dk5dlrnv1/image/upload/v1676039684/events/carrer%20day%2023/Companies%20Logo/artabout_logo_bkfxrc.png "ArtAbout")
 
 Περιγραφή:
 
@@ -200,20 +204,21 @@ eshops και εφαρμογών (custom πλατφόρμες, κινητές ε
   Ανάπτυξη ιστοσελίδων, διαδικτυακών εφαρμογών και eshop. Χρήση των πιο νέων τεχνολογιών και
   καθημερινή τριβή με πραγματικά project και πελάτες.
   Απαραίτητες γνώσεις:
- * PHP
- * JavaScript
- * MySQL
- * HTML/CSS
+
+* PHP
+* JavaScript
+* MySQL
+* HTML/CSS
 
   Πλεονεκτήματα θέσης
-  * Απόκτηση εμπειρίας και τεχνογνωσίας σε πραγματικές συνθήκες εργασίας στις πλατφόρμες
+
+* Απόκτηση εμπειρίας και τεχνογνωσίας σε πραγματικές συνθήκες εργασίας στις πλατφόρμες
   WordPress και Magento
-  * Υψηλή εξειδίκευση σε ηλεκτρονικά καταστήματα.
-  * Ανάθεση εργασιών σε καινοτόμα projects.
-  * Προοπτική μόνιμης απασχόλησης μετά την λήξη της πρακτικής.
+* Υψηλή εξειδίκευση σε ηλεκτρονικά καταστήματα.
+* Ανάθεση εργασιών σε καινοτόμα projects.
+* Προοπτική μόνιμης απασχόλησης μετά την λήξη της πρακτικής.
 
 [info@artabout.gr](mailto:info@artabout.gr)
-
 
 * #### DORMED HELLAS SA
 
@@ -221,7 +226,6 @@ eshops και εφαρμογών (custom πλατφόρμες, κινητές ε
 Θεσσαλονίκη
 
 * #### ELBIS - MC Chargers
-
 
 Περιγραφή:
 
@@ -260,16 +264,16 @@ eshops και εφαρμογών (custom πλατφόρμες, κινητές ε
 
  Περιγραφή Θέσεων Εργασίας ή Θέσεων Πρακτικής Άσκησης:
 
-
 To R&D στελεχώνεται από μηχανικούς διαφορετικών ειδικοτήτων και συνεχώς υπάρχει
 απαίτηση για στελέχωση νέων θέσεων
 Οι θέσεις που προκύπτουν αφορούν
- * Frond-end & Back-end developers
- * Software Developers
- * Embedded System Engineers
- * Βιομηχανικούς Σχεδιαστές
- * Ηλεκτρονικούς Μηχανικούς
- * Ηλεκτρολόγους Μηχανικούς
+
+* Frond-end & Back-end developers
+* Software Developers
+* Embedded System Engineers
+* Βιομηχανικούς Σχεδιαστές
+* Ηλεκτρονικούς Μηχανικούς
+* Ηλεκτρολόγους Μηχανικούς
 
 [info@ELBIS.gr](mailto:info@ELBIS.gr)
 
@@ -288,6 +292,8 @@ To R&D στελεχώνεται από μηχανικούς διαφορετικ
 [careers@foodtecsolutions.com](mailtocareers@foodtecsolutions.com)
 
 * #### HAM Systems
+
+  ![](https://res.cloudinary.com/dk5dlrnv1/image/upload/v1676039689/events/carrer%20day%2023/Companies%20Logo/ham_logo_mkygaw.png "HAM")
 
 Περιγραφή:
 
@@ -314,32 +320,33 @@ To R&D στελεχώνεται από μηχανικούς διαφορετικ
 Περιγραφή Θέσεων Εργασίας ή Θέσεων Πρακτικής Άσκησης:
 
 Απασχόληση
+
 * Πλήρης ή μερική απασχόληση
 * Θέση εργασίας ή Θέση πρακτικής άσκησης
-Καθήκοντα / Υπευθυνότητες
+  Καθήκοντα / Υπευθυνότητες
 * Συγκόλληση ηλεκτρονικών κυκλωμάτων (είτε με κολλητήρι είτε με αέρα)
 * Συναρμολόγηση και προγραμματισμός συσκευών
 * Έλεγχος ορθής λειτουργίας συσκευών
 * Πακετάρισμα συσκευών
 * Συμβάλει στην ομαδική προσπάθεια για την επίτευξη της ικανοποίησης των πελατώνΕνδεδειγμένα Προσόντα / Γνώσεις
-Ικανότητες
+  Ικανότητες
 * Πολύ καλή γνώση χειρισμού Η/Υ και smartphones (Android/iOS)
 * Καλή γνώση Αγγλικής Γλώσσας (Πτυχίο Αγγλικών επιπέδου B2 θα εκτιμηθεί)
 * Βασική γνώση δικτύων (Wi-Fi, Bluetooth, GSM)
 * Αναλυτική ικανότητα και επίλυση προβλημάτων
 * Οργανωτική ικανότητα
-Εμπειρία / προϋπηρεσία
-Δεν απαιτείται
-Η εταιρεία προσφέρει
+  Εμπειρία / προϋπηρεσία
+  Δεν απαιτείται
+  Η εταιρεία προσφέρει
 * Πλήρες πακέτο αποδοχών (σταθερός μισθός και ασφάλιση)
 * Συνεχής εκπαίδευση
 * Ευχάριστο εργασιακό περιβάλλον
 
 [hr@hamsystems.eu](mailto:hr@hamsystems.eu)
 
-
 * #### Hellas Signs, Ελληνικές Επιγραφές
 
+  ![](https://res.cloudinary.com/dk5dlrnv1/image/upload/v1676039686/events/carrer%20day%2023/Companies%20Logo/hellasSigns_logo_lcpccj.jpg "Hellas Signs")
 
 Περιγραφή:
 
@@ -366,14 +373,15 @@ super market, εστίασης, πρατηρίων …
 
 Διεύθυνση: Είσοδος Α,         ΒΙΠΕΘ Σίνδου
 
-[Παρουσίαση] (https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/B13_Presentation2022%20-%20%ce%95%ce%bb%ce%bb%ce%b7%ce%bd%ce%b9%ce%ba%ce%ad%cf%82%20%ce%95%cf%80%ce%b9%ce%b3%cf%81%ce%b1%cf%86%ce%ad%cf%82.pptx)
+[Παρουσίαση](https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/B13_Presentation2022%20-%20%ce%95%ce%bb%ce%bb%ce%b7%ce%bd%ce%b9%ce%ba%ce%ad%cf%82%20%ce%95%cf%80%ce%b9%ce%b3%cf%81%ce%b1%cf%86%ce%ad%cf%82.pptx)
 
-[Περιγραφή Θέσεων Εργασίας ή Θέσεων Πρακτικής Άσκησης] (https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/B12_HAM_%ce%a0%ce%b5%cf%81%ce%b9%ce%b3%cf%81%ce%b1%cf%86%ce%ae%ce%95%cf%81%ce%b3%ce%b1%ce%b6%cf%8c%ce%bc%ce%b5%ce%bd%ce%bf%ce%95%cf%81%ce%b3%ce%b1%cf%83%cf%84%ce%b7%cf%81%ce%af%ce%bf%cf%85%ce%97%ce%bb%ce%b5%ce%ba%cf%84%cf%81%ce%bf%ce%bd%ce%b9%ce%ba%cf%8e%ce%bd.pdf)
+[Περιγραφή Θέσεων Εργασίας ή Θέσεων Πρακτικής Άσκησης](https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/B12_HAM_%ce%a0%ce%b5%cf%81%ce%b9%ce%b3%cf%81%ce%b1%cf%86%ce%ae%ce%95%cf%81%ce%b3%ce%b1%ce%b6%cf%8c%ce%bc%ce%b5%ce%bd%ce%bf%ce%95%cf%81%ce%b3%ce%b1%cf%83%cf%84%ce%b7%cf%81%ce%af%ce%bf%cf%85%ce%97%ce%bb%ce%b5%ce%ba%cf%84%cf%81%ce%bf%ce%bd%ce%b9%ce%ba%cf%8e%ce%bd.pdf)
 
 [info@hellassigns.gr](mailto:info@hellassigns.gr)
 
 * #### IARTS IKE
 
+  ![](https://res.cloudinary.com/dk5dlrnv1/image/upload/v1676039687/events/carrer%20day%2023/Companies%20Logo/iarts_logo_y3ynut.png "iarts")
 
 Περιγραφή:
 
@@ -386,7 +394,6 @@ super market, εστίασης, πρατηρίων …
 Κύπρο και είναι επίσημος συνεργάτης του Συλλόγου Μεσιτών Αττικής έχοντας
  κατασκευάσει το Real Estate Portal e-akinita.gr
 
-
 Διεύθυνση:
 Σκιάθου 2, ΤΚ 54646, Θεσσαλονίκη 
 
@@ -396,6 +403,7 @@ super market, εστίασης, πρατηρίων …
 
 * #### ITSAUR
 
+![](https://res.cloudinary.com/dk5dlrnv1/image/upload/v1676039687/events/carrer%20day%2023/Companies%20Logo/itsaur_logo_kereuz.png "ITSAUR")
 
 Περιγραφή:
 
@@ -420,6 +428,7 @@ Logistics, Cargo Services και Πλήρως Αυτοματοποιημένα P
 
 * #### Lancom-Battlenet
 
+![](https://res.cloudinary.com/dk5dlrnv1/image/upload/v1676039688/events/carrer%20day%2023/Companies%20Logo/lancom_logo_wmde6u.png "LANCOM")
 
 Περιγραφή:
 
@@ -441,61 +450,61 @@ Security Services, Colocation, Cloud PBX,) σε περισσότερες από 
 Διεύθυνση:
 Β. Ηρακλείου 40
 
-[Παρουσίαση]
+\[Παρουσίαση]
 
 Περιγραφή Θέσεων Εργασίας ή Θέσεων Πρακτικής Άσκησης:
 
 * 3 θέσεις πρακτικής για Software/Web Developer είναι διαθέσιμες
-Εκτός από όρεξη για μάθηση, θα μας άρεσε πολύ να έχεις:
-Εμπειρία Javascript ή PHP Frameworks
-Εμπειρία σε MySQL, επιθυμητά και σε Redis
-Team development με χρήση GIT
-Επιθυμητή εμπειρία σε System Administration
-Να τηρείς τις προθεσμίες και να πιάνεις τους στόχους σου
-Να έχεις Ομαδικό πνεύμα και οργανωτικές ικανότητες
-Μία από τις θέσεις Software/Web Developer θα είναι δική σου στο τέλος τις πρακτικής.
-Θα ασχοληθείς και θα είσαι υπεύθυνος/η για την ανάπτυξη των εσωτερικών Web
-application της εταιρίας.
-Θα εργαστείς σε ήδη υπάρχοντα Projects σε συνεργασία με την υπόλοιπη ομάδα.
-Θα δημιουργήσεις τα δικά σου Projects και θα μάθεις να τα ολοκληρώνεις με σωστές
-διαδικασίες
+  Εκτός από όρεξη για μάθηση, θα μας άρεσε πολύ να έχεις:
+  Εμπειρία Javascript ή PHP Frameworks
+  Εμπειρία σε MySQL, επιθυμητά και σε Redis
+  Team development με χρήση GIT
+  Επιθυμητή εμπειρία σε System Administration
+  Να τηρείς τις προθεσμίες και να πιάνεις τους στόχους σου
+  Να έχεις Ομαδικό πνεύμα και οργανωτικές ικανότητες
+  Μία από τις θέσεις Software/Web Developer θα είναι δική σου στο τέλος τις πρακτικής.
+  Θα ασχοληθείς και θα είσαι υπεύθυνος/η για την ανάπτυξη των εσωτερικών Web
+  application της εταιρίας.
+  Θα εργαστείς σε ήδη υπάρχοντα Projects σε συνεργασία με την υπόλοιπη ομάδα.
+  Θα δημιουργήσεις τα δικά σου Projects και θα μάθεις να τα ολοκληρώνεις με σωστές
+  διαδικασίες
 * 4 θέσεις Systems Administrator για σένα
-Εδώ θα μάθεις για την διαχείριση πληροφοριακών συστημάτων Unix/Linux και Windows
-Λίγα πράγματα που θα θέλαμε να έχεις ασχοληθεί:
-Γνώσεις Linux / Windows Servers / cPanel/Plesk/Virtualmin
-Apache/Nginx/PHP/Varnish/MySQL/BIND/Exim/Postfix
-User management
-Package management
-BASH &amp; registry scripting
-Virtualization ESXi
-Firewalling, Networking
-Services management
-Στο τέλος μια επιτυχημένης πρακτικής, μια από τις θέσεις του Sysadmin σε περιμένει. Θα
-ασχολείσαι πλέον με:
-Διαχείριση, Συντήρηση και Εγκατάσταση WINDOWS &amp; LINUX servers
-Εντοπισμός και επίλυση τεχνικών θεμάτων (software/networking/hardware)
-Μελέτη, καταγραφή της υπάρχουσας υποδομής &amp; τεκμηρίωση διεργασιών ρουτίνας
-Εξυπηρέτηση πελατών (Helpdesk/Support)
+  Εδώ θα μάθεις για την διαχείριση πληροφοριακών συστημάτων Unix/Linux και Windows
+  Λίγα πράγματα που θα θέλαμε να έχεις ασχοληθεί:
+  Γνώσεις Linux / Windows Servers / cPanel/Plesk/Virtualmin
+  Apache/Nginx/PHP/Varnish/MySQL/BIND/Exim/Postfix
+  User management
+  Package management
+  BASH &amp; registry scripting
+  Virtualization ESXi
+  Firewalling, Networking
+  Services management
+  Στο τέλος μια επιτυχημένης πρακτικής, μια από τις θέσεις του Sysadmin σε περιμένει. Θα
+  ασχολείσαι πλέον με:
+  Διαχείριση, Συντήρηση και Εγκατάσταση WINDOWS &amp; LINUX servers
+  Εντοπισμός και επίλυση τεχνικών θεμάτων (software/networking/hardware)
+  Μελέτη, καταγραφή της υπάρχουσας υποδομής &amp; τεκμηρίωση διεργασιών ρουτίνας
+  Εξυπηρέτηση πελατών (Helpdesk/Support)
 * 3 θέσεις Network Engineer για σένα
-O / H Network Engineer είναι υπεύθυνος για τον έλεγχο, ανάπτυξη και διαχείριση των
-υποδομών δικτύου της Lancom
-Λίγα πράγματα που θα θέλαμε να έχεις ασχοληθεί:
-Πιστοποιήσεις Cisco Routing / Switching θα ληφθούν σημαντικά υπόψη
-Εμπειρία στην χρήση Routers, Voice Gateways, ME Switches, Firewalls
-Εμπειρία με εργαλεία παρακολούθησης και διαχείρισης δικτύων
-Αν η πρακτική σου τελειώσει θετικά, μια από τις θέσεις του Network Engineer σε περιμένει.
-Θα ασχολείσαι πλέον με:
-Διαχείριση βλαβών και υλοποίηση τηλεπικοινωνιακών υπηρεσιών
-Λειτουργία / βελτιστοποίηση του IP Access Δικτύου
-Addressing
-Subnetting
-Switching
-Routing protocols
-OSI model
-L2 VLANS
-NAT/DHCP
-ACL
- 4 θέσεις Infrastructure Engineer για σένα
+  O / H Network Engineer είναι υπεύθυνος για τον έλεγχο, ανάπτυξη και διαχείριση των
+  υποδομών δικτύου της Lancom
+  Λίγα πράγματα που θα θέλαμε να έχεις ασχοληθεί:
+  Πιστοποιήσεις Cisco Routing / Switching θα ληφθούν σημαντικά υπόψη
+  Εμπειρία στην χρήση Routers, Voice Gateways, ME Switches, Firewalls
+  Εμπειρία με εργαλεία παρακολούθησης και διαχείρισης δικτύων
+  Αν η πρακτική σου τελειώσει θετικά, μια από τις θέσεις του Network Engineer σε περιμένει.
+  Θα ασχολείσαι πλέον με:
+  Διαχείριση βλαβών και υλοποίηση τηλεπικοινωνιακών υπηρεσιών
+  Λειτουργία / βελτιστοποίηση του IP Access Δικτύου
+  Addressing
+  Subnetting
+  Switching
+  Routing protocols
+  OSI model
+  L2 VLANS
+  NAT/DHCP
+  ACL
+   4 θέσεις Infrastructure Engineer για σένα
 
 O / H Infrastructure Engineer είναι υπεύθυνος για τις υποδομές της εταιρείας (δικτυακή
 υποδομή και υποδομές Data Center)
@@ -513,18 +522,19 @@ Splicing οπτικών ινών
 , Power Meter)
 Εγκατάσταση εξειδικευμένων εξοπλισμών δικτύου
 Ρύθμιση δικτυακού εξοπλισμού
+
 * 2 θέσεις Presales Engineer για σένα
-O / H Presales Engineer είναι υπεύθυνος της ανάλυσης των αναγκών των πελατών και της
-μελέτης των λύσεων προς κάλυψή τους.
-Εκτός από όρεξη για μάθηση, σε αυτή τη θέση θα σε βοηθούσε πολύ να έχεις:
-Βασικές γνώσεις δικτύων και συστημάτων
-Επικοινωνιακές και διαπραγματευτικές δεξιότητες
-Δυναμική προσωπικότητα
-Προσανατολισμός στην επίτευξη στόχων
-Ικανότητα οργάνωσης εργασιών, συναντήσεων και reports
-Ομαδικό πνεύμα εργασίας
-Πολύ καλή γνώση Αγγλικών
-Δίπλωμα ΙΧ
+  O / H Presales Engineer είναι υπεύθυνος της ανάλυσης των αναγκών των πελατών και της
+  μελέτης των λύσεων προς κάλυψή τους.
+  Εκτός από όρεξη για μάθηση, σε αυτή τη θέση θα σε βοηθούσε πολύ να έχεις:
+  Βασικές γνώσεις δικτύων και συστημάτων
+  Επικοινωνιακές και διαπραγματευτικές δεξιότητες
+  Δυναμική προσωπικότητα
+  Προσανατολισμός στην επίτευξη στόχων
+  Ικανότητα οργάνωσης εργασιών, συναντήσεων και reports
+  Ομαδικό πνεύμα εργασίας
+  Πολύ καλή γνώση Αγγλικών
+  Δίπλωμα ΙΧ
 
 Αν η πρακτική σου τελειώσει θετικά, μια από τις θέσεις του Presales Engineer σε περιμένει.
 Θα ασχολείσαι πλέον με:
@@ -532,25 +542,26 @@ O / H Presales Engineer είναι υπεύθυνος της ανάλυσης τ
 Σχεδιασμός λύσεων virtualization
 Διαπραγμάτευση και συμφωνία τεχνικών προδιαγραφών με τους πελάτες
 Οργάνωση, εποπτεία και παράδοση έργου (project management)
+
 * 2 θέσεις Technical Support Battlenet
-Oι υποψήφιοι/ιες θα ενταχθούν στην ομάδα τεχνικής υποστήριξης των HQ της Battlenet.
-Περιγραφή Θέσης
-Διαχείριση βλαβών σε πρώτο επίπεδο
-Διαχείριση, Συντήρηση και Εγκατάσταση WINDOWS &amp; LINUX servers
-Εντοπισμός και επίλυση τεχνικών θεμάτων (software/networking/hardware)
-Μελέτη, καταγραφή της υπάρχουσας υποδομής &amp; τεκμηρίωση διεργασιών ρουτίνας
-Εγκαταστάσεις συστήματος Battlenet σε καταστήματα στην Ελλάδα και στο εξωτερικό
-Εξυπηρέτηση πελατών (Helpdesk/Support)
-Τήρηση προθεσμιών και εκπλήρωση στόχων
-Ομαδικό πνεύμα και οργανωτικές ικανότητες
+  Oι υποψήφιοι/ιες θα ενταχθούν στην ομάδα τεχνικής υποστήριξης των HQ της Battlenet.
+  Περιγραφή Θέσης
+  Διαχείριση βλαβών σε πρώτο επίπεδο
+  Διαχείριση, Συντήρηση και Εγκατάσταση WINDOWS &amp; LINUX servers
+  Εντοπισμός και επίλυση τεχνικών θεμάτων (software/networking/hardware)
+  Μελέτη, καταγραφή της υπάρχουσας υποδομής &amp; τεκμηρίωση διεργασιών ρουτίνας
+  Εγκαταστάσεις συστήματος Battlenet σε καταστήματα στην Ελλάδα και στο εξωτερικό
+  Εξυπηρέτηση πελατών (Helpdesk/Support)
+  Τήρηση προθεσμιών και εκπλήρωση στόχων
+  Ομαδικό πνεύμα και οργανωτικές ικανότητες
 
 [hr@lancom.gr](mailto:hr@lancom.gr)
 
-
 * #### Logistic-i
 
-Περιγραφή:
+  ![](https://res.cloudinary.com/dk5dlrnv1/image/upload/v1676039689/events/carrer%20day%2023/Companies%20Logo/logistic_logo_aukwyb.png "Logistic-i")
 
+Περιγραφή:
 
 Η εταιρία LOGISTIC-i , ιδρύθηκε το 2010 και αποτελεί μια
 ραγδαία ανερχόμενη εταιρία στον τομέα του System Integration. Από την ίδρυση
@@ -578,22 +589,19 @@ system integrator partner για την κάλυψη των επιχειρησι
 
 Διεύθυνση: Λαέρτου & Αγίας Αναστασίας 3, Πυλαία, ΤΚ 55535 (κτίριο PhilliposBusinessCenter)
 
-[Παρουσίαση] (https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/B7_%ce%a0%ce%b1%cf%81%ce%bf%cf%85%cf%83%ce%af%ce%b1%cf%83%ce%b7Logistic-i.pptx)
+[Παρουσίαση](https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/B7_%ce%a0%ce%b1%cf%81%ce%bf%cf%85%cf%83%ce%af%ce%b1%cf%83%ce%b7Logistic-i.pptx)
 
-[Περιγραφή Θέσεων Εργασίας ή Θέσεων Πρακτικής Άσκησης] (https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/B7_Logistic-i_%ce%a0%ce%b5%cf%81%ce%b9%ce%b3%cf%81%ce%b1%cf%86%ce%ad%cf%82%ce%b8%ce%ad%cf%83%ce%b5%cf%89%ce%bd%ce%b5%cf%81%ce%b3%ce%b1%cf%83%ce%af%ce%b1%cf%82.docx)
+[Περιγραφή Θέσεων Εργασίας ή Θέσεων Πρακτικής Άσκησης](https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/B7_Logistic-i_%ce%a0%ce%b5%cf%81%ce%b9%ce%b3%cf%81%ce%b1%cf%86%ce%ad%cf%82%ce%b8%ce%ad%cf%83%ce%b5%cf%89%ce%bd%ce%b5%cf%81%ce%b3%ce%b1%cf%83%ce%af%ce%b1%cf%82.docx)
 
 [info@logistic-i.gr](mailto:info@logistic-i.gr)
 
 * #### netcompany intrasoft
 
-
-[Παρουσίαση] (https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/B5_Netcompany-Intrasoft-Presentation1.pptx)
-
-
-
+[Παρουσίαση](https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/B5_Netcompany-Intrasoft-Presentation1.pptx)
 
 * #### Olympia Electronics
 
+  ![](https://res.cloudinary.com/dk5dlrnv1/image/upload/v1676039692/events/carrer%20day%2023/Companies%20Logo/olympia_logo_szbcgx.png "Olympia")
 
 Περιγραφή:
 
@@ -602,6 +610,7 @@ H OLYMPIA ELECTRONICS αποτελεί την μεγαλύτερη αμιγώς 
 εταιρεία είναι κυρίαρχη στην Ελληνική αγορά με μερίδιο αγοράς πάνω από το 50% στον φωτισμό
 ασφαλείας και την πυρανίχνευση.
 Εξάγουμε σε 72 χώρες του εξωτερικού στις εξής γεωγραφικές περιοχές:
+
 * Ευρωπαϊκή Ένωση
 * Ανατολικές Ευρωπαϊκές χώρες &amp; Ρωσία
 * Μέση Ανατολή &amp; Χώρες του Κόλπου
@@ -621,21 +630,21 @@ H OLYMPIA ELECTRONICS A.E. δίνει ιδιαίτερη έμφαση στις �
 Οι νέες εγκαταστάσεις αφορούν υποδομές R&amp;D HUB για προγραμματιστές (software developers) και
 ηλεκτρονικούς (embedded engineers).
 
-
 Διεύθυνση: 72 χλμ. Π.Ε.Ο. Θεσσαλονίκης Κατερίνης T.K. 60 300
 
-[Παρουσίαση] (https://cloud.olympia-electronics.com/index.php/s/zisrXzZD8L6Wqes)
+[Παρουσίαση](https://cloud.olympia-electronics.com/index.php/s/zisrXzZD8L6Wqes)
 
 [cv@olympia-electronics.gr](mailto:cv@olympia-electronics.gr)
 
 [hr@olympia-electronics.com](mailto:hr@olympia-electronics.com)
 
-
 * #### Smart Up
+
+  ![](https://res.cloudinary.com/dk5dlrnv1/image/upload/v1676039692/events/carrer%20day%2023/Companies%20Logo/smartup_logo_j90snb.png "SmartUp")
 
 Διεύθυνση: Κομνηνών 45 Εύοσμος, Θεσσαλονίκη,56224
 
-[Παρουσίαση] (https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/B3_Smartup.pdf)
+[Παρουσίαση](https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/B3_Smartup.pdf)
 
 [hr@smartupweb.com](mailto:hr@smartupweb.com)
 
@@ -648,6 +657,8 @@ H OLYMPIA ELECTRONICS A.E. δίνει ιδιαίτερη έμφαση στις �
 [info@twinsoft.gr](mailto:info@twinsoft.gr)
 
 * #### ΓΝΩΜΩΝ ΠΛΗΡΟΦΟΡΙΚΗΣ ΑΕ
+
+  ![](https://res.cloudinary.com/dk5dlrnv1/image/upload/v1676039685/events/carrer%20day%2023/Companies%20Logo/gnomon_logo_dsy2ul.png "Gnomon")
 
 Περιγραφή:
 
@@ -665,17 +676,21 @@ H OLYMPIA ELECTRONICS A.E. δίνει ιδιαίτερη έμφαση στις �
 [Παρουσίαση](https://people.iee.ihu.gr/~gouliana/Praktikh/B2_Career-day-gnomon-2023.pptx)
 
 Περιγραφή Θέσεων Εργασίας ή Θέσεων Πρακτικής Άσκησης:
+
 * Backend Developer (preferred using java)
 * Mobile Frontend Developer (preferred using Fluuter or knowledge of Javascript Framework) 
 
 [cv@gnomon.com.gr](mailto:cv@gnomon.com.gr)
 
-
 ### ΘΕΣΕΙΣ ΠΡΑΚΤΙΚΗΣ ΑΣΚΗΣΗΣ
 
 * #### Agrotech
 
+  ![](https://res.cloudinary.com/dk5dlrnv1/image/upload/v1676039685/events/carrer%20day%2023/Companies%20Logo/CMYK_Agrotech_fu24nr.png "Agrotech")
+
 Περιγραφή:
+
+
 
 Η Agrotech, η μεγαλύτερη ελληνική εταιρεία εμπορίας γεωργικών μηχανημάτων και
 ανταλλακτικών, ανήκει στον όμιλο εταιρειών Agrogroup Μποζατζίδης - Μητσιολίδης, ο οποίος
@@ -703,7 +718,7 @@ H OLYMPIA ELECTRONICS A.E. δίνει ιδιαίτερη έμφαση στις �
 Διεύθυνση: 8ο Χιλιόμετρο
 θεσσαλονίκη-Αθήνα
 
-[Παρουσίαση] (https://people.iee.ihu.gr/~gouliana/Praktikh/G10_AGROTECH.pptx)
+[Παρουσίαση](https://people.iee.ihu.gr/~gouliana/Praktikh/G10_AGROTECH.pptx)
 
 Περιγραφή Θέσης Πρακτικής Άσκησης:
 
@@ -720,56 +735,58 @@ H OLYMPIA ELECTRONICS A.E. δίνει ιδιαίτερη έμφαση στις �
 Το ιδανικό προφίλ υποψηφίου θα πρέπει να συγκεντρώνει τα παρακάτω:
 
 * Πτυχίο ΑΕΙ ή ΤΕΙ με ειδικότητα Ηλεκτρονικού, Ηλεκτρολόγου
-Μηχανικού ή σχετικό πτυχίο επαγγελματικής κατάρτισης
+  Μηχανικού ή σχετικό πτυχίο επαγγελματικής κατάρτισης
 * Άριστη γνώση αγγλικής γλώσσας
 * Άριστη γνώση Η/Υ
 * Διάγνωση και επισκευή ηλεκτρονικών κυκλωμάτων
 * Συγκόλληση SMD υλικών
 * Συναρμολόγηση ηλεκτρονικών κυκλωμάτων βάσει σχεδίου
 * Τεχνική υποστήριξη πελατών / προσωπικού / συνεργατών
-Επιπλέον, θα εκτιμηθεί,
-
+  Επιπλέον, θα εκτιμηθεί,
 * Εμπειρία στην διάγνωση σύνθετων ηλεκτρικών και ηλεκτρονικών
-προβλημάτων
+  προβλημάτων
 * Γνώση γερμανικής γλώσσας
 * Προϋπηρεσία που σχετίζεται με το συγκεκριμένο αντικείμενο
 
 Η εταιρεία μας προσφέρει:
+
 * ένα ανταγωνιστικό πακέτο αποδοχών
 * συνεχής εκπαίδευση των εργαζομένων
 * ευκαιρία για επαγγελματική ανέλιξη
-Μετά τη συλλογή και την αξιολόγηση των βιογραφικών σημειωμάτων
-θα υπάρξει επικοινωνία μόνο με τους υποψηφίους που
-ανταποκρίνονται στις απαιτήσεις της θέσης προς στελέχωση για να
-οριστεί συνάντηση για συνέντευξη.
-Ο υποψήφιος μπορεί να στείλει το βιογραφικό του σημείωμα και στο
-[hr@agrotechniki.gr ](mailto:hr@agrotechniki.gr )
- .
-Όλες οι αιτήσεις θεωρούνται απόλυτα εμπιστευτικές.
-
+  Μετά τη συλλογή και την αξιολόγηση των βιογραφικών σημειωμάτων
+  θα υπάρξει επικοινωνία μόνο με τους υποψηφίους που
+  ανταποκρίνονται στις απαιτήσεις της θέσης προς στελέχωση για να
+  οριστεί συνάντηση για συνέντευξη.
+  Ο υποψήφιος μπορεί να στείλει το βιογραφικό του σημείωμα και στο
+  [hr@agrotechniki.gr ](mailto:hr@agrotechniki.gr)
+   .
+  Όλες οι αιτήσεις θεωρούνται απόλυτα εμπιστευτικές.
 * IT Specialist
 * Η Agrotech SA – John Deere κορυφαία εταιρία εμπορίας γεωργικών
-μηχανήματων σε Ελλάδα και Κύπρο ενδιαφέρεται για την εύρεση
-ανθρωπίνου δυναμικού για να πλαισιώσει την ομάδα του τμήματος ΙΤ.
+  μηχανήματων σε Ελλάδα και Κύπρο ενδιαφέρεται για την εύρεση
+  ανθρωπίνου δυναμικού για να πλαισιώσει την ομάδα του τμήματος ΙΤ.
 
 Ενδεικτικά ορισμένες αρμοδιότητες
+
 * Εγκατάσταση/Συντήρηση/Αντιμετώπιση βλαβών σε τομείς όπως, servers,
-δίκτυα, software
+  δίκτυα, software
 * Υποστήριξη και αντιμετώπιση προβλημάτων σε end users για καθημερινά
-ζητήματα (PC, εκτυπωτές, e-mail, κτλ)
+  ζητήματα (PC, εκτυπωτές, e-mail, κτλ)
 * Μηχανογράφηση υποδομής και διατήρηση αρχείων καταγραφής IT
-εξοπλισμού, εφαρμογών και αδειών χρήσης
+  εξοπλισμού, εφαρμογών και αδειών χρήσης
 * Κατάθεση προτάσεων για διόρθωση/ αντικατάσταση εξοπλισμού και
-συστημάτων
+  συστημάτων
 * Επικοινωνία με δίκτυο συνεργατών για επίλυση βλαβών/ προβλημάτων
 
 Απαραίτητα προσόντα :
+
 * Πτυχίο ΑΕΙ/ΤΕΙ Πληροφορικής
 * Μεταπτυχιακός τίτλος σπουδών θα εκτιμηθεί
 * Πολύ καλή γνώση Αγγλικών
 * Πολύ καλή γνώση Microsoft Office 365
 
 Η εταιρεία μας προσφέρει:
+
 * Ανταγωνιστικό πακέτο αποδοχών
 * Ευχάριστο και σύγχρονο εργασιακό περιβάλλον
 * Προοπτικές εξέλιξης
@@ -782,11 +799,11 @@ H OLYMPIA ELECTRONICS A.E. δίνει ιδιαίτερη έμφαση στις �
 στο hr@agrotechniki.gr με τίτλο "IT Specialist’’
 H παραπάνω θέση εργασίας αφορά και πρακτική άσκηση.
 
-[hr@agrotechniki.gr ](mailto:hr@agrotechniki.gr )
+[hr@agrotechniki.gr ](mailto:hr@agrotechniki.gr)
 
 [zacharia@agrotechniki.gr](mailto:zacharia@agrotechniki.gr)
 
-* #### FORCE 
+* #### FORCE
 
 Περιγραφή:
 
@@ -823,7 +840,7 @@ electromobility.
 
 Διεύθυνση: Ηλέκτρας 5, Καλαμαριά - Θεσσαλονίκη ,55134
 
-[Παρουσίαση] (https://people.iee.ihu.gr/~gouliana/Praktikh/D7_COMPANYPROFILEFORCE2023.pdf)
+[Παρουσίαση](https://people.iee.ihu.gr/~gouliana/Praktikh/D7_COMPANYPROFILEFORCE2023.pdf)
 
 Περιγραφή Θέσης Πρακτικής Άσκησης:
 
@@ -831,9 +848,10 @@ electromobility.
 Η εταιρία Force Ε.Π.Ε. δραστηριοποιείτε από το 1984 στον χώρο των συστημάτων
 ασφαλείας (Συστήματα Συναγερμού – CCTV – Access control – Πυρανίχνευση –
 Ηλεκτρομαγνητικές Κλειδαριές – Ηλεκτροκίνηση) με έδρα την Καλαμαριά Θες/νίκης ενώ
-διαθέτει υποκατάστημα στο Αιγάλεω Αττικής. [https://www.force.gr/](https://www.force.gr/)
+διαθέτει υποκατάστημα στο Αιγάλεω Αττικής. <https://www.force.gr/>
 
 Οι Πρακτικά Ασκούμενοι θα Εκπαιδευτούν σε:
+
 * Επισκευή ηλεκτρονικών συστημάτων σε εσωτερικό πεδίο
 * Συντήρηση &amp; τοποθέτηση ηλεκτρονικών συστημάτων σε εξωτερικό πεδίο
 
@@ -841,14 +859,16 @@ electromobility.
 2 άτομα
 
 Ικανότητες και Δεξιότητες:
+
 * Φιλομάθεια
 * Τυπικότητα
 * Οργανωτικότητα
 
 [konstantinos@force.gr](mailto:konstantinos@force.gr)
 
-
 * #### Airshop.gr
+
+  ![](https://res.cloudinary.com/dk5dlrnv1/image/upload/v1676039685/events/carrer%20day%2023/Companies%20Logo/airshop_logo_fy7z9s.png "Airshop")
 
 Περιγραφή:
 
@@ -869,6 +889,7 @@ Air Transport Association) και ΕΤΓΜΘ (Ένωση Τουριστικών 
 
 Οι δραστηριότητες μας επεκτείνονται σε πολυάριθμους και ποικίλους τομείς τουριστικών
 υπηρεσιών όπως:
+
 * Εκδόσεις αεροπορικών εισιτηρίων
 * Εκδόσεις ακτοπλοϊκών εισιτηρίων
 * Διοργάνωση επαγγελματικών ταξιδίων
@@ -911,23 +932,21 @@ Agent (OTA). Οι online υπηρεσίες που προσφέρει αυτή �
 
 [Παρουσίαση](https://people.iee.ihu.gr/~gouliana/Praktikh/G9_airshop_tei_presentation.ppsx)
 
-[cv@airshop.gr ](mailto:cv@airshop.gr )
- 
+[cv@airshop.gr ](mailto:cv@airshop.gr)
 
-* #### APIFON 
+* #### APIFON
 
 Διεύθυνση: Λεωφόρος Γεωργικής Σχολής 27, 55535 Πυλαία Θεσσαλονίκης
 
 [Παρουσίαση](https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/G8_apifon's%20YOUniversity.pdf)
 
-[Περιγραφή Θέσης Πρακτικής Άσκησης] (https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/G8_Apifon%20Internships.pdf)
+[Περιγραφή Θέσης Πρακτικής Άσκησης](https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/G8_Apifon%20Internships.pdf)
 
-[ hr@apifon.com ](mailto: hr@apifon.com )
+\[ hr@apifon.com ](mailto: hr@apifon.com )
 
+* #### ARX.NET
 
-* #### ARX.NET 
-
-
+  ![](https://res.cloudinary.com/dk5dlrnv1/image/upload/v1676059853/events/carrer%20day%2023/Companies%20Logo/arxFinal_epjhzh.jpg "arx.net")
 
 Διεύθυνση: Λ. Σοφού 18,
 Θεσσαλονίκη
@@ -936,8 +955,9 @@ Agent (OTA). Οι online υπηρεσίες που προσφέρει αυτή �
 
 [cv@arx.net](mailto:cv@arx.net)
 
-* #### GWF Labs 
+* #### GWF Labs
 
+  ![](https://res.cloudinary.com/dk5dlrnv1/image/upload/v1676039686/events/carrer%20day%2023/Companies%20Logo/gwf_logo_vnazkx.png "GWF")
 
 Περιγραφή:
 
@@ -962,35 +982,39 @@ communication technologies in this domain.
 Διεύθυνση: 9ο Χιλ.
 Θεσσαλονίκης-Θέρμης
 
-[Παρουσίαση] (https://gwfag-my.sharepoint.com/personal/georgia_maravelia_gwf-labs_gr/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fgeorgia%5Fmaravelia%5Fgwf%2Dlabs%5Fgr%2FDocuments%2F20230211%20Job%20Fair%2011%2D02%2D23%2Epdf&parent=%2Fpersonal%2Fgeorgia%5Fmaravelia%5Fgwf%2Dlabs%5Fgr%2FDocuments&ga=1)
-
+[Παρουσίαση](https://gwfag-my.sharepoint.com/personal/georgia_maravelia_gwf-labs_gr/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fgeorgia%5Fmaravelia%5Fgwf%2Dlabs%5Fgr%2FDocuments%2F20230211%20Job%20Fair%2011%2D02%2D23%2Epdf&parent=%2Fpersonal%2Fgeorgia%5Fmaravelia%5Fgwf%2Dlabs%5Fgr%2FDocuments&ga=1)
 
 [info@gwf-labs.gr](mailto:info@gwf-labs.gr)
 
 [georgia.maravelia@gwf-labs.gr](mailto:georgia.maravelia@gwf-labs.gr)
 
+* #### interworks.cloud
 
-* #### interworks.cloud 
+  ![](https://res.cloudinary.com/dk5dlrnv1/image/upload/v1676039690/events/carrer%20day%2023/Companies%20Logo/interworkds_logo_kc2gu1.png "interworks")
 
 [Περιγραφή](https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/G5_interworks.cloud%20.pdf)
 
 Διεύθυνση: Ιατρού Γωγούση 8, Ευκαρπία 564 29
 
-[Παρουσίαση] (https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/G5_interworks.cloud%20Introduction%202023_Diethnes.pptx)
+[Παρουσίαση](https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/G5_interworks.cloud%20Introduction%202023_Diethnes.pptx)
 
 [jobs@interworks.cloud](mailto:jobs@interworks.cloud)
 
-* #### Offline Technologies 
+* #### Offline Technologies
+
+  ![](https://res.cloudinary.com/dk5dlrnv1/image/upload/v1676039690/events/carrer%20day%2023/Companies%20Logo/offlinetech_logo_orkye4.png "offlinetech")
 
 Διεύθυνση: Εθ. Αντιστάσεως 33, Καλαμαριά 551 33
 
-[Παρουσίαση] (https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/G4_OfflineTechnologies.pdf)
+[Παρουσίαση](https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/G4_OfflineTechnologies.pdf)
 
 [Περιγραφή Θέσης Πρακτικής Άσκησης](https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/G4_pureprofile_offline_technologies_postions.pdf)
 
 [ggeorgopoulos@pureprofile.com](mailto:ggeorgopoulos@pureprofile.com)
 
 * #### TITAN Cement Company S.A.
+
+  ![](https://res.cloudinary.com/dk5dlrnv1/image/upload/v1676039690/events/carrer%20day%2023/Companies%20Logo/LOGO_TITAN_iaja5c.jpg "Titan")
 
 Περιγραφή:
 
@@ -1015,17 +1039,17 @@ communication technologies in this domain.
 αποδοτικότητά και να παράγει υψηλής ποιότητας προϊόντα, σύμφωνα με τις ανάγκες των
 πελατών του σήμερα και στο μέλλον.
 
-
 Διεύθυνση: Efkarpia, POBox 51559, 564 03 Thessaloniki, Greece
 
-[Παρουσίαση] (https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/G3_TITAN_Eukarpia_presentation_60years.pdf)
+[Παρουσίαση](https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/G3_TITAN_Eukarpia_presentation_60years.pdf)
 
 [vourout@titan.gr](mailto:vourout@titan.gr)
 
-* #### Κλινική ΑΓΙΟΣ ΛΟΥΚΑΣ 
+* #### Κλινική ΑΓΙΟΣ ΛΟΥΚΑΣ
+
+  ![](https://res.cloudinary.com/dk5dlrnv1/image/upload/v1676039684/events/carrer%20day%2023/Companies%20Logo/agiosloukas_logo_si8l5y.png "Κλινική ΑΓΙΟΣ ΛΟΥΚΑΣ")
 
 Περιγραφή:
-
 
 Η
  Κλινική «ΑΓΙΟΣ ΛΟΥΚΑΣ» είναι ιδιωτικό νοσηλευτικό ίδρυμα και βρίσκεται 
@@ -1044,17 +1068,17 @@ communication technologies in this domain.
 Διεύθυνση:
 Χαριλάου Τρικούπη 3, 55236 Πανόραμα Θεσσαλονίκης
 
-[Παρουσίαση] (https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/G8_agios_loukas.pptx)
+[Παρουσίαση](https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/G8_agios_loukas.pptx)
 
-[Περιγραφή Θέσης Πρακτικής Άσκησης] (https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/G8_agios_loukas.pdf)
+[Περιγραφή Θέσης Πρακτικής Άσκησης](https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/G8_agios_loukas.pdf)
 
 [info@klinikiagiosloukas.gr](mailto:info@klinikiagiosloukas.gr)
 
- 
 ### ΔΕΝ ΜΠΟΡΕΣΑΝ ΝΑ ΠΑΡΑΣΤΟΥΝ
 
 * #### Entranet
 
+  ![](https://res.cloudinary.com/dk5dlrnv1/image/upload/v1676039685/events/carrer%20day%2023/Companies%20Logo/entranet_logo_taye0y.png "Entranet")
 
 Περιγραφή:
 
@@ -1067,7 +1091,6 @@ communication technologies in this domain.
 
 Διεύθυνση: ΠΛΑΤΑΙΩΝ 44, ΤΚ 54249,  ΘΕΣΣΑΛΟΝΙΚΗ
 
-
 Περιγραφή Θέσης Πρακτικής Άσκησης :
 
 ΠΡΟΣΦΕΡΟΥΜΕ ΘΕΣΗ ΓΙΑ ΠΡΑΚΤΙΚΗ:
@@ -1075,12 +1098,10 @@ communication technologies in this domain.
 
 Java for Android και C#.
 
-
 Καλή γνώση JavaScript, React, React Native και NodeJS.
 Βασικές γνώσεις AWS και DynamoDB.
 
 [info@entranet.gr](mailto:info@entranet.gr)
-
 
 * #### Kenotom P.C. - I.K.E
 
@@ -1117,10 +1138,11 @@ southern Europe. Kenotom currently employs more than 180 engineers.
 
 [Παρουσίαση](https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/D2_Kenotom_Presentation_CareerDay_2022%20CW%2042.pptx)
 
-
 [careers@kenotom.com](mailto:careers@kenotom.com)
 
-* ####  Space
+* #### Space
+
+  ![](https://res.cloudinary.com/dk5dlrnv1/image/upload/v1676039684/events/carrer%20day%2023/Companies%20Logo/space_logo_ln68l6.png "Space")
 
 Περιγραφή: 
 
@@ -1130,7 +1152,6 @@ H Space Hellas είναι ένας κορυφαίος System Integrator και V
 
 Διεύθυνση: Καριοφύλλη -Κυρίλλου-Γιανιτσών
 
-[Παρουσίαση] (https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/D3_SH_2023%20Corporate%20Presentation_MK_09022023.pdf)
+[Παρουσίαση](https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/D3_SH_2023%20Corporate%20Presentation_MK_09022023.pdf)
 
-[Περιγραφή Θέσης Πρακτικής Άσκησης] (https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/D3_%ce%a4%ce%b5%cf%87%ce%bd%ce%b9%ce%ba%cf%8c%cf%82%ce%97.%ce%a5%ce%ba%ce%b1%ce%b9%ce%94%ce%b9%ce%ba%cf%84%cf%8d%cf%89%ce%bd-%ce%98%ce%95%ce%a3%ce%a3%ce%91%ce%9b%ce%9f%ce%9d%ce%99%ce%9a%ce%97.doc)
-
+[Περιγραφή Θέσης Πρακτικής Άσκησης](https://people.iee.ihu.gr/~gouliana/Praktikh/Hmerida_e_22_23/D3_%ce%a4%ce%b5%cf%87%ce%bd%ce%b9%ce%ba%cf%8c%cf%82%ce%97.%ce%a5%ce%ba%ce%b1%ce%b9%ce%94%ce%b9%ce%ba%cf%84%cf%8d%cf%89%ce%bd-%ce%98%ce%95%ce%a3%ce%a3%ce%91%ce%9b%ce%9f%ce%9d%ce%99%ce%9a%ce%97.doc)
