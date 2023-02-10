@@ -30,10 +30,50 @@ perimenw text k.Gouliana
 
 <!--EndFragment-->
 
-Link παρουσίασης: [](<http://aetos.it.teithe.gr/~gouliana/Praktikh/Hmerida_e_22_23/A5_Aineas tei.pptx/>)<http://aetos.it.teithe.gr/~gouliana/Praktikh/Hmerida_e_22_23/A5_Aineas tei.pptx>
+Link παρουσίασης:
+
+ [](http://aetos.it.teithe.gr/~gouliana/Praktikh/Hmerida_e_22_23/A5_Aineastei.pptx/)<http://aetos.it.teithe.gr/~gouliana/Praktikh/Hmerida_e_22_23/A5_Aineas tei.pptx>
 
 <!--StartFragment-->
 
-[info@aineas.gr](<>)
+<!--StartFragment-->
+
+```markdown
+[links text](http://aetos.it.teithe.gr/~gouliana/Praktikh/Hmerida_e_22_23/A5_Aineas tei.pptx)
+
+[Contact Us](mailto:info@aineas.gr)
+```
 
 <!--EndFragment-->
+
+<!--EndFragment-->
+
+[](<>)
+
+<!--EndFragment-->
+
+* #### Accenture
+* #### ClipNews AE
+* #### Deloitte
+* #### Interlife
+
+### ΘΕΣΕΙΣ ΕΡΓΑΣΙΑΣ ΚΑΙ ΘΕΣΕΙΣ ΠΡΑΚΤΙΚΗΣ ΑΣΚΗΣΗΣ
+
+* #### Art Sound & Lights
+* #### ArtAbout
+* #### DORMED HELLAS SA
+* #### ELBIS - MC Chargers
+* #### FoodTec Solutions
+* #### HAM Systems
+* #### Hellas Signs, Ελληνικές Επιγραφές
+* #### IARTS IKE
+* #### ITSAUR
+* #### Lancom-Battlenet
+* #### Logistic-i
+* #### netcompany intrasoft
+* #### Olympia Electronics
+* #### Smart Up
+* #### Twin soft
+* #### ΓΝΩΜΩΝ ΠΛΗΡΟΦΟΡΙΚΗΣ ΑΕ
+*
+*
