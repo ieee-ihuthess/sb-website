@@ -156,7 +156,7 @@ collections:
           options: [
             { label: "Greek", value: "el-gr"},
             { label: "English", value: "en-gb"}
-          ] 
+          ]
         }
       - { label: "Answer", name: "body", widget: "markdown" }
   - name: "galleryImage"
@@ -178,3 +178,21 @@ collections:
       - label: "Caption"
         name: "caption"
         widget: "string"
+  - name: "blogPosts"
+    label: "Blog Posts"
+    folder: "content/blogposts"
+    create: true
+    slug: "{{title}}"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Description"
+        name: "description"
+        widget: "string"
+      - label: "Content"
+        name: "content"
+        widget: "markdown"
+      - label: "Created on"
+        name: "date"
+        widget: "datetime"

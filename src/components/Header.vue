@@ -79,11 +79,11 @@ export default {
       menuItems: [
         {
           name: "home",
-          target: "#home",
+          target: window?.location.toString().includes('blog') ? '/#home' : "#home",
         },
         {
           name: "gallery",
-          target: "#gallery",
+          target: window?.location.toString().includes('blog') ? "/#gallery" : "#gallery",
         },
         {
           name: "WIE",
@@ -100,6 +100,10 @@ export default {
         {
           name: "members",
           target: "#members",
+        },
+        {
+          name: "Blog",
+          target: "/blog"
         },
         {
           name: "contact",

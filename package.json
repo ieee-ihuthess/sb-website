@@ -20,6 +20,7 @@
     "netlify-cms": "^2.10.78",
     "particles.vue": "^2.1.11",
     "vue": "^2.6.12",
+    "vue-feather-icons": "^5.1.0",
     "vue-owl-carousel": "^2.0.3",
     "vue-scrollactive": "^0.9.3",
     "vue-scrollto": "^2.20.0",

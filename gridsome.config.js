@@ -35,10 +35,25 @@ module.exports = {
       },
     },
     {
+      use: "@gridsome/source-filesystem",
+      options: {
+        typeName: "BlogPost",
+        path: "./content/blogpost/**/*.md",
+      },
+    },
+    {
       use: `gridsome-plugin-netlify-cms`,
       options: {
         publicPath: `/admin`,
       },
     },
   ],
+  templates: {
+    BlogPost: [
+      {
+        path: '/blog/:slug',
+        component: './src/templates/BlogPost.vue'
+      }
+    ],
+  },
 };
