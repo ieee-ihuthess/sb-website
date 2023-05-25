@@ -1,5 +1,5 @@
 ---
-title: "Emergin possibilities: Our student branch story"
+title: "Emergin possibilities:  A story from our IEEE Student branch"
 image: https://res.cloudinary.com/dk5dlrnv1/image/upload/v1684975728/25_5_23f_xnmqn4.jpg
 date: 2023-05-25T09:00:00.000Z
 links:
