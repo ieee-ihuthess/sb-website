@@ -1,6 +1,6 @@
 ---
 name: Dimitris Tetepoulidis
-designation: Design & Media Committee
+designation: Member
 image: https://res.cloudinary.com/dk5dlrnv1/image/upload/v1613476465/members/tetepoulidis_gvyzvz.jpg
 socialLinks:
   facebook: https://www.facebook.com/D.Tetepoulidis
