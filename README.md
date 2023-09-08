@@ -7,3 +7,10 @@ Our new, [JAMstack](https://jamstack.org/) powered website using the Vue based [
 2. Clone the project.
 3. `npm install` inside the project directory to install dependencies.
 4. `gridsome develop` to spin up a local dev environment.
+
+
+### Development with docker
+
+1. Clone the project
+2. `docker build -t my-gridsome-app .` to create the docker image
+3. `docker run -p 8080:8080 my-gridsome-app` to run the container
