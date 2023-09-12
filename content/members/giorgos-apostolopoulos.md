@@ -8,5 +8,5 @@ socialLinks:
   github: https://github.com/joj0s
   gitlab: https://gitlab.com/joj0s
   linkedin: https://www.linkedin.com/in/giorgos-apostolopoulos-1438b51b2/
-date: 2021-02-11T10:43:39.930Z
+date: 2023-09-01T16:25:00.000Z
 ---

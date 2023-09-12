@@ -1,12 +1,12 @@
 ---
 name: Konstantinos Giantselidis
 designation: Member
-image: https://res.cloudinary.com/dk5dlrnv1/image/upload/c_scale,h_350,w_350/v1637055155/members/photo_2021-11-16_11-15-22_vqwois.jpg
+image: https://res.cloudinary.com/dk5dlrnv1/image/upload/v1694547718/members/giantselidis_cvvogg.jpg
 socialLinks:
   github: "#"
   gitlab: "#"
   facebook: https://www.facebook.com/konstantinosgiants/
   instagram: https://www.instagram.com/constantine_giants/
   linkedin: https://www.linkedin.com/in/constantine-giantselidis-994393204/
-date: 2021-02-12T09:31:38.000Z
+date: 2023-09-01T16:29:00.000Z
 ---

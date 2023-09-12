@@ -8,5 +8,5 @@ socialLinks:
   gitlab: "#"
   instagram: https://www.instagram.com/pnevmalex/
   linkedin: https://www.linkedin.com/in/pnevmalex/
-date: 2021-02-11T10:43:19.930Z
+date: 2023-09-01T16:20:00.000Z
 ---

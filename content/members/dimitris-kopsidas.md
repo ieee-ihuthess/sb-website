@@ -1,12 +1,12 @@
 ---
 name: Dimitris Kopsidas
 designation: Secretary
-image: 
+image: https://res.cloudinary.com/dk5dlrnv1/image/upload/v1694547574/members/default_ufej2q.jpg
 socialLinks:
   github: "#"
   gitlab: "#"
   facebook: "#"
   instagram: "#"
   linkedin: "#"
-date: 2021-02-11T10:43:18.930Z
+date: 2023-09-01T16:19:00.000Z
 ---
