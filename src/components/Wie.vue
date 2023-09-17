@@ -4,9 +4,9 @@
     <div class="wie__wrapper">
       <div class="wie__quote">
         <h3 class="quote__content">
-          “I believe in the unlimited power of women in the context of science and engineering”
+          “Engineering is a way to express your creativity while making a meaningful impact on the world. Embrace the challenge.”
         </h3>
-        <h3 class="quote__author">-Elizabeth Holmes</h3>
+        <h3 class="quote__author">-Reshma Saujani</h3>
       </div>
       <p class="wie__description">
         {{ $t("wieText") }}

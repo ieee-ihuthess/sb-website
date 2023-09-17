@@ -38,7 +38,7 @@ export default {
           icon: "instagram",
           iconType: "fab",
           text: "Instagram page",
-          to: "https://www.instagram.com/ieee.ihuthess/",
+          to: "https://www.instagram.com/ieeeihusb/",
         },
         {
           icon: "youtube",
