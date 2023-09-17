@@ -1,7 +1,7 @@
 ---
 name: Alexandros Pnevmonidis
 designation: Treasurer
-image: https://res.cloudinary.com/dk5dlrnv1/image/upload/v1693969669/members/pnevmonidis_giwpxt.jpg
+image: https://res.cloudinary.com/dk5dlrnv1/image/upload/v1694953765/members/pnevmonidis2_ga3ng2.jpg
 socialLinks:
   facebook: "#"
   github: https://github.com/Pnevmalex

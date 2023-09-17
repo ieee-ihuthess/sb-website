@@ -1,6 +1,6 @@
 ---
 name: Vasilis Celani
-designation: Technical Committee Officer
+designation: Member
 image: https://res.cloudinary.com/dk5dlrnv1/image/upload/v1693969465/members/celani_w42nr8.jpg
 socialLinks:
   github: https://github.com/CelaniDe

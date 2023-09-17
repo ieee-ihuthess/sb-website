@@ -1,6 +1,6 @@
 ---
 name: Athanasios Karezos
-designation: Design Committee Officer
+designation: Member
 image: https://res.cloudinary.com/dk5dlrnv1/image/upload/v1694545298/members/thanasis-karezos_wlozjn.jpg
 socialLinks:
   github: "#"
